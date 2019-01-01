@@ -1,0 +1,9 @@
+h1 {
+  text-align: center;
+  font-family: rad;
+}
+
+@font-face {
+  font-family: rad;
+  src: url(https://fonts.gstatic.com/s/permanentmarker/v7/Fh4uPib9Iyv2ucM6pGQMWimMp004La2Cf5b6jlg.woff2);
+}
