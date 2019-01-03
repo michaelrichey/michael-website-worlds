@@ -1,0 +1,34 @@
+h1 {
+  font-family: impact;
+  text-align: center;
+  color: white;
+  text-shadow: black 10px 10px;
+  font-size: 80px;
+}
+
+p {
+  font-family: courier;
+  width: 80%;
+  color: white;
+  text-shadow: black 2px 2px;
+  font-size: 20px;
+}
+
+table, tr, td {
+  border: dotted 2px blue;
+  font-family: impact;
+  color: white;
+  text-shadow: black 2px 2px;
+  font-size: 30px;
+}
+
+body {
+  background-image: url(/images/green-hill-zone.jpg);
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
