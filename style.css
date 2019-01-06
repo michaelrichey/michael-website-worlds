@@ -2,7 +2,7 @@ h1 {
   font-size: 100px;
   text-align: center;
   font-family: copperplate;
-  background-image: url("/images/pattern.png");
+  background-image: url("images/pattern.png");
 }
 
 .center {
