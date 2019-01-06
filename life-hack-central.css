@@ -1,0 +1,67 @@
+#logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 65%;
+}
+
+h2, h3 {
+  font-family: puter;
+}
+
+#back {
+  font-family: puter;
+  background-color: #ffa07a;
+  color: white;
+  padding: 7px;
+}
+
+html {
+  background-color: white;
+  border: 2px solid #ffa07a;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px;
+}
+
+#main {
+  width: 60%;
+  color: black;
+  font-family: georgia;
+  font-size: 18px;
+  text-align: left;
+  float: left;
+}
+
+#ads {
+  text-align: right;
+  width: 35%;
+  float: right;
+  font-size: 25px;
+  color: black;
+  font-family: impact;
+}
+
+#adheader {
+  background-color: #c4c4c4;
+  color: white;
+  font-family: times;
+}
+
+.adimage {
+  width: 80%;
+}
+
+.adimage:hover {
+  width: 100%;
+  border: #4cb1ff 8px solid;
+}
+
+.adlink {
+  color: black;
+}
+
+@font-face {
+  font-family: puter;
+  src: url(https://fonts.gstatic.com/s/fjallaone/v5/Yq6R-LCAWCX3-6Ky7FAFrOF6kjouQb4.woff2);
+}
