@@ -1,0 +1,76 @@
+h1 {
+  text-align: center;
+}
+
+body {
+  background-color: tan;
+  font-family: arial;
+}
+
+.intro {
+  border: black 2px solid;
+  padding: 1%;
+  font-family: fantasy;
+  border-radius: 20px;
+  background-color: violet;
+}
+
+.perkbill {
+  float: left;
+  width: 40%;
+  border: red solid 3px;
+  border-radius: 10px;
+  margin: 1%;
+  padding: 1%;
+  background-color: silver;
+  font-family: courier;
+}
+
+.perkbill:hover {
+  float: left;
+  width: 45%;
+  border: red solid 3px;
+  border-radius: 10px;
+  margin: 1%;
+  padding: 1%;
+  background-color: red;
+  font-family: courier;
+}
+
+.crispy {
+  float: right;
+  width: 40%;
+  border: blue dotted 3px;
+  border-radius: 10px;
+  margin: 1%;
+  padding: 1%;
+  background-color: gold;
+  font-family: impact;
+}
+
+.crispy:hover {
+  float: right;
+  width: 45%;
+  border: blue dotted 3px;
+  border-radius: 10px;
+  margin: 1%;
+  padding: 1%;
+  background-color: blue;
+  font-family: impact;
+}
+
+.happy {
+  float: right;
+}
+
+.angry {
+  float: right;
+}
+
+.back {
+  background-color: pink;
+  font-family: impact;
+  display: block;
+  margin-top: 60%;
+  font-size: 80px;
+}
