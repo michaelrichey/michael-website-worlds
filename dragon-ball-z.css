@@ -1,0 +1,172 @@
+.grid {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header header header nav nav"
+    "main main main main main"
+    "characters characters characters characters sagas"
+    "testimonials testimonials testimonials testimonials testimonials"
+    "subscribe subscribe subscribe subscribe subscribe"
+    "footer footer footer footer footer"
+}
+
+.box1 {
+  grid-area: header;
+  border: black 1px solid;
+}
+
+.title {
+  text-align: left;
+}
+
+.box1a {
+  grid-area: nav;
+  border: black 1px solid;
+  text-align: right;
+}
+
+a {
+  text-decoration: none;
+}
+
+.box2 {
+  grid-area: main;
+  border: black 1px solid;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+.headimg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h2{
+  text-align: center;
+}
+
+.box3 {
+  grid-area: characters;
+  border: black 1px solid;
+  display: inline-grid;
+  grid-template-areas:
+    "chara chara chara"
+    "goku vegeta pic"
+    "rest rest rest"
+}
+
+.charahead {
+  border: black 1px solid;
+  grid-area: chara;
+}
+
+.box3-1 {
+  border: black 1px solid;
+  grid-area: goku;
+  margin-left: 4%;
+  margin-right: 4%;
+}
+
+.box3-2 {
+  border: black 1px solid;
+  grid-area: vegeta;
+  margin-left: 4%;
+  margin-right: 4%;
+}
+
+.box3-3 {
+  border: black 1px solid;
+  grid-area: pic;
+  margin-left: 4%;
+  margin-right: 4%;
+}
+
+.box3-4 {
+  border: black 1px solid;
+  grid-area: rest;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+h3 {
+  text-align: center;
+}
+
+.charaimg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.box4 {
+  grid-area: sagas;
+  border: black 1px solid;
+  margin-left: 4%;
+  margin-right: 4%;
+}
+
+.box5 {
+  grid-area: testimonials;
+  border: black 1px solid;
+  display: grid;
+  grid-template-areas:
+    "testhead testhead testhead"
+    "test1 test2 test3"
+}
+
+.testhead {
+  text-align: center;
+  grid-area: testhead;
+}
+
+.test1 {
+  border: black 1px solid;
+  grid-area: test1;
+}
+
+.test2 {
+  border: black 1px solid;
+  grid-area: test2;
+}
+
+.test3 {
+  border: black 1px solid;
+  grid-area: test3;
+}
+
+.box6 {
+  grid-area: subscribe;
+  border: black 1px solid;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+table, tr {
+  border: orange 3px solid;
+  width: 70%;
+  padding: 5;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+td {
+  border: orange 3px solid;
+  width: 70%;
+  padding: 5;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  width: 80%;
+}
+
+.box7 {
+  grid-area: footer;
+  border: black 1px solid;
+  padding: 5%
+}
+
+h1 {
+  text-align: center;
+}
