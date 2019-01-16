@@ -12,7 +12,7 @@
   grid-template-areas:
     "header header header nav nav"
     "main main main main main"
-    "characters characters characters characters sagas"
+    "characters characters sagas sagas sagas"
     "testimonials testimonials testimonials testimonials testimonials"
     "subscribe subscribe subscribe subscribe subscribe"
     "footer footer footer footer footer";
@@ -25,7 +25,13 @@
 }
 
 .title {
-  text-align: left;
+  vertical-align: middle;
+}
+
+.helper {
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
 }
 
 .box1a {
@@ -42,6 +48,7 @@ a {
 
 .box2 {
   grid-area: main;
+  border-top: 7px #d10808 solid;
   padding-left: 15%;
   padding-right: 15%;
   background-color: #feaa2c;
@@ -57,13 +64,15 @@ a {
 h2{
   text-align: center;
   color: #d10808;
+  font-size: 50px;
 }
 
 .box3 {
   grid-area: characters;
   display: grid;
-  align-content: start;
+  align-content: center;
   background-color: #e87300;
+  justify-items: center;
   grid-template-areas:
     "chara chara chara"
     "goku vegeta pic"
@@ -72,25 +81,27 @@ h2{
 
 .charahead {
   grid-area: chara;
-  height: 20%;
 }
 
 .box3-1 {
   grid-area: goku;
   margin-left: 4%;
   margin-right: 4%;
+  width: 70%;
 }
 
 .box3-2 {
   grid-area: vegeta;
   margin-left: 4%;
   margin-right: 4%;
+  width: 70%
 }
 
 .box3-3 {
   grid-area: pic;
   margin-left: 4%;
   margin-right: 4%;
+  width: 70%
 }
 
 .box3-4 {
@@ -102,9 +113,17 @@ h2{
 h3 {
   text-align: center;
   color: #d10808;
+  font-size: 25px;
 }
 
 .charaimg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 300px;
+}
+
+.charaimg1 {
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -113,7 +132,7 @@ h3 {
 
 .box4 {
   grid-area: sagas;
-  border: red 10px dotted;
+  border: #d10808 10px solid;
   padding-left: 10px;
   padding-right: 10px;
   background-color: black;
@@ -163,8 +182,9 @@ h3 {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 30%;
-  border: 10px solid red;
+  width: auto;
+  height: 200px;
+  border: 10px solid #d10808;
 }
 
 .box6 {
@@ -185,7 +205,6 @@ h3 {
 
 table, tr {
   border: orange 3px solid;
-  width: 70%;
   padding: 5;
   margin-left: auto;
   margin-right: auto;
@@ -193,12 +212,10 @@ table, tr {
 
 td {
   border: orange 3px solid;
-  width: 70%;
   padding: 5;
   margin-left: auto;
   margin-right: auto;
   padding: 10px;
-  width: 80%;
 }
 
 .box7 {
