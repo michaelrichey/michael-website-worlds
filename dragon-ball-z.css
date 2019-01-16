@@ -1,0 +1,230 @@
+@font-face {
+  src: url(https://fonts.gstatic.com/s/novaflat/v10/QdVUSTc-JgqpytEbVeb0viFluW44JQ.woff2);
+  font-family: dbz;
+}
+
+.grid {
+  font-family: dbz;
+  font-size: 20px;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "header header header nav nav"
+    "main main main main main"
+    "characters characters sagas sagas sagas"
+    "testimonials testimonials testimonials testimonials testimonials"
+    "subscribe subscribe subscribe subscribe subscribe"
+    "footer footer footer footer footer";
+}
+
+.box1 {
+  grid-area: header;
+  background-color: #e87300;
+  padding: 2%;
+}
+
+.title {
+  vertical-align: middle;
+}
+
+.helper {
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+}
+
+.box1a {
+  grid-area: nav;
+  text-align: right;
+  background-color: #e87300;
+  padding: 5%;
+}
+
+a {
+  text-decoration: none;
+  color: #d10808;
+}
+
+.box2 {
+  grid-area: main;
+  border-top: 7px #d10808 solid;
+  padding-left: 15%;
+  padding-right: 15%;
+  background-color: #feaa2c;
+}
+
+.headimg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+h2{
+  text-align: center;
+  color: #d10808;
+  font-size: 50px;
+}
+
+.box3 {
+  grid-area: characters;
+  display: grid;
+  align-content: center;
+  background-color: #e87300;
+  justify-items: center;
+  grid-template-areas:
+    "chara chara chara"
+    "goku vegeta pic"
+    "rest rest rest";
+}
+
+.charahead {
+  grid-area: chara;
+}
+
+.box3-1 {
+  grid-area: goku;
+  margin-left: 4%;
+  margin-right: 4%;
+  width: 70%;
+}
+
+.box3-2 {
+  grid-area: vegeta;
+  margin-left: 4%;
+  margin-right: 4%;
+  width: 70%
+}
+
+.box3-3 {
+  grid-area: pic;
+  margin-left: 4%;
+  margin-right: 4%;
+  width: 70%
+}
+
+.box3-4 {
+  grid-area: rest;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+h3 {
+  text-align: center;
+  color: #d10808;
+  font-size: 25px;
+}
+
+.charaimg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 300px;
+}
+
+.charaimg1 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+.box4 {
+  grid-area: sagas;
+  border: #d10808 10px solid;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: black;
+  color: white;
+}
+
+.sagaimage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.box5 {
+  grid-area: testimonials;
+  display: grid;
+  background-color: #feaa2c;
+  grid-template-areas:
+    "testhead testhead testhead"
+    "test1 test2 test3"
+}
+
+.testhead {
+  text-align: center;
+  grid-area: testhead;
+}
+
+.test1 {
+  grid-area: test1;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.test2 {
+  grid-area: test2;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.test3 {
+  grid-area: test3;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.testimg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  height: 200px;
+  border: 10px solid #d10808;
+}
+
+.box6 {
+  grid-area: subscribe;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-bottom: 5%;
+  background-color: black;
+  color: white;
+}
+
+.subimg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+}
+
+table, tr {
+  border: orange 3px solid;
+  padding: 5;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+td {
+  border: orange 3px solid;
+  padding: 5;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+}
+
+.box7 {
+  grid-area: footer;
+  padding: 5%;
+  background-color: #e87300;
+}
+
+h1 {
+  text-align: center;
+  color: #d10808;
+}
