@@ -5,6 +5,10 @@
   font-family: futura;
 }
 
+body {
+  margin: 0;
+}
+
 .box1 {
   grid-column: 1 / 8;
   grid-row: span 1;
