@@ -3,6 +3,10 @@
   font-family: dbz;
 }
 
+body {
+  margin: 0;
+}
+
 .grid {
   font-family: dbz;
   font-size: 20px;
