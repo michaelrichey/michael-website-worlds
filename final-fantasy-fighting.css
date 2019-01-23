@@ -1,0 +1,77 @@
+.grid {
+  display: grid;
+  grid-template-areas:
+    "banner banner banner"
+    "enemy hero name1"
+    "enemy hero name2"
+    "enemy hero name3"
+    "ename bmenu name4";
+}
+
+.box1 {
+  grid-area: banner;
+  border: black 5px solid;
+  border-radius: 20px;
+}
+
+.box2 {
+  grid-area: enemy;
+  border: black 5px solid;
+  border-radius: 20px;
+  background-image: url(images/ff-battle-bg1.png);
+  background-size: cover;
+}
+
+.eimg {
+  width: 20%;
+}
+
+.box3 {
+  grid-area: hero;
+  border: black 5px solid;
+  border-radius: 20px;
+  background-image: url(images/ff-battle-bg1.png);
+  background-size: cover;
+}
+
+.himg {
+  width: 20%;
+  display: block;
+  margin-left: auto;
+}
+
+.box4 {
+  grid-area: name1;
+  border: black 5px solid;
+  border-radius: 20px;
+}
+
+.box5 {
+  grid-area: name2;
+  border: black 5px solid;
+  border-radius: 20px;
+}
+
+.box6 {
+  grid-area: name3;
+  border: black 5px solid;
+  border-radius: 20px;
+}
+
+.box7 {
+  grid-area: name4;
+  border: black 5px solid;
+  border-radius: 20px;
+}
+
+.box8 {
+  grid-area: ename;
+  border: black 5px solid;
+  border-radius: 20px;
+}
+
+.box9 {
+  grid-area: bmenu;
+  border: black 5px solid;
+  border-radius: 20px;
+}
