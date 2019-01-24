@@ -12,6 +12,7 @@
   grid-area: banner;
   border: black 5px solid;
   border-radius: 20px;
+  padding: 1%;
 }
 
 .box2 {
@@ -20,6 +21,7 @@
   border-radius: 20px;
   background-image: url(images/ff-battle-bg1.png);
   background-size: cover;
+  padding: 5%;
 }
 
 .eimg {
@@ -32,6 +34,7 @@
   border-radius: 20px;
   background-image: url(images/ff-battle-bg1.png);
   background-size: cover;
+  padding: 5%;
 }
 
 .himg {
@@ -44,34 +47,57 @@
   grid-area: name1;
   border: black 5px solid;
   border-radius: 20px;
+  padding: 5%;
 }
 
 .box5 {
   grid-area: name2;
   border: black 5px solid;
   border-radius: 20px;
+  padding: 5%;
 }
 
 .box6 {
   grid-area: name3;
   border: black 5px solid;
   border-radius: 20px;
+  padding: 5%;
 }
 
 .box7 {
   grid-area: name4;
   border: black 5px solid;
   border-radius: 20px;
+  padding: 5%;
 }
 
 .box8 {
   grid-area: ename;
   border: black 5px solid;
   border-radius: 20px;
+  padding: 5%;
+  display: grid;
+  grid-template-areas:
+    "ename1 ename2";
+}
+
+.box8a {
+  grid-area: ename1;
+  border: black 5px solid;
+  border-radius: 20px;
+  padding: 5%;
+}
+
+.box8b {
+  grid-area: ename2;
+  border: black 5px solid;
+  border-radius: 20px;
+  padding: 5%;
 }
 
 .box9 {
   grid-area: bmenu;
   border: black 5px solid;
   border-radius: 20px;
+  padding: 5%;
 }
