@@ -1,4 +1,9 @@
+body {
+  background-color: black;
+}
+
 .grid {
+  color: white;
   display: grid;
   grid-template-areas:
     "banner banner banner"
@@ -10,14 +15,15 @@
 
 .box1 {
   grid-area: banner;
-  border: black 5px solid;
+  border: #d9d9d9 5px solid;
   border-radius: 20px;
   padding: 1%;
+  background-image: linear-gradient(#412be0, #10006b);
 }
 
 .box2 {
   grid-area: enemy;
-  border: black 5px solid;
+  border: #d9d9d9 5px solid;
   border-radius: 20px;
   background-image: url(images/ff-battle-bg1.png);
   background-size: cover;
@@ -30,7 +36,7 @@
 
 .box3 {
   grid-area: hero;
-  border: black 5px solid;
+  border: #d9d9d9 5px solid;
   border-radius: 20px;
   background-image: url(images/ff-battle-bg1.png);
   background-size: cover;
@@ -45,37 +51,42 @@
 
 .box4 {
   grid-area: name1;
-  border: black 5px solid;
+  border: #d9d9d9 5px solid;
   border-radius: 20px;
   padding: 5%;
+  background-image: linear-gradient(#412be0, #10006b);
 }
 
 .box5 {
   grid-area: name2;
-  border: black 5px solid;
+  border: #d9d9d9 5px solid;
   border-radius: 20px;
   padding: 5%;
+  background-image: linear-gradient(#412be0, #10006b);
 }
 
 .box6 {
   grid-area: name3;
-  border: black 5px solid;
+  border: #d9d9d9 5px solid;
   border-radius: 20px;
   padding: 5%;
+  background-image: linear-gradient(#412be0, #10006b);
 }
 
 .box7 {
   grid-area: name4;
-  border: black 5px solid;
+  border: #d9d9d9 5px solid;
   border-radius: 20px;
   padding: 5%;
+  background-image: linear-gradient(#412be0, #10006b);
 }
 
 .box8 {
   grid-area: ename;
-  border: black 5px solid;
+  border: #d9d9d9 5px solid;
   border-radius: 20px;
   padding: 5%;
+  background-image: linear-gradient(#412be0, #10006b);
   display: grid;
   grid-template-areas:
     "ename1 ename2";
@@ -83,21 +94,18 @@
 
 .box8a {
   grid-area: ename1;
-  border: black 5px solid;
-  border-radius: 20px;
   padding: 5%;
 }
 
 .box8b {
   grid-area: ename2;
-  border: black 5px solid;
-  border-radius: 20px;
   padding: 5%;
 }
 
 .box9 {
   grid-area: bmenu;
-  border: black 5px solid;
+  border: #d9d9d9 5px solid;
   border-radius: 20px;
   padding: 5%;
+  background-image: linear-gradient(#412be0, #10006b);
 }
