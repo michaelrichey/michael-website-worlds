@@ -4,6 +4,7 @@ body {
 
 .grid {
   color: white;
+  font-family: 'Press Start 2P';
   display: grid;
   grid-template-areas:
     "banner banner banner"
@@ -30,6 +31,13 @@ body {
   padding: 5%;
 }
 
+.box2a {
+  height: 200px;
+}
+
+.box2b {
+}
+
 .eimg {
   width: 20%;
 }
@@ -43,10 +51,63 @@ body {
   padding: 5%;
 }
 
-.himg {
-  width: 20%;
+.box3a {
+  height: 200px;
+}
+
+.box3b {
+}
+
+.himg1 {
+  width: 85px;
+  height: 125px;
   display: block;
   margin-left: auto;
+  background-image: url(images/ff-cloud.png);
+  background-size: cover;
+}
+
+.himg1:hover {
+  background-image: url(images/ff-attack-ex.gif);
+}
+
+.himg2 {
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin-left: auto;
+  background-image: url(images/ff-terra.png);
+  background-size: cover;
+}
+
+.himg2:hover {
+  background-image: url(images/ff-attack-ex.gif);
+}
+
+.himg3 {
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin-left: auto;
+  background-image: url(images/ff-cecil.png);
+  background-size: cover;
+}
+
+.himg3:hover {
+  background-image: url(images/ff-attack-ex.gif);
+}
+
+.himg4 {
+  width: 90px;
+  height: 150px;
+  display: block;
+  margin-left: auto;
+  background-image: url(images/ff-neo.gif);
+  background-size: cover;
+}
+
+.himg4:hover {
+  background-image: url(images/ff-attack-ex.gif);
 }
 
 .box4 {
