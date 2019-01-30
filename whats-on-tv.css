@@ -1,0 +1,62 @@
+.grid {
+  display: grid;
+  grid-template-areas:
+    "head head head"
+    "tv1 tv2 tv3"
+    "tv4 tv4 tv5"
+    "tv4 tv4 tv6"
+}
+
+.head {
+  border: red 5px dotted;
+  grid-area: head;
+}
+
+.tvimg1 {
+  width: 20vw;
+  z-index: 3;
+  left: 0px;
+  top: 0px;
+  position: relative;
+}
+
+.overlay {
+  z-index: 1;
+  left: 0px;
+  top: 0px;
+  position: relative;
+}
+
+.tv1 {
+  border: red 5px dotted;
+  grid-area: tv1;
+}
+
+.tv2 {
+  border: red 5px dotted;
+  grid-area: tv2;
+}
+
+.tv3 {
+  border: red 5px dotted;
+  grid-area: tv3;
+}
+
+.tv4 {
+  border: red 5px dotted;
+  grid-area: tv4;
+}
+
+.tvimg2 {
+  width: 40vw;
+}
+
+.tv5 {
+  border: red 5px dotted;
+  grid-area: tv5;
+}
+
+.tv6 {
+  border: red 5px dotted;
+  grid-area: tv6;
+}
