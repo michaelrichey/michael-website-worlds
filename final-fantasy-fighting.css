@@ -1,0 +1,172 @@
+body {
+  background-color: black;
+}
+
+.grid {
+  color: white;
+  font-family: 'Press Start 2P';
+  display: grid;
+  grid-template-areas:
+    "banner banner banner"
+    "enemy hero name1"
+    "enemy hero name2"
+    "enemy hero name3"
+    "ename bmenu name4";
+}
+
+.box1 {
+  grid-area: banner;
+  border: #d9d9d9 5px solid;
+  border-radius: 20px;
+  padding: 1%;
+  background-image: linear-gradient(#412be0, #10006b);
+}
+
+.box2 {
+  grid-area: enemy;
+  border: #d9d9d9 5px solid;
+  border-radius: 20px;
+  background-image: url(images/ff-battle-bg1.png);
+  background-size: cover;
+  padding: 5%;
+}
+
+.box2a {
+  height: 200px;
+}
+
+.box2b {
+}
+
+.eimg {
+  width: 20%;
+}
+
+.box3 {
+  grid-area: hero;
+  border: #d9d9d9 5px solid;
+  border-radius: 20px;
+  background-image: url(images/ff-battle-bg1.png);
+  background-size: cover;
+  padding: 5%;
+}
+
+.box3a {
+  height: 200px;
+}
+
+.box3b {
+}
+
+.himg1 {
+  width: 85px;
+  height: 125px;
+  display: block;
+  margin-left: auto;
+  background-image: url(images/ff-cloud.png);
+  background-size: cover;
+}
+
+.himg1:hover {
+  background-image: url(images/ff-attack-ex.gif);
+}
+
+.himg2 {
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin-left: auto;
+  background-image: url(images/ff-terra.png);
+  background-size: cover;
+}
+
+.himg2:hover {
+  background-image: url(images/ff-attack-ex.gif);
+}
+
+.himg3 {
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin-left: auto;
+  background-image: url(images/ff-cecil.png);
+  background-size: cover;
+}
+
+.himg3:hover {
+  background-image: url(images/ff-attack-ex.gif);
+}
+
+.himg4 {
+  width: 90px;
+  height: 150px;
+  display: block;
+  margin-left: auto;
+  background-image: url(images/ff-neo.gif);
+  background-size: cover;
+}
+
+.himg4:hover {
+  background-image: url(images/ff-attack-ex.gif);
+}
+
+.box4 {
+  grid-area: name1;
+  border: #d9d9d9 5px solid;
+  border-radius: 20px;
+  padding: 5%;
+  background-image: linear-gradient(#412be0, #10006b);
+}
+
+.box5 {
+  grid-area: name2;
+  border: #d9d9d9 5px solid;
+  border-radius: 20px;
+  padding: 5%;
+  background-image: linear-gradient(#412be0, #10006b);
+}
+
+.box6 {
+  grid-area: name3;
+  border: #d9d9d9 5px solid;
+  border-radius: 20px;
+  padding: 5%;
+  background-image: linear-gradient(#412be0, #10006b);
+}
+
+.box7 {
+  grid-area: name4;
+  border: #d9d9d9 5px solid;
+  border-radius: 20px;
+  padding: 5%;
+  background-image: linear-gradient(#412be0, #10006b);
+}
+
+.box8 {
+  grid-area: ename;
+  border: #d9d9d9 5px solid;
+  border-radius: 20px;
+  padding: 5%;
+  background-image: linear-gradient(#412be0, #10006b);
+  display: grid;
+  grid-template-areas:
+    "ename1 ename2";
+}
+
+.box8a {
+  grid-area: ename1;
+  padding: 5%;
+}
+
+.box8b {
+  grid-area: ename2;
+  padding: 5%;
+}
+
+.box9 {
+  grid-area: bmenu;
+  border: #d9d9d9 5px solid;
+  border-radius: 20px;
+  padding: 5%;
+  background-image: linear-gradient(#412be0, #10006b);
+}
