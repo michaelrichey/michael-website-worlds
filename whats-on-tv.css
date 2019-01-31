@@ -12,51 +12,70 @@
   grid-area: head;
 }
 
-.tvimg1 {
-  width: 20vw;
-  z-index: 3;
-  left: 0px;
-  top: 0px;
-  position: relative;
-}
-
-.overlay {
-  z-index: 1;
-  left: 0px;
-  top: 0px;
-  position: relative;
-}
-
 .tv1 {
   border: red 5px dotted;
   grid-area: tv1;
+  position: relative;
+}
+
+.overlay1 {
+  width: 350px;
+  position: absolute;
+  z-index: 3;
+  top: -10px;
+  left: 10px;
+}
+
+.tvimg1 {
+  width: 300px;
+  position: absolute;
+  z-index: 2;
+  top: 20px;
+  left: 25px;
 }
 
 .tv2 {
   border: red 5px dotted;
   grid-area: tv2;
+  position: relative;
+}
+
+.overlay2 {
+  width: 350px;
+  position: absolute;
+  z-index: 5;
+  top: -10px;
+  left: 100px;
+}
+
+.tvimg2 {
+  width: 280px;
+  position: absolute;
+  z-index: 4;
+  top: 20px;
+  left: 120px;
 }
 
 .tv3 {
   border: red 5px dotted;
   grid-area: tv3;
+  position: relative;
 }
 
 .tv4 {
   border: red 5px dotted;
   grid-area: tv4;
-}
-
-.tvimg2 {
-  width: 40vw;
+  position: relative;
 }
 
 .tv5 {
   border: red 5px dotted;
   grid-area: tv5;
+  position: relative;
 }
 
 .tv6 {
   border: red 5px dotted;
   grid-area: tv6;
+  position: relative;
 }
