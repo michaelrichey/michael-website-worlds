@@ -62,10 +62,42 @@
   position: relative;
 }
 
+.overlay3 {
+  width: 350px;
+  position: absolute;
+  z-index: 7;
+  top: -10px;
+  left: 200px;
+}
+
+.tvimg3 {
+  width: 300px;
+  position: absolute;
+  z-index: 6;
+  top: 20px;
+  left: 220px;
+}
+
 .tv4 {
   border: red 5px dotted;
   grid-area: tv4;
   position: relative;
+}
+
+.overlay4 {
+  width: 600px;
+  position: absolute;
+  z-index: 9;
+  top: 250px;
+  left: 1px;
+}
+
+.tvimg4 {
+  width: 500px;
+  position: absolute;
+  z-index: 8;
+  top: 309px;
+  left: 25px;
 }
 
 .tv5 {
