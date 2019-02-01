@@ -1,3 +1,11 @@
+body {
+  background-image: url(https://media.giphy.com/media/OVlFjmEDhx9rG/giphy.gif);
+  color: white;
+  font-family: impact;
+  text-align: center;
+  font-size: 30px;
+}
+
 .grid {
   display: grid;
   grid-template-areas:
@@ -8,12 +16,10 @@
 }
 
 .head {
-  border: red 5px dotted;
   grid-area: head;
 }
 
 .tv1 {
-  border: red 5px dotted;
   grid-area: tv1;
   position: relative;
 }
@@ -35,7 +41,6 @@
 }
 
 .tv2 {
-  border: red 5px dotted;
   grid-area: tv2;
   position: relative;
 }
@@ -45,7 +50,7 @@
   position: absolute;
   z-index: 5;
   top: -10px;
-  left: 100px;
+  left: 20px;
 }
 
 .tvimg2 {
@@ -53,11 +58,10 @@
   position: absolute;
   z-index: 4;
   top: 20px;
-  left: 120px;
+  left: 32px;
 }
 
 .tv3 {
-  border: red 5px dotted;
   grid-area: tv3;
   position: relative;
 }
@@ -67,7 +71,7 @@
   position: absolute;
   z-index: 7;
   top: -10px;
-  left: 200px;
+  left: 20px;
 }
 
 .tvimg3 {
@@ -75,17 +79,16 @@
   position: absolute;
   z-index: 6;
   top: 20px;
-  left: 220px;
+  left: 32px;
 }
 
 .tv4 {
-  border: red 5px dotted;
   grid-area: tv4;
   position: relative;
 }
 
 .overlay4 {
-  width: 600px;
+  width: 710px;
   position: absolute;
   z-index: 9;
   top: 250px;
@@ -93,21 +96,63 @@
 }
 
 .tvimg4 {
-  width: 500px;
+  width: 550px;
   position: absolute;
   z-index: 8;
-  top: 309px;
+  top: 340px;
   left: 25px;
 }
 
 .tv5 {
-  border: red 5px dotted;
   grid-area: tv5;
   position: relative;
 }
 
+.overlay5 {
+  width: 350px;
+  position: absolute;
+  z-index: 7;
+  top: 280px;
+  left: 20px;
+}
+
+.tvimg5 {
+  width: 300px;
+  position: absolute;
+  z-index: 6;
+  top: 315px;
+  left: 32px;
+}
+
 .tv6 {
-  border: red 5px dotted;
   grid-area: tv6;
   position: relative;
+}
+
+.overlay6 {
+  width: 350px;
+  position: absolute;
+  z-index: 7;
+  top: 500px;
+  left: 20px;
+}
+
+.tvimg6 {
+  width: 300px;
+  position: absolute;
+  z-index: 6;
+  top: 530px;
+  left: 32px;
+}
+
+.back {
+  position: absolute;
+  top: 1000px;
+  left: 32px;
+}
+
+a {
+  color: white;
+  font-size: 40px;
+  text-decoration: none;
 }
