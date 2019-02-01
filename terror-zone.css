@@ -1,0 +1,35 @@
+.grid {
+  display: grid;
+  grid-template-areas:
+    "head head head"
+    "lframe main main"
+    "lframe main main"
+    "lframe main2 main2"
+    "foot foot foot"
+
+}
+
+.head {
+  border: green solid 5px;
+  grid-area: head;
+}
+
+.lframe {
+  border: green solid 5px;
+  grid-area: lframe;
+}
+
+.main {
+  border: green solid 5px;
+  grid-area: main;
+}
+
+.main2 {
+  border: green solid 5px;
+  grid-area: main2;
+}
+
+.foot {
+  border: green solid 5px;
+  grid-area: foot;
+}
