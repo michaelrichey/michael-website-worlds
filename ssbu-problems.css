@@ -1,0 +1,28 @@
+.grid {
+  display: grid;
+  grid-template-areas:
+    "head"
+    "main"
+    "biglist"
+    "foot"
+}
+
+.head {
+  border: green 5px dotted;
+  grid-area: head;
+}
+
+.main {
+  border: green 5px dotted;
+  grid-area: main;
+}
+
+.biglist {
+  border: green 5px dotted;
+  grid-area: biglist;
+}
+
+.foot {
+  border: green 5px dotted;
+  grid-area: foot;
+}
