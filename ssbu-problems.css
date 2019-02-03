@@ -22,6 +22,16 @@
   grid-area: biglist;
 }
 
+.scroll {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40vw;
+  height: auto;
+  white-space: nowrap;
+  overflow: auto;
+}
+
 .foot {
   border: green 5px dotted;
   grid-area: foot;
