@@ -32,6 +32,12 @@
   overflow: auto;
 }
 
+li {
+  float: left;
+  display: inline;
+  padding: 5%;
+}
+
 .foot {
   border: green 5px dotted;
   grid-area: foot;
