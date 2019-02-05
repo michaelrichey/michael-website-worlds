@@ -44,10 +44,12 @@ h1 {
 
 h2 {
   font-family: creep;
+  text-shadow: 2px 2px #32ff1c;
 }
 
 h3 {
   font-family: creep;
+  text-shadow: 2px 2px #32ff1c;
 }
 
 .lframe {
