@@ -20,22 +20,18 @@
 .biglist {
   border: green 5px dotted;
   grid-area: biglist;
-}
-
-.scroll {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 40vw;
-  height: auto;
   white-space: nowrap;
   overflow: auto;
+  width: 60vw;
 }
 
 li {
-  float: left;
-  display: inline;
-  padding: 5%;
+  display: inline-block;
+  width: auto;
+}
+
+img {
+  width: 50vw;
 }
 
 .foot {
