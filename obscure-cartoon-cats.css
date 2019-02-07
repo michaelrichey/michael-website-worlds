@@ -1,0 +1,49 @@
+.grid {
+  display: grid;
+  grid-template-areas:
+    "head"
+    "main"
+    "biglist"
+    "foot";
+  font-family: georgia;
+  font-size: 25px;
+  background-image: url(images/cat-bg.gif);
+}
+
+.head {
+  grid-area: head;
+  padding: 2%;
+  text-align: center;
+}
+
+.main {
+  grid-area: main;
+  padding: 2%;
+}
+
+.biglist {
+  border: gray 25px ridge;
+  grid-area: biglist;
+  white-space: nowrap;
+  overflow: auto;
+  width: 60vw;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #cee1ff;
+}
+
+li {
+  display: inline-block;
+  width: auto;
+  text-align: center;
+}
+
+img {
+  height: 40vw;
+  padding-right: 20px;
+}
+
+.foot {
+  grid-area: foot;
+  padding: 4%;
+}
