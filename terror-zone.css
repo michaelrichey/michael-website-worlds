@@ -1,0 +1,158 @@
+@font-face {
+  font-family: creep;
+  src: url(https://fonts.gstatic.com/s/creepster/v7/AlZy_zVUqJz4yMrniH4Rcn35fh4Dog.woff2);
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.grid {
+  font-family: rockwell;
+  display: grid;
+  grid-template-areas:
+    "head head head"
+    "lframe main main"
+    "lframe main main"
+    "lframe main2 main2"
+    "foot foot foot"
+
+}
+
+.head {
+  border: #32ff1c ridge 15px;
+  grid-area: head;
+  text-align: center;
+  text-shadow: 3px 3px #32ff1c;
+  font-size: 40px;
+  color: purple;
+  background-image: url(images/shiverspines-ghost-bg.jpg);
+  background-size: 100px;
+}
+
+.skele {
+  padding-top: 2000px;
+}
+
+h1 {
+  font-family: creep;
+}
+
+h2 {
+  font-family: creep;
+  text-shadow: 2px 2px #32ff1c;
+}
+
+h3 {
+  font-family: creep;
+  text-shadow: 2px 2px #32ff1c;
+}
+
+.lframe {
+  border: ridge #32ff1c 15px;
+  grid-area: lframe;
+  padding: 5%;
+  background-image: url(images/shiverspines-ghost-bg.jpg);
+  background-size: 100px;
+  color: purple;
+  font-size: 20px;
+}
+
+.main {
+  border: #32ff1c ridge 15px;
+  grid-area: main;
+  padding: 5%;
+  font-size: 30px;
+  background-image: url(images/shiverspines-ghost-bg.jpg);
+  background-size: 100px;
+}
+
+.main2 {
+  border: #32ff1c ridge 15px;
+  grid-area: main2;
+  display: grid;
+  font-size: 20px;
+  background-image: url(images/shiverspines-bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  grid-template-areas:
+    "main2title main2title main2title"
+    "book1 book2 book3"
+    "book4 book5 book6"
+    "book7 book8 book9"
+    "book10 book10 book10";
+}
+
+.bookimg {
+  width: 20vw;
+}
+
+.main2title {
+  text-align: center;
+  grid-area: main2title;
+}
+
+.book1 {
+  grid-area: book1;
+  padding: 5%;
+}
+
+.book2 {
+  grid-area: book2;
+  padding: 5%;
+}
+
+.book3 {
+  grid-area: book3;
+  padding: 5%;
+}
+
+.book4 {
+  grid-area: book4;
+  padding: 5%;
+}
+
+.book5 {
+  grid-area: book5;
+  padding: 5%;
+}
+
+.book6 {
+  grid-area: book6;
+  padding: 5%;
+}
+
+.book7 {
+  grid-area: book7;
+  padding: 5%;
+}
+
+.book8 {
+  grid-area: book8;
+  padding: 5%;
+}
+
+.book9 {
+  grid-area: book9;
+  padding: 5%;
+}
+
+.book10 {
+  grid-area: book10;
+  padding: 5%;
+  text-align: center;
+  font-size: 50px;
+}
+
+.foot {
+  border: #32ff1c ridge 15px;
+  grid-area: foot;
+  padding: 2%;
+  background-image: url(images/shiverspines-ghost-bg.jpg);
+  background-size: 100px;
+}
