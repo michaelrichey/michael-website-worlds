@@ -1,0 +1,46 @@
+.grid {
+  display: grid;
+  grid-template-areas:
+    "head head head"
+    "main main main"
+    "boxes boxes boxes"
+    "foot foot foot";
+}
+
+.head {
+  border: 10px solid red;
+  grid-area: head;
+}
+
+.main {
+  border: 10px solid red;
+  grid-area: main;
+}
+
+.boxes {
+  border: 10px solid red;
+  grid-area: boxes;
+  display: grid;
+  grid-template-areas:
+    "samurai pizza cats"
+}
+
+.samurai {
+  border: 10px solid red;
+  grid-area: samurai;
+}
+
+.pizza {
+  border: 10px solid red;
+  grid-area: pizza;
+}
+
+.cats {
+  border: 10px solid red;
+  grid-area: cats;
+}
+
+.foot {
+  border: 10px solid red;
+  grid-area: foot;
+}
