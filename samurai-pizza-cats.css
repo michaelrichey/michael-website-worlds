@@ -32,6 +32,10 @@
   overflow: auto;
 }
 
+.samurai img {
+  height: 20vw;
+}
+
 li {
   display: inline-block;
 }
@@ -43,11 +47,19 @@ li {
   overflow: auto;
 }
 
+.pizza img {
+  height: 20vw;
+}
+
 .cats {
   border: 10px solid red;
   grid-area: cats;
   white-space: nowrap;
   overflow: auto;
+}
+
+.cats img {
+  height: 20vw;
 }
 
 .foot {
