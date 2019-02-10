@@ -15,27 +15,44 @@
 }
 
 .lframe {
-  border: purple 10px solid;
+  border: 20px ridge #280071;
   grid-area: lframe;
+  width: 20vw;
+  background-image: url(images/hornets-menu-bg.jpg);
+  background-position: right;
 }
 
-.lframe1 {
-  font-size: 30px
+.lframe a {
+  text-decoration: none;
+  color: #280071;
+}
+
+.menu {
+  font-size: 2vw;
+  position: fixed;
+  width: 10vw;
+  border: none;
 }
 
 .main {
-  border: purple 10px solid;
+
   grid-area: main;
+  background-image: url(images/hornets-floor-bg.gif);
+}
+
+.logo {
+  width: 15vw;
+  float: right;
 }
 
 .players {
-  border: purple 10px solid;
   grid-area: players;
   display: inline-block;
   overflow: auto;
+  background-image: url(images/hornets-floor-bg.gif);
 }
 
-table td {
+.players table td {
   border: teal 3px solid;
 }
 
@@ -44,16 +61,16 @@ table td {
 }
 
 .news {
-  border: purple 10px solid;
   grid-area: news;
+  background-image: url(images/hornets-floor-bg.gif);
 }
 
 .hugo {
-  border: purple 10px solid;
   grid-area: hugo;
+  background-size: 300px;
 }
 
 .dunk {
-  border: purple 10px solid;
   grid-area: dunk;
+  background-image: url(images/hornets-floor-bg.gif);
 }
