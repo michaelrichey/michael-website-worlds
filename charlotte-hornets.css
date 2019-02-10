@@ -6,12 +6,16 @@
     "lframe players players players"
     "lframe news news news"
     "lframe hugo hugo hugo"
-    "lframe dunk dunk dunk";
+    "lframe dunk dunk dunk"
+    "lframe endz endz endz";
 }
 
 .head {
-  border: purple 10px solid;
+  border: #00778B 20px ridge;
   grid-area: head;
+  padding: 3%;
+  background-image: url(images/space.gif);
+  color: white;
 }
 
 .lframe {
@@ -20,6 +24,7 @@
   width: 20vw;
   background-image: url(images/hornets-menu-bg.jpg);
   background-position: right;
+  padding: 4%;
 }
 
 .lframe a {
@@ -34,10 +39,14 @@
   border: none;
 }
 
-.main {
+.menugif {
+  width:15vw;
+}
 
+.main {
   grid-area: main;
   background-image: url(images/hornets-floor-bg.gif);
+  padding: 4%;
 }
 
 .logo {
@@ -50,10 +59,11 @@
   display: inline-block;
   overflow: auto;
   background-image: url(images/hornets-floor-bg.gif);
+  padding: 4%;
 }
 
 .players table td {
-  border: teal 3px solid;
+  border: #280071 10px ridge;
 }
 
 .ppics {
@@ -63,14 +73,28 @@
 .news {
   grid-area: news;
   background-image: url(images/hornets-floor-bg.gif);
+  padding: 4%;
+}
+
+.hoopin {
+  float: right;
+  width: 20vw
 }
 
 .hugo {
   grid-area: hugo;
   background-size: 300px;
+  padding: 4%;
+  background-image: url(images/water-bg.gif);
+  color: white;
 }
 
 .dunk {
   grid-area: dunk;
   background-image: url(images/hornets-floor-bg.gif);
+  padding: 4%;
+}
+
+.end {
+  grid-area: endz;
 }
