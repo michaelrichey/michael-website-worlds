@@ -1,0 +1,45 @@
+.grid {
+  display: grid;
+  grid-template-areas:
+    "head head head head"
+    "lframe main main main"
+    "lframe players players players"
+    "lframe news news news"
+    "lframe hugo hugo hugo"
+    "lframe dunk dunk dunk";
+}
+
+.head {
+  border: purple 10px solid;
+  grid-area: head;
+}
+
+.lframe {
+  border: purple 10px solid;
+  grid-area: lframe;
+}
+
+.main {
+  border: purple 10px solid;
+  grid-area: main;
+}
+
+.players {
+  border: purple 10px solid;
+  grid-area: players;
+}
+
+.news {
+  border: purple 10px solid;
+  grid-area: news;
+}
+
+.hugo {
+  border: purple 10px solid;
+  grid-area: hugo;
+}
+
+.dunk {
+  border: purple 10px solid;
+  grid-area: dunk;
+}
