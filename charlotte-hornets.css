@@ -1,3 +1,7 @@
+body{
+  margin: 0;
+}
+
 .grid {
   display: grid;
   grid-template-areas:
@@ -104,6 +108,21 @@
   padding: 4%;
 }
 
+.dunkgif {
+  width: 10vw;
+  border: solid 4px red;
+}
+
 .end {
   grid-area: endz;
+  background-image: url(images/space.gif);
+  color: white;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 6%;
+  padding-bottom: 6%;
+}
+
+.endtable {
+  text-align: center;
 }
