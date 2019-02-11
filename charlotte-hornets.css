@@ -123,6 +123,7 @@ body{
   padding-bottom: 6%;
 }
 
-.endtable {
+.endtable td {
   text-align: center;
+  border: silver 2px ridge;
 }
