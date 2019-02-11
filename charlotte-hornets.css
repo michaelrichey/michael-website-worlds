@@ -1,0 +1,129 @@
+body{
+  margin: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-areas:
+    "head head head head"
+    "lframe main main main"
+    "lframe players players players"
+    "lframe news news news"
+    "lframe hugo hugo hugo"
+    "lframe dunk dunk dunk"
+    "lframe endz endz endz";
+}
+
+.head {
+  border: #00778B 20px ridge;
+  grid-area: head;
+  padding: 3%;
+  background-image: url(images/space.gif);
+  color: white;
+}
+
+.lframe {
+  border: 20px ridge #280071;
+  grid-area: lframe;
+  width: 20vw;
+  background-image: url(images/hornets-menu-bg.jpg);
+  background-position: right;
+  padding: 4%;
+}
+
+.lframe a {
+  text-decoration: none;
+  color: #280071;
+}
+
+.menu {
+  font-size: 2vw;
+  position: fixed;
+  width: 10vw;
+  border: none;
+}
+
+.menugif {
+  width:15vw;
+}
+
+.main {
+  grid-area: main;
+  background-image: url(images/hornets-floor-bg.gif);
+  padding: 4%;
+}
+
+.logo {
+  width: 15vw;
+  float: right;
+}
+
+.players {
+  grid-area: players;
+  display: inline-block;
+  overflow: auto;
+  background-image: url(images/hornets-floor-bg.gif);
+  padding: 4%;
+}
+
+.players table td {
+  border: #00778B 10px ridge;
+}
+
+.ppics {
+  width: 40vw;
+}
+
+.ppicsbox {
+  background-image: url(images/static.gif);
+}
+
+.ppicsbox:hover {
+  background-image: url(images/static.gif);
+  border: #f12c29 10px ridge;
+}
+
+.news {
+  grid-area: news;
+  background-image: url(images/hornets-floor-bg.gif);
+  padding: 4%;
+}
+
+.hoopin {
+  float: right;
+  width: 20vw
+}
+
+.hugo {
+  grid-area: hugo;
+  background-size: 300px;
+  padding: 4%;
+  background-image: url(images/water-bg.gif);
+  color: white;
+}
+
+.dunk {
+  grid-area: dunk;
+  background-image: url(images/hornets-floor-bg.gif);
+  padding: 4%;
+}
+
+.dunkgif {
+  width: 10vw;
+  border: solid 4px red;
+}
+
+.end {
+  grid-area: endz;
+  background-image: url(images/space.gif);
+  color: white;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 6%;
+  padding-bottom: 6%;
+}
+
+.endtable td {
+  text-align: center;
+  border: silver 2px ridge;
+}
