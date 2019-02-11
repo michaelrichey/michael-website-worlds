@@ -63,11 +63,20 @@
 }
 
 .players table td {
-  border: #280071 10px ridge;
+  border: #00778B 10px ridge;
 }
 
 .ppics {
   width: 40vw;
+}
+
+.ppicsbox {
+  background-image: url(images/static.gif);
+}
+
+.ppicsbox:hover {
+  background-image: url(images/static.gif);
+  border: #f12c29 10px ridge;
 }
 
 .news {
