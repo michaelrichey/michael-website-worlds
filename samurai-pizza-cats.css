@@ -10,11 +10,26 @@
 .head {
   border: 10px solid red;
   grid-area: head;
+  padding: 7%;
+  background-image: url(images/samurai-minamoto-no-yoshitsune.jpg);
+}
+
+table {
+  text-align: center;
+  color: white;
+  text-shadow: black 2px 2px;
+}
+
+table img {
+  height: 5vw;
 }
 
 .main {
   border: 10px solid red;
   grid-area: main;
+  color: white;
+  text-shadow: black 2px 2px;
+  background-image: url(images/pizza-new-york.jpg);
 }
 
 .boxes {
@@ -65,4 +80,7 @@ li {
 .foot {
   border: 10px solid red;
   grid-area: foot;
+  background-image: url(images/cats-maine-coon.jpg);
+  color: white;
+  text-shadow: black 2px 2px;
 }
