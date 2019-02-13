@@ -1,0 +1,102 @@
+.grid {
+  display: grid;
+  grid-template-areas:
+    "head head head"
+    "main main main"
+    "boxes boxes boxes"
+    "foot foot foot";
+}
+
+body {
+  margin: 0;
+}
+
+.head {
+  grid-area: head;
+  padding: 3%;
+  background-image: url(images/samurai-minamoto-no-yoshitsune.jpg);
+}
+
+table {
+  text-align: center;
+  color: white;
+  text-shadow: black 2px 2px;
+}
+
+table img {
+  height: 5vw;
+}
+
+.main {
+  grid-area: main;
+  color: white;
+  text-shadow: black 2px 2px;
+  background-image: url(images/pizza-detroit.jpg);
+  padding: 3%;
+  font-size: 21px;
+}
+
+.boxes {
+  grid-area: boxes;
+  display: grid;
+  grid-template-areas:
+    "samurai pizza cats"
+}
+
+.samurai {
+  border: 10px inset #ffbb4f;
+  grid-area: samurai;
+  white-space: nowrap;
+  overflow: auto;
+  background-color: #4fffc4;
+}
+
+.samurai img {
+  height: 20vw;
+}
+
+li {
+  display: inline-block;
+}
+
+.pizza {
+  border: 10px inset #ffbb4f;
+  grid-area: pizza;
+  white-space: nowrap;
+  overflow: auto;
+  background-color: #4fffc4;
+}
+
+.pizza img {
+  height: 20vw;
+}
+
+.cats {
+  border: 10px inset #ffbb4f;
+  grid-area: cats;
+  white-space: nowrap;
+  overflow: auto;
+  background-color: #4fffc4;
+}
+
+.cats img {
+  height: 20vw;
+}
+
+.foot {
+  grid-area: foot;
+  background-image: url(images/cats-maine-coon.jpg);
+  color: white;
+  text-shadow: black 2px 2px;
+  padding: 3%;
+}
+
+.foottable td {
+  padding: 3%;
+  align-items: end;
+  width: 20vw;
+}
+
+.foottable img {
+  height: 10vw;
+}
