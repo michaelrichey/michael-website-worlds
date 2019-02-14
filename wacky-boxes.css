@@ -1,0 +1,15 @@
+.grid {
+  display: grid;
+  grid-template-areas:
+    "box1 box2";
+}
+
+.box1 {
+  grid-area: box1;
+  border: purple solid 8px;
+}
+
+.box2 {
+  grid-area: box2;
+  border: purple solid 8px;
+}
