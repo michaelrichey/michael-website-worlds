@@ -7,9 +7,11 @@
 .box1 {
   grid-area: box1;
   border: purple solid 8px;
+  transform: skewx(25deg);
 }
 
 .box2 {
   grid-area: box2;
   border: purple solid 8px;
+  transform: skew(4deg,7deg);
 }
