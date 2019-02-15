@@ -1,17 +1,109 @@
 .grid {
   display: grid;
+  text-align: center;
   grid-template-areas:
-    "box1 box2";
+    "box1 box2"
+    "box3 box4"
+    "box5 box6"
+    "box7 box8"
+    "box9 box9"
+    "box10 box11"
+    "box12 box13"
+    "box14 box15"
+    "box16 box17";
 }
 
 .box1 {
   grid-area: box1;
   border: purple solid 8px;
-  transform: skewx(25deg);
+  transform: scale(.5, .5);
 }
 
 .box2 {
   grid-area: box2;
   border: purple solid 8px;
-  transform: skew(4deg,7deg);
+  transform: scale(-1, -1);
+}
+
+.box3 {
+  grid-area: box3;
+  border: purple solid 8px;
+  transform: skewx(25deg);
+}
+
+.box4 {
+  grid-area: box4;
+  border: purple solid 8px;
+  transform: skewy(-25deg);
+}
+
+.box5 {
+  grid-area: box5;
+  border: purple solid 8px;
+  transform: rotate(25deg);
+}
+
+.box6 {
+  grid-area: box6;
+  border: purple solid 8px;
+  transform: rotatex(70deg);
+}
+
+.box7 {
+  grid-area: box7;
+  border: purple solid 8px;
+  transform: rotateY(70deg);
+}
+
+.box8 {
+  grid-area: box8;
+  border: purple solid 8px;
+  transform: rotateZ(70deg);
+}
+
+.box9 {
+  grid-area: box9;
+  border: purple solid 8px;
+  transform: translatez(-100px, 80px);
+}
+
+.box10 {
+  grid-area: box10;
+  border: purple solid 8px;
+  transform: rotate3d(0deg,0deg, 55deg);
+}
+
+.box11 {
+  grid-area: box11;
+  border: purple solid 8px;
+}
+
+.box12 {
+  grid-area: box12;
+  border: purple solid 8px;
+}
+
+.box13 {
+  grid-area: box13;
+  border: purple solid 8px;
+}
+
+.box14 {
+  grid-area: box14;
+  border: purple solid 8px;
+}
+
+.box15 {
+  grid-area: box15;
+  border: purple solid 8px;
+}
+
+.box16 {
+  grid-area: box16;
+  border: purple solid 8px;
+}
+
+.box17 {
+  grid-area: box17;
+  border: purple solid 8px;
 }
