@@ -64,46 +64,63 @@
 .box9 {
   grid-area: box9;
   border: purple solid 8px;
-  transform: translatez(-100px, 80px);
+  transform: rotate(-20deg) skewx(22deg);
 }
 
 .box10 {
   grid-area: box10;
   border: purple solid 8px;
-  transform: rotate3d(0deg,0deg, 55deg);
+  transform: perspective(100px) translatez(-200px) skewY(30deg) rotate(90deg);
 }
 
 .box11 {
   grid-area: box11;
   border: purple solid 8px;
+  transform: scale(1.4) rotateY(180deg) rotatez(-23deg);
 }
 
 .box12 {
   grid-area: box12;
   border: purple solid 8px;
+  transform: skewX(77deg) skewX(20deg);
 }
 
 .box13 {
   grid-area: box13;
   border: purple solid 8px;
+  transform: scale(.8) rotatez(180deg);
 }
 
 .box14 {
   grid-area: box14;
   border: purple solid 8px;
+  transform: scale(5);
 }
 
 .box15 {
   grid-area: box15;
   border: purple solid 8px;
+  transform: rotateX(120deg);
+}
+
+.box15:hover {
+  grid-area: box15;
+  border: red dotted 8px;
+  transform: rotateX(120deg) skewx(12deg);
 }
 
 .box16 {
   grid-area: box16;
   border: purple solid 8px;
+  transform: scale(.7) translatex(200px) translateY(500px) skewx(22deg);
 }
 
 .box17 {
   grid-area: box17;
   border: purple solid 8px;
+  transform: translatey(150px) rotatez(-15deg) skew(15deg)
+}
+
+a {
+  color: red;
 }
