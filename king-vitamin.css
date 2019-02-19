@@ -1,0 +1,74 @@
+.grid {
+  display: grid;
+  grid-template-areas:
+    "box1 box2"
+    "box3 box4"
+}
+
+.box1 {
+  grid-area: box1;
+  border: red solid 4px;
+}
+
+.kv1 {
+  animation: grow 5s infinite;
+}
+
+@keyframes grow {
+  0% {transform: scale(0);}
+  50% {transform: scale(1);}
+  100% {transform: scale(0);}
+}
+
+.box2 {
+  grid-area: box2;
+  border: red solid 4px;
+}
+
+.kv2 {
+  animation: spin 5s infinite;
+}
+
+@keyframes spin {
+  0% {transform: rotatey(0deg);}
+  50% {transform: rotatey(180deg);}
+  100% {transform: rotatey(0deg);}
+}
+
+.box3 {
+  grid-area: box3;
+  border: red solid 4px;
+}
+
+.kv3 {
+  animation: wonk 5s infinite;
+}
+
+@keyframes wonk {
+  0% {transform: skewy(0deg);}
+  25% {transform: skewy(-22deg);}
+  50% {transform: skewx(24deg);}
+  75% {transform: skewy(25deg) skewX(25deg);}
+  100% {transform: skewy(0deg);}
+}
+
+.box4 {
+  grid-area: box4;
+  border: red solid 4px;
+}
+
+.kv4 {
+  animation: zzz 5s infinite;
+}
+
+@keyframes yyy {
+  0% {transform: rotatez(0deg);}
+  100% {transform: rotatez(360deg);}
+}
+
+@keyframes zzz {
+  0% {transform: skewx(0deg) rotatez(0deg) scale(.8);}
+  50% {transform: skewx(40deg) rotatez(150deg) rotatey(0deg) scale(1.3);}
+  75% {transform: skewy(32deg) rotatez(220deg) rotatey(180deg) scale(1);}
+  100% {transform: skewx(0deg) rotatez(360deg) rotatey(0deg) scale(.8);}
+}
