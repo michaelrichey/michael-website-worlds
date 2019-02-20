@@ -1,17 +1,44 @@
+body {
+  animation: bganim 10s infinite;
+  font-family: impact;
+  font-size: 30px;
+}
+
+.end {
+  font-size: 12px;
+}
+
+@keyframes bganim {
+  0% {background-color: #43ff0f;}
+  25% {background-color: #8811ff;}
+  75% {background-color: #1cffff;}
+  100% {background-color: #43ff0f;}
+}
+
+h1 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
 .grid {
   display: grid;
   grid-template-areas:
     "box1 box2"
-    "box3 box4"
+    "box3 box4";
+  justify-content: center;
+  grid-gap: 3vw;
 }
 
 .box1 {
   grid-area: box1;
-  border: red solid 4px;
 }
 
 .kv1 {
   animation: grow 5s infinite;
+  height: 40vw;
 }
 
 @keyframes grow {
@@ -22,11 +49,11 @@
 
 .box2 {
   grid-area: box2;
-  border: red solid 4px;
 }
 
 .kv2 {
   animation: spin 5s infinite;
+  height: 40vw;
 }
 
 @keyframes spin {
@@ -37,11 +64,11 @@
 
 .box3 {
   grid-area: box3;
-  border: red solid 4px;
 }
 
 .kv3 {
   animation: wonk 5s infinite;
+  height: 40vw;
 }
 
 @keyframes wonk {
@@ -54,11 +81,11 @@
 
 .box4 {
   grid-area: box4;
-  border: red solid 4px;
 }
 
 .kv4 {
   animation: zzz 5s infinite;
+  height: 40vw;
 }
 
 @keyframes yyy {
