@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-areas:
+    "stickybar"
+    "main"
+    "box1"
+    "box2"
+    "test"
+    "end1"
+    "foot";
+}
+
+.stickybar {
+  grid-area: stickybar;
+  border: red 5px solid;
+}
+
+.main {
+  grid-area: main;
+  border: red 5px solid;
+}
+
+.box1 {
+  grid-area: box1;
+  border: red 5px solid;
+}
+
+.box2 {
+  grid-area: box2;
+  border: red 5px solid;
+}
+
+.test {
+  grid-area: test;
+  border: red 5px solid;
+  display: grid;
+  grid-template-areas:
+    "test1 test2 test3"
+}
+
+.test1 {
+  grid-area: test1;
+  border: red 5px solid;
+}
+
+.test2 {
+  grid-area: test2;
+  border: red 5px solid;
+}
+
+.test3 {
+  grid-area: test3;
+  border: red 5px solid;
+}
+
+.end1 {
+  grid-area: end1;
+  border: red 5px solid;
+}
+
+.foot {
+  grid-area: foot;
+  border: red 5px solid;
+}
