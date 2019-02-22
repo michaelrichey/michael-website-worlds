@@ -1,0 +1,161 @@
+body {
+  margin: 20px;
+  background-image: url(images/bg-pattern.jpg);
+}
+
+.grid {
+  font-family: impact;
+  grid-gap: 20px;
+  display: grid;
+  grid-template-areas:
+    "stickybar"
+    "main"
+    "box1"
+    "box2"
+    "test"
+    "end1"
+    "foot";
+}
+
+.stickybar {
+  grid-area: stickybar;
+  border: #9070f0 20px ridge;
+  padding: 2%;
+  animation: stickybar 5s infinite;
+  background-color: #0ff768;
+}
+
+@keyframes stickybar {
+  0% {transform: scale(.8)}
+  50% {transform: scale(1)}
+  100% {transform: scale(.8)}
+}
+
+.main {
+  grid-area: main;
+  border: #9070f0 20px ridge;
+  padding: 2%;
+  animation: main 5s infinite;
+  background-color: #0ff768;
+}
+
+@keyframes main {
+  0% {transform: skewX(5deg);}
+  50% {transform: skewX(-5deg);}
+  100% {transform: skewX(5deg);}
+}
+
+.box1 {
+  grid-area: box1;
+  border: #9070f0 20px ridge;
+  padding: 2%;
+  animation: box1 infinite 5s;
+  background-color: #0ff768;
+}
+
+@keyframes box1 {
+  0% {transform: rotatey(20deg);}
+  50% {transform: rotatey(-20deg);}
+  100% {transform: rotatey(20deg);}
+}
+
+.box2 {
+  grid-area: box2;
+  border: #9070f0 20px ridge;
+  padding: 2%;
+  animation: box2 infinite 5s;
+  background-color: #0ff768;
+}
+
+@keyframes box2 {
+  0% {transform: translatex(-20px) translateY(-20px);}
+  25% {transform: translatex(20px) translateY(-20px);}
+  50% {transform: translatex(20px) translateY(20px);}
+  75% {transform: translatex(-20px) translateY(20px);}
+  100% {transform: translatex(-20px) translateY(-20px);}
+}
+
+.test {
+  grid-area: test;
+  border: #9070f0 20px ridge;
+  display: grid;
+  padding: 2%;
+  animation: test infinite 5s;
+  background-color: #0ff768;
+  grid-gap: 10px;
+  grid-template-areas:
+    "test1 test0 test3"
+    "test1 test2 test3";
+}
+
+@keyframes test {
+  0% {transform: scale(1.04);}
+  50% {transform: scale(1);}
+  100% {transform: scale(1.04);}
+}
+
+.test0 {
+  text-align: center;
+}
+
+.test1 {
+  grid-area: test1;
+  border: #9070f0 20px ridge;
+  padding: 2%;
+  animation: test1 5s infinite;
+}
+
+@keyframes test1 {
+  0% {transform: translatey(-10px);}
+  50% {transform: translatey(10px);}
+  100% {transform: translatey(-10px);}
+}
+
+.test2 {
+  grid-area: test2;
+  border: #9070f0 20px ridge;
+  padding: 2%;
+  animation: test2 infinite 5s;
+}
+
+@keyframes test2 {
+  0% {transform: translatey(10px);}
+  50% {transform: translatey(-10px);}
+  100% {transform: translatey(10px);}
+}
+
+.test3 {
+  grid-area: test3;
+  border: #9070f0 20px ridge;
+  padding: 2%;
+  animation: test1 5s infinite;
+}
+
+.end1 {
+  grid-area: end1;
+  border: #9070f0 20px ridge;
+  padding: 2%;
+  animation: end1 infinite 5s;
+  background-color: #0ff768;
+}
+
+@keyframes end1 {
+  0% {transform: rotatez(2deg);}
+  50% {transform: rotatez(-2deg);}
+  100% {transform: rotatez(2deg);}
+}
+
+.foot {
+  grid-area: foot;
+  border: #9070f0 20px ridge;
+  padding: 2%;
+  animation: foot infinite 5s;
+  background-color: #0ff768;
+  font-size: 40px;
+}
+
+@keyframes foot {
+  0% {transform: rotatex(360deg);}
+  50% {transform: rotatex(0deg);}
+  100% {transform: rotatex(360deg);}
+}
