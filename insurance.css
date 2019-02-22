@@ -1,8 +1,10 @@
 body {
   margin: 20px;
+  background-image: url(images/bg-pattern.jpg);
 }
 
 .grid {
+  font-family: impact;
   grid-gap: 20px;
   display: grid;
   grid-template-areas:
@@ -17,9 +19,10 @@ body {
 
 .stickybar {
   grid-area: stickybar;
-  border: red 5px solid;
+  border: #9070f0 20px ridge;
   padding: 2%;
   animation: stickybar 5s infinite;
+  background-color: #0ff768;
 }
 
 @keyframes stickybar {
@@ -30,9 +33,10 @@ body {
 
 .main {
   grid-area: main;
-  border: red 5px solid;
+  border: #9070f0 20px ridge;
   padding: 2%;
   animation: main 5s infinite;
+  background-color: #0ff768;
 }
 
 @keyframes main {
@@ -43,9 +47,10 @@ body {
 
 .box1 {
   grid-area: box1;
-  border: red 5px solid;
+  border: #9070f0 20px ridge;
   padding: 2%;
   animation: box1 infinite 5s;
+  background-color: #0ff768;
 }
 
 @keyframes box1 {
@@ -56,9 +61,10 @@ body {
 
 .box2 {
   grid-area: box2;
-  border: red 5px solid;
+  border: #9070f0 20px ridge;
   padding: 2%;
   animation: box2 infinite 5s;
+  background-color: #0ff768;
 }
 
 @keyframes box2 {
@@ -71,12 +77,15 @@ body {
 
 .test {
   grid-area: test;
-  border: red 5px solid;
+  border: #9070f0 20px ridge;
   display: grid;
-  grid-template-areas:
-    "test1 test2 test3";
   padding: 2%;
   animation: test infinite 5s;
+  background-color: #0ff768;
+  grid-gap: 10px;
+  grid-template-areas:
+    "test1 test0 test3"
+    "test1 test2 test3";
 }
 
 @keyframes test {
@@ -85,9 +94,13 @@ body {
   100% {transform: scale(1.04);}
 }
 
+.test0 {
+  text-align: center;
+}
+
 .test1 {
   grid-area: test1;
-  border: red 5px solid;
+  border: #9070f0 20px ridge;
   padding: 2%;
   animation: test1 5s infinite;
 }
@@ -100,7 +113,7 @@ body {
 
 .test2 {
   grid-area: test2;
-  border: red 5px solid;
+  border: #9070f0 20px ridge;
   padding: 2%;
   animation: test2 infinite 5s;
 }
@@ -113,16 +126,17 @@ body {
 
 .test3 {
   grid-area: test3;
-  border: red 5px solid;
+  border: #9070f0 20px ridge;
   padding: 2%;
   animation: test1 5s infinite;
 }
 
 .end1 {
   grid-area: end1;
-  border: red 5px solid;
+  border: #9070f0 20px ridge;
   padding: 2%;
   animation: end1 infinite 5s;
+  background-color: #0ff768;
 }
 
 @keyframes end1 {
@@ -133,9 +147,11 @@ body {
 
 .foot {
   grid-area: foot;
-  border: red 5px solid;
+  border: #9070f0 20px ridge;
   padding: 2%;
   animation: foot infinite 5s;
+  background-color: #0ff768;
+  font-size: 40px;
 }
 
 @keyframes foot {
