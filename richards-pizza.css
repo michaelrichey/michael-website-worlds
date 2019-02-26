@@ -1,13 +1,19 @@
+body {
+  margin: 0;
+}
+
 .grid{
   display: grid;
   grid-template-areas:
     "head head head head"
     "lframe main main main"
-    "foot foot rframe rframe"
+    "foot foot rframe rframe";
+  background-color: #daa831;
 }
 
 .head {
-  border: 5px red solid;
+  border-image: 10px transparent solid;
+  border-image: url(images/ad-1.jpg) 30 round;
   grid-area: head;
 }
 
