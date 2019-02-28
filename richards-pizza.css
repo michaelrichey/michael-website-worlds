@@ -9,30 +9,50 @@ body {
     "lframe main main main"
     "foot foot rframe rframe";
   background-color: #daa831;
+  font-family: impact;
 }
 
 .head {
-  border-image: 10px transparent solid;
-  border-image: url(images/ad-1.jpg) 30 round;
+  border: 40px red solid;
+  border-image-source: url(images/pizza-border-1.gif);
+  border-image-slice: 70;
+  border-image-repeat: round;
   grid-area: head;
+  padding: 3%;
 }
 
 .main {
-  border: 5px red solid;
+  border: 10px red solid;
+  border-image-source: url(images/pizza-border-1.gif);
+  border-image-slice: 70;
+  border-image-repeat: round;
   grid-area: main;
+  padding: 3%;
 }
 
 .lframe {
-  border: 5px red solid;
+  border: 10px red solid;
+  border-image-source: url(images/pizza-border-1.gif);
+  border-image-slice: 70;
+  border-image-repeat: round;
   grid-area: lframe;
+  padding: 3%;
 }
 
 .rframe {
-  border: 5px red solid;
+  border: 10px red solid;
+  border-image-source: url(images/pizza-border-1.gif);
+  border-image-slice: 70;
+  border-image-repeat: round;
   grid-area: rframe;
+  padding: 3%;
 }
 
 .foot {
-  border: 5px red solid;
+  border: 10px red solid;
+  border-image-source: url(images/pizza-border-1.gif);
+  border-image-slice: 70;
+  border-image-repeat: round;
   grid-area: foot;
+  padding: 3%;
 }
