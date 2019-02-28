@@ -9,7 +9,7 @@ body {
     "lframe main main main"
     "foot foot rframe rframe";
   background-color: #daa831;
-  font-family: impact;
+  font-family: fantasy;
 }
 
 .head {
@@ -18,7 +18,7 @@ body {
   border-image-slice: 70;
   border-image-repeat: round;
   grid-area: head;
-  padding: 3%;
+  text-align: center;
 }
 
 .main {
@@ -55,4 +55,9 @@ body {
   border-image-repeat: round;
   grid-area: foot;
   padding: 3%;
+  align-items: end;
+}
+
+.foot img{
+  width: 20vw;
 }
