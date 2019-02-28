@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+}
+
+.grid{
+  display: grid;
+  grid-template-areas:
+    "head head head head"
+    "lframe main main main"
+    "foot foot rframe rframe";
+  background-color: #daa831;
+  font-family: fantasy;
+}
+
+.head {
+  border: 40px red solid;
+  border-image-source: url(images/pizza-border-1.gif);
+  border-image-slice: 70;
+  border-image-repeat: round;
+  grid-area: head;
+  text-align: center;
+}
+
+.main {
+  border: 10px red solid;
+  border-image-source: url(images/pizza-border-1.gif);
+  border-image-slice: 70;
+  border-image-repeat: round;
+  grid-area: main;
+  padding: 3%;
+}
+
+.lframe {
+  border: 10px red solid;
+  border-image-source: url(images/pizza-border-1.gif);
+  border-image-slice: 70;
+  border-image-repeat: round;
+  grid-area: lframe;
+  padding: 3%;
+}
+
+.rframe {
+  border: 10px red solid;
+  border-image-source: url(images/pizza-border-1.gif);
+  border-image-slice: 70;
+  border-image-repeat: round;
+  grid-area: rframe;
+  padding: 3%;
+}
+
+.foot {
+  border: 10px red solid;
+  border-image-source: url(images/pizza-border-1.gif);
+  border-image-slice: 70;
+  border-image-repeat: round;
+  grid-area: foot;
+  padding: 3%;
+  align-items: end;
+}
+
+.foot img{
+  width: 20vw;
+}
