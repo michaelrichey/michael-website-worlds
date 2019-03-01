@@ -26,6 +26,7 @@ body {
   animation-timing-function: linear;
   animation-iteration-count: 1;
   background-color: yellow;
+  z-index: 4;
 }
 
 @keyframes head {
