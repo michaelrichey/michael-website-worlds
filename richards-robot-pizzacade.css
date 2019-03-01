@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  background-color: yellow;
+}
+
+.grid{
+  display: grid;
+  grid-template-areas:
+    "head head head head"
+    "lframe main main main"
+    "foot foot rframe rframe";
+  background-color: yellow;
+  font-family: impact;
+  color: purple;
+}
+
+.head {
+  border: 40px red solid;
+  border-image-source: url(images/pizza-border-1.gif);
+  border-image-slice: 70;
+  border-image-repeat: round;
+  grid-area: head;
+  text-align: center;
+  animation-name: head;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  background-color: yellow;
+}
+
+@keyframes head {
+  0% {transform: scale(5) rotateZ(360deg);}
+  100% {transform: scale(1) rotateZ(0deg);}
+}
+
+.main {
+  border: 10px red solid;
+  border-image-source: url(images/pizza-border-1.gif);
+  border-image-slice: 70;
+  border-image-repeat: round;
+  grid-area: main;
+  padding: 3%;
+  transform: skewX(-5deg);
+}
+
+.lframe {
+  border: 10px red solid;
+  border-image-source: url(images/pizza-border-1.gif);
+  border-image-slice: 70;
+  border-image-repeat: round;
+  grid-area: lframe;
+  padding: 3%;
+  transform: skewX(-5deg);
+}
+
+.lframe img:hover {
+  animation: pizzaicon 1s infinite;
+}
+
+@keyframes pizzaicon {
+  0% {transform: rotatez(360deg);}
+  100% {transform: rotatez(0deg);}
+}
+
+.rframe {
+  border: 10px red solid;
+  border-image-source: url(images/pizza-border-1.gif);
+  border-image-slice: 70;
+  border-image-repeat: round;
+  grid-area: rframe;
+  padding: 3%;
+  transform: rotateZ(3deg) translatey(10px);
+}
+
+.foot {
+  border: 10px red solid;
+  border-image-source: url(images/pizza-border-1.gif);
+  border-image-slice: 70;
+  border-image-repeat: round;
+  grid-area: foot;
+  padding: 3%;
+  align-items: end;
+  transform: rotateZ(3deg) translatey(10px);
+}
+
+.foot img{
+  width: 20vw;
+}
