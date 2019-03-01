@@ -1,6 +1,6 @@
 body {
-  margin: 0;
-  background-color: yellow;
+  margin: 50px;
+  background-color: purple;
 }
 
 .grid{
@@ -8,10 +8,12 @@ body {
   grid-template-areas:
     "head head head head"
     "lframe main main main"
+    "games games rframe rframe"
     "foot foot rframe rframe";
-  background-color: yellow;
+  background-color: none;
   font-family: impact;
   color: purple;
+  grid-gap: 20px;
 }
 
 .head {
@@ -42,6 +44,20 @@ body {
   grid-area: main;
   padding: 3%;
   transform: skewX(-5deg);
+  background-color: yellow;
+}
+
+.main:hover {
+  animation-name: mh;
+  animation-duration: 500ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: step-start;
+}
+
+@keyframes mh {
+  0% {background-color: red}
+  50% {background-color: #ff22ff}
+  100% {background-color: #44ff23}
 }
 
 .lframe {
@@ -52,6 +68,14 @@ body {
   grid-area: lframe;
   padding: 3%;
   transform: skewX(-5deg);
+  background-color: yellow;
+}
+
+.lframe:hover {
+  animation-name: mh;
+  animation-duration: 500ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: step-start;
 }
 
 .lframe img:hover {
@@ -71,6 +95,14 @@ body {
   grid-area: rframe;
   padding: 3%;
   transform: rotateZ(3deg) translatey(10px);
+  background-color: yellow;
+}
+
+.rframe:hover {
+  animation-name: mh;
+  animation-duration: 500ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: step-start;
 }
 
 .foot {
@@ -82,8 +114,35 @@ body {
   padding: 3%;
   align-items: end;
   transform: rotateZ(3deg) translatey(10px);
+  background-color: yellow;
+}
+
+.foot:hover {
+  animation-name: mh;
+  animation-duration: 500ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: step-start;
 }
 
 .foot img{
   width: 20vw;
+}
+
+.games {
+  border: 10px red solid;
+  border-image-source: url(images/pizza-border-1.gif);
+  border-image-slice: 70;
+  border-image-repeat: round;
+  grid-area: games;
+  padding: 3%;
+  align-items: end;
+  transform: rotateZ(3deg) translatey(10px);
+  background-color: yellow;
+}
+
+.games:hover {
+  animation-name: mh;
+  animation-duration: 500ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: step-start;
 }
