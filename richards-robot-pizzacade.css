@@ -1,6 +1,14 @@
 body {
   margin: 50px;
-  background-color: purple;
+  background-image: url(images/pizza-bg-1.gif);
+  animation: 60s infinite bgbody;
+  animation-timing-function: linear;
+}
+
+@keyframes bgbody {
+  0% {background-position: 0% 0%}
+  50% {background-position: 100% 100%}
+  100% {background-position: 0% 0%}
 }
 
 h1 {
@@ -98,7 +106,8 @@ h1 {
 }
 
 .rframe img {
-  border: purple dotted 10px
+  border: purple dotted 10px;
+  animation: 1s infinite borderflash;
 }
 
 .foot {
@@ -130,12 +139,18 @@ h1 {
 }
 
 .games img {
-  border: purple dotted 10px
+  border: purple dotted 10px;
+  animation: 1s infinite borderflash;
 }
 
-.games:hover {
-  animation-name: mh;
-  animation-duration: 500ms;
-  animation-iteration-count: infinite;
-  animation-timing-function: step-start;
+#gameroom {
+  width: 30vw;
+  border: purple dotted 10px;
+  animation: 1s infinite borderflash;
+}
+
+@keyframes borderflash {
+  0% {border: purple dotted 10px}
+  50% {border: orange dotted 10px}
+  100% {border: purple dotted 10px}
 }
