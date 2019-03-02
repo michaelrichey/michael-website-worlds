@@ -3,6 +3,18 @@ body {
   background-color: purple;
 }
 
+h1 {
+  font-size: 5vw;
+  text-shadow: orange 5px 5px;
+  animation: h1head 1s infinite;
+}
+
+@keyframes h1head {
+  0% {color: purple; text-shadow: orange 5px 5px}
+  50% {color: orange; text-shadow: purple 5px 5px}
+  0% {color: purple; text-shadow: orange 5px 5px}
+}
+
 .grid{
   display: grid;
   grid-template-areas:
@@ -54,12 +66,6 @@ body {
   animation-timing-function: step-start;
 }
 
-@keyframes mh {
-  0% {background-color: red}
-  50% {background-color: #ff22ff}
-  100% {background-color: #44ff23}
-}
-
 .lframe {
   border: 10px red solid;
   border-image-source: url(images/pizza-border-1.gif);
@@ -69,13 +75,6 @@ body {
   padding: 3%;
   transform: skewX(-5deg);
   background-color: yellow;
-}
-
-.lframe:hover {
-  animation-name: mh;
-  animation-duration: 500ms;
-  animation-iteration-count: infinite;
-  animation-timing-function: step-start;
 }
 
 .lframe img:hover {
@@ -98,11 +97,8 @@ body {
   background-color: yellow;
 }
 
-.rframe:hover {
-  animation-name: mh;
-  animation-duration: 500ms;
-  animation-iteration-count: infinite;
-  animation-timing-function: step-start;
+.rframe img {
+  border: purple dotted 10px
 }
 
 .foot {
@@ -115,13 +111,6 @@ body {
   align-items: end;
   transform: rotateZ(3deg) translatey(10px);
   background-color: yellow;
-}
-
-.foot:hover {
-  animation-name: mh;
-  animation-duration: 500ms;
-  animation-iteration-count: infinite;
-  animation-timing-function: step-start;
 }
 
 .foot img{
@@ -138,6 +127,10 @@ body {
   align-items: end;
   transform: rotateZ(3deg) translatey(10px);
   background-color: yellow;
+}
+
+.games img {
+  border: purple dotted 10px
 }
 
 .games:hover {
