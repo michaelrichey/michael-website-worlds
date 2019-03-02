@@ -1,0 +1,156 @@
+body {
+  margin: 50px;
+  background-image: url(images/pizza-bg-1.gif);
+  animation: 60s infinite bgbody;
+  animation-timing-function: linear;
+}
+
+@keyframes bgbody {
+  0% {background-position: 0% 0%}
+  50% {background-position: 100% 100%}
+  100% {background-position: 0% 0%}
+}
+
+h1 {
+  font-size: 5vw;
+  text-shadow: orange 5px 5px;
+  animation: h1head 1s infinite;
+}
+
+@keyframes h1head {
+  0% {color: purple; text-shadow: orange 5px 5px}
+  50% {color: orange; text-shadow: purple 5px 5px}
+  0% {color: purple; text-shadow: orange 5px 5px}
+}
+
+.grid{
+  display: grid;
+  grid-template-areas:
+    "head head head head"
+    "lframe main main main"
+    "games games rframe rframe"
+    "foot foot rframe rframe";
+  background-color: none;
+  font-family: impact;
+  color: purple;
+  grid-gap: 20px;
+}
+
+.head {
+  border: 40px red solid;
+  border-image-source: url(images/pizza-border-1.gif);
+  border-image-slice: 70;
+  border-image-repeat: round;
+  grid-area: head;
+  text-align: center;
+  animation-name: head;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  background-color: yellow;
+  z-index: 4;
+}
+
+@keyframes head {
+  0% {transform: scale(5) rotateZ(360deg);}
+  100% {transform: scale(1) rotateZ(0deg);}
+}
+
+.main {
+  border: 10px red solid;
+  border-image-source: url(images/pizza-border-1.gif);
+  border-image-slice: 70;
+  border-image-repeat: round;
+  grid-area: main;
+  padding: 3%;
+  transform: skewX(-5deg);
+  background-color: yellow;
+}
+
+.main:hover {
+  animation-name: mh;
+  animation-duration: 500ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: step-start;
+}
+
+.lframe {
+  border: 10px red solid;
+  border-image-source: url(images/pizza-border-1.gif);
+  border-image-slice: 70;
+  border-image-repeat: round;
+  grid-area: lframe;
+  padding: 3%;
+  transform: skewX(-5deg);
+  background-color: yellow;
+}
+
+.lframe img:hover {
+  animation: pizzaicon 1s infinite;
+}
+
+@keyframes pizzaicon {
+  0% {transform: rotatez(360deg);}
+  100% {transform: rotatez(0deg);}
+}
+
+.rframe {
+  border: 10px red solid;
+  border-image-source: url(images/pizza-border-1.gif);
+  border-image-slice: 70;
+  border-image-repeat: round;
+  grid-area: rframe;
+  padding: 3%;
+  transform: rotateZ(3deg) translatey(10px);
+  background-color: yellow;
+}
+
+.rframe img {
+  border: purple dotted 10px;
+  animation: 1s infinite borderflash;
+}
+
+.foot {
+  border: 10px red solid;
+  border-image-source: url(images/pizza-border-1.gif);
+  border-image-slice: 70;
+  border-image-repeat: round;
+  grid-area: foot;
+  padding: 3%;
+  align-items: end;
+  transform: rotateZ(3deg) translatey(10px);
+  background-color: yellow;
+}
+
+.foot img{
+  width: 20vw;
+}
+
+.games {
+  border: 10px red solid;
+  border-image-source: url(images/pizza-border-1.gif);
+  border-image-slice: 70;
+  border-image-repeat: round;
+  grid-area: games;
+  padding: 3%;
+  align-items: end;
+  transform: rotateZ(3deg) translatey(10px);
+  background-color: yellow;
+}
+
+.games img {
+  border: purple dotted 10px;
+  animation: 1s infinite borderflash;
+}
+
+#gameroom {
+  width: 30vw;
+  border: purple dotted 10px;
+  animation: 1s infinite borderflash;
+}
+
+@keyframes borderflash {
+  0% {border: purple dotted 10px}
+  50% {border: orange dotted 10px}
+  100% {border: purple dotted 10px}
+}
