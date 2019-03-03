@@ -29,7 +29,7 @@ h1 {
     "head head head head"
     "lframe main main main"
     "games games rframe rframe"
-    "foot foot rframe rframe";
+    "foot foot foot foot";
   background-color: none;
   font-family: impact;
   color: purple;
@@ -108,6 +108,7 @@ h1 {
 .rframe img {
   border: purple dotted 10px;
   animation: 1s infinite borderflash;
+  width: 30vw;
 }
 
 .foot {
