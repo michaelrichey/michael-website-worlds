@@ -1,0 +1,31 @@
+body {
+  background-image: url(images/psx-produce.jpg);
+  background-size: cover;
+}
+
+.shelf {
+  position: relative;
+  transform: translate(3vw, 10vw);
+  width: 50vw;
+  z-index: -5;
+}
+
+.game1 {
+  position: relative;
+  transform: translate(-30vw, -23vw);
+  width: 5vw;
+  z-index: 1;
+  animation: game1 3s infinite;
+  animation-direction: alternate;
+  animation-delay: 2s;
+  animation-timing-function: linear;
+}
+
+@keyframes game1 {
+  0% {transform: translate(-30vw, -23vw);}
+  100% {transform: translate(30vw, -23vw);}
+}
+
+h1 {
+  text-align: center;
+}
