@@ -17,7 +17,7 @@ body {
   z-index: 1;
   animation: game1 3s infinite;
   animation-direction: alternate;
-  animation-delay: 2s;
+  animation-delay: 6s;
   animation-timing-function: linear;
 }
 
@@ -32,7 +32,7 @@ body {
   width: 5vw;
   z-index: 1;
   animation: game2 1.5s infinite alternate;
-  animation-delay: 2s;
+  animation-delay: 6s;
   animation-timing-function: linear;
 }
 
@@ -47,7 +47,7 @@ body {
   width: 5vw;
   z-index: 1;
   animation: game3 2s infinite alternate;
-  animation-delay: 2s;
+  animation-delay: 6s;
   animation-timing-function: linear;
 }
 
@@ -63,7 +63,7 @@ body {
   width: 5vw;
   z-index: 1;
   animation: game4 7s infinite alternate;
-  animation-delay: 2s;
+  animation-delay: 6s;
   animation-timing-function: linear;
 }
 
@@ -80,7 +80,7 @@ body {
   width: 5vw;
   z-index: 1;
   animation: game5 6s infinite alternate;
-  animation-delay: 2s;
+  animation-delay: 6s;
   animation-timing-function: ease-in;
 }
 
@@ -96,7 +96,7 @@ body {
   width: 5vw;
   z-index: 1;
   animation: game6a 2s infinite alternate, game6b 4s infinite alternate;
-  animation-delay: 2s;
+  animation-delay: 6s;
   animation-timing-function: ease-out;
 }
 
@@ -116,7 +116,7 @@ body {
   width: 5vw;
   z-index: 1;
   animation: game7a 2s infinite alternate ease-in, game7b 6s infinite alternate linear;
-  animation-delay: 2s;
+  animation-delay: 6s;
 }
 
 @keyframes game7a {
@@ -132,6 +132,26 @@ body {
   100% {height: 20vw;}
 }
 
+.game8 {
+  position: relative;
+  transform: translate(-65vw, -17vw);
+  width: 5vw;
+  z-index: 1;
+  animation: 10s infinite alternate game8;
+  animation-delay: 6s;
+  animation-timing-function: linear;
+}
+
+@keyframes game8 {
+  0% {transform: translate(-65vw, -17vw);}
+  20% {transform: translate(20vw, -12vw);}
+  60% {transform: translate(-37vw, -23vw);}
+  70% {transform: translate(-37vw, 24vw);}
+  100% {transform: translate(-10vw, -25vw) rotatex(180deg);}
+}
+
 h1 {
   text-align: center;
+  color: white;
+  text-shadow: black 4px 4px;
 }
