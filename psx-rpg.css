@@ -26,6 +26,54 @@ body {
   100% {transform: translate(30vw, -23vw);}
 }
 
+.game2 {
+  position: relative;
+  transform: translate(-28vw, -23vw);
+  width: 5vw;
+  z-index: 1;
+  animation: game2 1.5s infinite alternate;
+  animation-delay: 2s;
+  animation-timing-function: linear;
+}
+
+@keyframes game2 {
+  0% {transform: translate(-28vw, -23vw) scale(1);}
+  100% {transform: translate(28vw, 5vw) scale(2);}
+}
+
+.game3 {
+  position: relative;
+  transform: translate(-45vw, -29vw);
+  width: 5vw;
+  z-index: 1;
+  animation: game3 2s infinite alternate;
+  animation-delay: 2s;
+  animation-timing-function: linear;
+}
+
+@keyframes game3 {
+  0% {transform: translate(-45vw, -29vw) rotateZ(0deg);}
+  50% {transform: translate(20vw, -50vw) rotateZ(50deg);}
+  100% {transform: translate(-20vw, 5vw) rotateZ(360deg);}
+}
+
+.game4 {
+  position: relative;
+  transform: translate(-40vw, -29vw);
+  width: 5vw;
+  z-index: 1;
+  animation: game4 7s infinite alternate;
+  animation-delay: 2s;
+  animation-timing-function: linear;
+}
+
+@keyframes game4 {
+  0% {transform: translate(-40vw, -29vw) rotatey(0deg);}
+  50% {transform: translate(-40vw, 5vw) rotatey(360deg);}
+  75% {transform: translate(-20vw, -45vw) rotatez(180deg);}
+  100% {transform: translate(20vw, -42vw) rotatez(5000deg);}
+}
+
 h1 {
   text-align: center;
 }
