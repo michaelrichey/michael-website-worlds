@@ -90,6 +90,26 @@ body {
   100% {transform: translate(-40vw, 10vw) scale(1.4) rotateY(1080deg);}
 }
 
+.game6 {
+  position: relative;
+  transform: translate(-35vw, -28vw);
+  width: 5vw;
+  z-index: 1;
+  animation: game6a 2s infinite alternate, game6b 4s infinite alternate;
+  animation-delay: 2s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes game6a {
+  0% {transform: translate(-35vw, -28vw) scale(1);}
+  100% {transform: translate(-28vw, -35vw) scale(2);}
+}
+
+@keyframes game6b {
+  0% {border: teal 0px solid; border-radius: 0px;}
+  100% {border: yellow 3px solid; border-radius: 100px;}
+}
+
 h1 {
   text-align: center;
 }
