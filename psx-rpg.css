@@ -156,25 +156,6 @@ h1 {
   text-shadow: black 4px 4px;
 }
 
-.game9 {
-  position: absolute;
-  transform: translate(0vw, 20vw);
-  width: 40vw;
-  z-index: -5;
-  animation: game9 10s;
-  animation-iteration-count: 1;
-  animation-delay: 30s;
-  animation-timing-function: linear;
-}
-
-@keyframes game9 {
-  0% {transform: translate(0vw, 20vw);}
-  30% {transform: translate(-60vw, 20vw);}
-  70% {transform: translate(-60vw, 20vw);}
-  80% {transform: translate(-60vw, 20vw) rotatey(180deg);}
-  100% {transform: translate(0vw, 20vw) rotatey(180deg);}
-}
-
 .back {
   background-color: gray;
   border: yellow solid 3px;
