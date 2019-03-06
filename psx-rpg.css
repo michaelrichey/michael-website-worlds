@@ -17,7 +17,7 @@ body {
   z-index: 1;
   animation: game1 3s infinite;
   animation-direction: alternate;
-  animation-delay: 6s;
+  animation-delay: 10s;
   animation-timing-function: linear;
 }
 
@@ -32,7 +32,7 @@ body {
   width: 5vw;
   z-index: 1;
   animation: game2 1.5s infinite alternate;
-  animation-delay: 6s;
+  animation-delay: 10s;
   animation-timing-function: linear;
 }
 
@@ -47,7 +47,7 @@ body {
   width: 5vw;
   z-index: 1;
   animation: game3 2s infinite alternate;
-  animation-delay: 6s;
+  animation-delay: 10s;
   animation-timing-function: linear;
 }
 
@@ -63,7 +63,7 @@ body {
   width: 5vw;
   z-index: 1;
   animation: game4 7s infinite alternate;
-  animation-delay: 6s;
+  animation-delay: 10s;
   animation-timing-function: linear;
 }
 
@@ -80,7 +80,7 @@ body {
   width: 5vw;
   z-index: 1;
   animation: game5 6s infinite alternate;
-  animation-delay: 6s;
+  animation-delay: 10s;
   animation-timing-function: ease-in;
 }
 
@@ -96,7 +96,7 @@ body {
   width: 5vw;
   z-index: 1;
   animation: game6a 2s infinite alternate, game6b 4s infinite alternate;
-  animation-delay: 6s;
+  animation-delay: 10s;
   animation-timing-function: ease-out;
 }
 
@@ -116,7 +116,7 @@ body {
   width: 5vw;
   z-index: 1;
   animation: game7a 2s infinite alternate ease-in, game7b 6s infinite alternate linear;
-  animation-delay: 6s;
+  animation-delay: 10s;
 }
 
 @keyframes game7a {
@@ -138,7 +138,7 @@ body {
   width: 5vw;
   z-index: 1;
   animation: 10s infinite alternate game8;
-  animation-delay: 6s;
+  animation-delay: 10s;
   animation-timing-function: linear;
 }
 
@@ -154,4 +154,30 @@ h1 {
   text-align: center;
   color: white;
   text-shadow: black 4px 4px;
+}
+
+.game9 {
+  position: absolute;
+  transform: translate(0vw, 20vw);
+  width: 40vw;
+  z-index: -5;
+  animation: game9 10s;
+  animation-iteration-count: 1;
+  animation-delay: 30s;
+  animation-timing-function: linear;
+}
+
+@keyframes game9 {
+  0% {transform: translate(0vw, 20vw);}
+  30% {transform: translate(-60vw, 20vw);}
+  70% {transform: translate(-60vw, 20vw);}
+  80% {transform: translate(-60vw, 20vw) rotatey(180deg);}
+  100% {transform: translate(0vw, 20vw) rotatey(180deg);}
+}
+
+.back {
+  background-color: gray;
+  border: yellow solid 3px;
+  position: absolute;
+  z-index: -5;
 }
