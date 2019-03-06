@@ -17,7 +17,7 @@ body {
   z-index: 1;
   animation: game1 3s infinite;
   animation-direction: alternate;
-  animation-delay: 2s;
+  animation-delay: 10s;
   animation-timing-function: linear;
 }
 
@@ -26,6 +26,160 @@ body {
   100% {transform: translate(30vw, -23vw);}
 }
 
+.game2 {
+  position: relative;
+  transform: translate(-28vw, -23vw);
+  width: 5vw;
+  z-index: 1;
+  animation: game2 1.5s infinite alternate;
+  animation-delay: 10s;
+  animation-timing-function: linear;
+}
+
+@keyframes game2 {
+  0% {transform: translate(-28vw, -23vw) scale(1);}
+  100% {transform: translate(28vw, 5vw) scale(2);}
+}
+
+.game3 {
+  position: relative;
+  transform: translate(-45vw, -29vw);
+  width: 5vw;
+  z-index: 1;
+  animation: game3 2s infinite alternate;
+  animation-delay: 10s;
+  animation-timing-function: linear;
+}
+
+@keyframes game3 {
+  0% {transform: translate(-45vw, -29vw) rotateZ(0deg);}
+  50% {transform: translate(20vw, -50vw) rotateZ(50deg);}
+  100% {transform: translate(-20vw, 5vw) rotateZ(360deg);}
+}
+
+.game4 {
+  position: relative;
+  transform: translate(-40vw, -29vw);
+  width: 5vw;
+  z-index: 1;
+  animation: game4 7s infinite alternate;
+  animation-delay: 10s;
+  animation-timing-function: linear;
+}
+
+@keyframes game4 {
+  0% {transform: translate(-40vw, -29vw) rotatey(0deg);}
+  50% {transform: translate(-40vw, 5vw) rotatey(360deg);}
+  75% {transform: translate(-20vw, -45vw) rotatez(180deg);}
+  100% {transform: translate(20vw, -42vw) rotatez(5000deg);}
+}
+
+.game5 {
+  position: relative;
+  transform: translate(-37vw, -28.5vw);
+  width: 5vw;
+  z-index: 1;
+  animation: game5 6s infinite alternate;
+  animation-delay: 10s;
+  animation-timing-function: ease-in;
+}
+
+@keyframes game5 {
+  0% {transform: translate(-37vw, -28.5vw) scale(1) rotateY(0deg);}
+  50% {transform: translate(-70vw, -60vw) scale(2) rotateY(360deg);}
+  100% {transform: translate(-40vw, 10vw) scale(1.4) rotateY(1080deg);}
+}
+
+.game6 {
+  position: relative;
+  transform: translate(-35vw, -28vw);
+  width: 5vw;
+  z-index: 1;
+  animation: game6a 2s infinite alternate, game6b 4s infinite alternate;
+  animation-delay: 10s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes game6a {
+  0% {transform: translate(-35vw, -28vw) scale(1);}
+  100% {transform: translate(-28vw, -35vw) scale(2);}
+}
+
+@keyframes game6b {
+  0% {border: teal 0px solid; border-radius: 0px;}
+  100% {border: yellow 3px solid; border-radius: 100px;}
+}
+
+.game7 {
+  position: relative;
+  transform: translate(-47vw, -24vw);
+  width: 5vw;
+  z-index: 1;
+  animation: game7a 2s infinite alternate ease-in, game7b 6s infinite alternate linear;
+  animation-delay: 10s;
+}
+
+@keyframes game7a {
+  0% {transform: translate(-47vw, -24vw);}
+  10% {transform: translate(0vw, -24vw);}
+  65% {transform: translate(0vw, -50vw);}
+  90% {transform: translate(-32vw, -50vw);}
+  100% {transform: translate(-32vw, 0vw);}
+}
+
+@keyframes game7b {
+  0% {height: 5vw;}
+  100% {height: 20vw;}
+}
+
+.game8 {
+  position: relative;
+  transform: translate(-65vw, -17vw);
+  width: 5vw;
+  z-index: 1;
+  animation: 10s infinite alternate game8;
+  animation-delay: 10s;
+  animation-timing-function: linear;
+}
+
+@keyframes game8 {
+  0% {transform: translate(-65vw, -17vw);}
+  20% {transform: translate(20vw, -12vw);}
+  60% {transform: translate(-37vw, -23vw);}
+  70% {transform: translate(-37vw, 24vw);}
+  100% {transform: translate(-10vw, -25vw) rotatex(180deg);}
+}
+
 h1 {
   text-align: center;
+  color: white;
+  text-shadow: black 4px 4px;
+}
+
+.game9 {
+  position: absolute;
+  transform: translate(0vw, 20vw);
+  width: 40vw;
+  z-index: -5;
+  animation: game9 10s;
+  animation-iteration-count: 1;
+  animation-delay: 30s;
+  animation-timing-function: linear;
+}
+
+@keyframes game9 {
+  0% {transform: translate(0vw, 20vw);}
+  30% {transform: translate(-60vw, 20vw);}
+  70% {transform: translate(-60vw, 20vw);}
+  80% {transform: translate(-60vw, 20vw) rotatey(180deg);}
+  100% {transform: translate(0vw, 20vw) rotatey(180deg);}
+}
+
+.back {
+  background-color: gray;
+  border: yellow solid 3px;
+  position: absolute;
+  z-index: 5;
+  transform: translate(750px, -100px);
+  padding: 1%;
 }
