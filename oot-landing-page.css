@@ -10,6 +10,18 @@
     "box7";
 }
 
+h1 {
+  font-family: 'Ruda', sans-serif;
+}
+
+h2 {
+  font-family: 'Ruda', sans-serif;
+}
+
+p {
+  font-family: 'Port Lligat Slab', serif;
+}
+
 .box1 {
   grid-area: box1;
   border: orange 5px solid;
@@ -34,20 +46,32 @@
   display: grid;
   grid-template-areas:
     "headline2 headline1";
-  background-color: gray;
+  background-image: url(images/oot-splash.jpg);
+  background-position: center;
+  background-size: cover;
+  color: white;
+  padding: 5%;
 }
 
 .headline1 {
   grid-area: headline1;
   border: purple 5px solid;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
+  padding: 10%;
+}
+
+.headline1 img {
+  width: 30vw;
 }
 
 .headline2 {
   grid-area: headline2;
   border: purple 5px solid;
+  padding-left: 10%;
+  padding-right: 10%;
+  font-size: 35px;
+  line-height: 70px;
 }
 
 .box3 {
@@ -100,6 +124,11 @@
 .trans2 {
   grid-area: trans2;
   border: purple 5px solid;
+  padding: 10%;
+}
+
+.trans2 img {
+  height: 20vw;
 }
 
 .box6 {
