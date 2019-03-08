@@ -20,6 +20,7 @@ h2 {
 
 p {
   font-family: 'Port Lligat Slab', serif;
+  font-size: 20px;
 }
 
 .box1 {
@@ -106,6 +107,7 @@ p {
 .box4 {
   grid-area: box4;
   border: orange 5px solid;
+  padding: 3%;
 }
 
 .box5 {
@@ -119,6 +121,7 @@ p {
 .trans1 {
   grid-area: trans1;
   border: purple 5px solid;
+  padding: 5%;
 }
 
 .trans2 {
