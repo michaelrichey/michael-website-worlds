@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+}
+
 .grid {
   display: grid;
   grid-template-areas:
@@ -26,6 +30,7 @@ p {
 .box1 {
   grid-area: box1;
   border: orange 5px solid;
+  background-color: #f2e0cf;
   display: grid;
   grid-template-areas:
     "logo headlink1 headlink1 headlink1";
@@ -79,8 +84,20 @@ p {
   grid-area: box3;
   border: orange 5px solid;
   display: grid;
+  background-color: #f2e0cf;
+  text-align: center;
   grid-template-areas:
+    "sp0 sp0 sp0 sp0"
     "sp1 sp2 sp3 sp4";
+}
+
+.box3 img {
+  height: 10vh;
+}
+
+.sp0 {
+  grid-area: sp0;
+  border: purple 5px solid;
 }
 
 .sp1 {
@@ -114,8 +131,9 @@ p {
   grid-area: box5;
   border: orange 5px solid;
   display: grid;
+  background-color: #f5f5fc;
   grid-template-areas:
-    "trans1 trans2";
+    "trans1 trans2 trans2 trans2";
 }
 
 .trans1 {
@@ -127,16 +145,35 @@ p {
 .trans2 {
   grid-area: trans2;
   border: purple 5px solid;
-  padding: 10%;
+  padding: 3%;
+  display: grid;
+  grid-gap: 15px;
+  align-items: center;
+  grid-template-areas:
+    "pic1 pic2"
+    "pic1 pic3"
 }
 
 .trans2 img {
-  height: 20vw;
+  width: 30vw;
+}
+
+.pic1 {
+  grid-area: pic1;
+}
+
+.pic2 {
+  grid-area: pic2;
+}
+
+.pic3 {
+  grid-area: pic3;
 }
 
 .box6 {
   grid-area: box6;
   border: orange 5px solid;
+  text-align: center;
   grid-template-areas:
     "cta1"
     "ctabutton";
@@ -144,15 +181,34 @@ p {
 
 .cta1 {
   grid-area: cta1;
+  padding-left: 20%;
+  padding-right: 20%;
   border: purple 5px solid;
 }
 
 .ctabutton {
   grid-area: ctabutton;
-  border: purple 5px solid;
+  background-color: #5c6ac4;
+  width: 150px;
+  padding: 1%;
+  border-radius: 10px;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ctabutton p {
+  color: white;
 }
 
 .box7 {
   grid-area: box7;
   border: orange 5px solid;
+  background-color: #010639;
+  text-align: center;
+}
+
+.box7 p {
+  color: white;
 }
