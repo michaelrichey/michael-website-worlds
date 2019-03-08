@@ -16,31 +16,18 @@ body {
 
 h1 {
   font-family: 'Ruda', sans-serif;
+  color: #010639;
 }
 
 h2 {
   font-family: 'Ruda', sans-serif;
+  color: #010639;
 }
 
 p {
   font-family: 'Port Lligat Slab', serif;
   font-size: 20px;
-}
-
-.box1 {
-  grid-area: box1;
-  background-color: #f2e0cf;
-  display: grid;
-  grid-template-areas:
-    "logo headlink1 headlink1 headlink1";
-}
-
-.logo {
-  grid-area: logo;
-}
-
-.headlink1 {
-  grid-area: headlink1;
+  color: #010639;
 }
 
 .box2 {
@@ -51,8 +38,15 @@ p {
   background-image: url(images/oot-splash.jpg);
   background-position: center;
   background-size: cover;
-  color: white;
   padding: 5%;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  padding-left: 4em;
+  padding-right: 4em;
+}
+
+.box2 h2 {
+  color: white;
 }
 
 .headline1 {
@@ -82,6 +76,10 @@ p {
   grid-template-areas:
     "sp0 sp0 sp0 sp0"
     "sp1 sp2 sp3 sp4";
+  padding-top: 1em;
+  padding-bottom: 2em;
+  padding-left: 4em;
+  padding-right: 4em;
 }
 
 .box3 img {
@@ -112,6 +110,10 @@ p {
 .box4 {
   grid-area: box4;
   padding: 3%;
+  padding-top: 6em;
+  padding-bottom: 6em;
+  padding-left: 4em;
+  padding-right: 4em;
 }
 
 .box5 {
@@ -120,6 +122,10 @@ p {
   background-color: #f5f5fc;
   grid-template-areas:
     "trans1 trans2 trans2 trans2";
+  padding-top: 6em;
+  padding-bottom: 6em;
+  padding-left: 4em;
+  padding-right: 4em;
 }
 
 .trans1 {
@@ -160,6 +166,8 @@ p {
   grid-template-areas:
     "cta1"
     "ctabutton";
+    padding-top: 6em;
+    padding-bottom: 6em;
 }
 
 .cta1 {
@@ -192,4 +200,9 @@ p {
 
 .box7 p {
   color: white;
+}
+
+a {
+  text-decoration: none;
+  color: #919eab;
 }
