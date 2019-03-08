@@ -80,10 +80,12 @@ p {
   padding-bottom: 2em;
   padding-left: 4em;
   padding-right: 4em;
+  grid-column-gap: 4em;
+  align-items: center;
 }
 
-.box3 img {
-  height: 10vh;
+.logoimg {
+  width: 100%;
 }
 
 .sp0 {
