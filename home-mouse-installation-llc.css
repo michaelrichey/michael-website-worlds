@@ -41,6 +41,10 @@
 .headtext {
   position: absolute;
   z-index: 6;
+  color: white;
+  left: 20vw;
+  right: 30vw;
+  font-size: 5vw;
 }
 
 .headimg {
