@@ -16,6 +16,7 @@
   display: grid;
   grid-template-areas:
     "logo headlink1 headlink1 headlink1";
+  background-color: #e5e6e8;
 }
 
 .logo {
@@ -33,17 +34,35 @@
   border: orange 5px solid;
   display: grid;
   grid-template-areas:
-    "headline1 headline2";
+    "headline1"
+    "headline2";
+}
+
+.headimg {
+  position: relative;
+  z-index: 5;
+  width: 100%;
+  max-width: 966px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border-radius: 40px;
 }
 
 .headline1 {
   grid-area: headline1;
   border: purple 5px solid;
+  background-color: #e5e6e8;
+  height: 30vw;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .headline2 {
   grid-area: headline2;
   border: purple 5px solid;
+  height: 20vw;
+  background-color: white;
 }
 
 .box3 {
