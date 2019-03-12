@@ -38,6 +38,11 @@
     "headline2";
 }
 
+.headtext {
+  position: absolute;
+  z-index: 6;
+}
+
 .headimg {
   position: relative;
   z-index: 5;
