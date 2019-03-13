@@ -34,8 +34,9 @@ h3 {
   grid-area: box1;
   display: grid;
   grid-template-areas:
-    "logo headlink1 headlink1 headlink1";
+    "logo headlink1";
   background-color: #e5e6e8;
+  padding-bottom: 3%;
 }
 
 .logo {
@@ -78,7 +79,7 @@ h3 {
 .headline1 {
   grid-area: headline1;
   background-color: #e5e6e8;
-  height: 30vw;
+  height: 29vw;
   padding-left: 5%;
   padding-right: 5%;
 }
@@ -96,6 +97,9 @@ h3 {
     "sp0 sp0 sp0 sp0"
     "sp1 sp2 sp3 sp4";
   background-color: #dcc79f;
+  align-items: center;
+  padding-top: 4em;
+  padding-bottom: 4em;
 }
 
 .box3 img {
@@ -163,6 +167,8 @@ h3 {
 .studyimg {
   width: 40vw;
   border-radius: 20px;
+  position: sticky;
+  top: 0;
 }
 
 .box6 {
@@ -199,4 +205,14 @@ h3 {
   grid-area: box7;
   background-color: black;
   color: white;
+  text-align: center;
+}
+
+.box7 p {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: #919eab;
 }
