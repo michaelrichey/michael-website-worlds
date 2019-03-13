@@ -1,0 +1,218 @@
+body {
+  margin: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-areas:
+    "box1"
+    "box2"
+    "box3"
+    "box4"
+    "box5"
+    "box6"
+    "box7";
+}
+
+p {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+h1 {
+  font-family: 'Vidaloka', serif;
+}
+
+h2 {
+  font-family: 'Vidaloka', serif;
+}
+
+h3 {
+  font-family: 'Vidaloka', serif;
+}
+
+.box1 {
+  grid-area: box1;
+  display: grid;
+  grid-template-areas:
+    "logo headlink1";
+  background-color: #e5e6e8;
+  padding-bottom: 3%;
+}
+
+.logo {
+  grid-area: logo;
+  padding-left: 3%;
+}
+
+.headlink1 {
+  grid-area: headlink1;
+}
+
+.box2 {
+  grid-area: box2;
+  display: grid;
+  grid-template-areas:
+    "headline1"
+    "headline2";
+}
+
+.headtext {
+  position: absolute;
+  z-index: 6;
+  color: white;
+  left: 20vw;
+  right: 30vw;
+  font-size: 4.5vw;
+}
+
+.headimg {
+  position: relative;
+  z-index: 5;
+  width: 90%;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  border-radius: 40px;
+}
+
+.headline1 {
+  grid-area: headline1;
+  background-color: #e5e6e8;
+  height: 29vw;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.headline2 {
+  grid-area: headline2;
+  height: 20vw;
+  background-color: white;
+}
+
+.box3 {
+  grid-area: box3;
+  display: grid;
+  grid-template-areas:
+    "sp0 sp0 sp0 sp0"
+    "sp1 sp2 sp3 sp4";
+  background-color: #dcc79f;
+  align-items: center;
+  padding-top: 4em;
+  padding-bottom: 4em;
+}
+
+.box3 img {
+  width: 16vw;
+}
+
+.sp0 {
+  grid-area: sp0;
+  text-align: center;
+}
+
+.sp1 {
+  grid-area: sp1;
+  text-align: center;
+}
+
+.sp2 {
+  grid-area: sp2;
+  text-align: center;
+}
+
+.sp3 {
+  grid-area: sp3;
+  text-align: center;
+}
+
+.sp4 {
+  grid-area: sp4;
+  text-align: center;
+}
+
+
+.box4 {
+  grid-area: box4;
+  padding-top: 4em;
+  padding-bottom: 4em;
+  padding-right: 10%;
+  padding-left: 10%;
+  background-color: #e5e6e8;
+}
+
+.box5 {
+  grid-area: box5;
+  display: grid;
+  grid-template-areas:
+    "trans1 trans2";
+  padding-top: 4em;
+  padding-bottom: 4em;
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
+.trans1 {
+  grid-area: trans1;
+  padding-left: 5%;
+  padding-right: 10%;
+}
+
+.trans2 {
+  grid-area: trans2;
+  padding-right: 5%;
+  padding-left: 10%;
+}
+
+.studyimg {
+  width: 40vw;
+  border-radius: 20px;
+  position: sticky;
+  top: 0;
+}
+
+.box6 {
+  grid-area: box6;
+  grid-template-areas:
+    "cta1"
+    "ctabutton";
+  padding: 3%;
+  background-color: #e5e6e8;
+}
+
+.cta1 {
+  grid-area: cta1;
+  text-align: center;
+  font-size: 30px;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.ctabutton {
+  grid-area: ctabutton;
+  text-align: center;
+  margin-left: 35%;
+  margin-right: 35%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+  padding: 3%;
+}
+
+.box7 {
+  grid-area: box7;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.box7 p {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: #919eab;
+}
