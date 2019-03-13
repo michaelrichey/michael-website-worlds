@@ -98,6 +98,10 @@ h3 {
   background-color: #dcc79f;
 }
 
+.box3 img {
+  width: 16vw;
+}
+
 .sp0 {
   grid-area: sp0;
   text-align: center;
