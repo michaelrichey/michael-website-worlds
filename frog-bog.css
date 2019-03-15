@@ -1,9 +1,12 @@
+body {
+  background-image: url(images/forest2.jpg);
+}
+
 h1 {
   text-align: center;
 }
 
 .flexcontainer {
-  border: green solid 5px;
   display: flex;
   flex-direction: row-reverse;
   flex-wrap: wrap-reverse;
@@ -11,49 +14,58 @@ h1 {
   align-items: center;
 }
 
-.flexcontainer img {
-}
-
-.frog1 {
-  border: darkgreen solid 5px;
-}
-
 .frog2 {
-  border: darkgreen solid 5px;
   flex-basis: 20%;
 }
 
 .frog3 {
-  border: darkgreen solid 5px;
   align-self: flex-end;
   height: 100px;
 }
 
 .frog4 {
-  border: purple solid 5px;
   height: 150px;
 }
 
 .frog5 {
-  border: darkgreen solid 5px;
   align-self: flex-start;
   flex-grow: 4;
 }
 
 .frog6 {
-  border: red solid 5px;
   order: 1;
 }
 
-.frog7 {
-  border: darkgreen solid 5px;
-}
-
 .frog8 {
-  border: darkgreen solid 5px;
   flex-grow: 2;
 }
 
-.frog10 {
-  border: blue solid 5px;
+.flexcontainer2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.froga {
+  flex-grow: 2;
+  flex-shrink: 5;
+  flex-basis: 10%;
+}
+
+.frogc {
+  flex-grow: 2;
+}
+
+.froge {
+  flex-grow: 3;
+  flex-shrink: 5;
+}
+
+.frogg {
+  flex-basis: 200px;
+}
+
+.frogh {
+  flex-grow: 20;
 }
