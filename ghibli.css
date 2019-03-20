@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  font-family: fantasy;
+}
+
+.grid {
+  display: grid;
+  grid-template-areas:
+    "box1 box1"
+    "box2 box3"
+    "box4 box5"
+    "box4 box6"
+    "box7 box7";
+}
+
+.box1 {
+  grid-area: box1;
+  background-image: url(images/geo-bg-3.jpg);
+}
+
+.box2 {
+  grid-area: box2;
+  display: flex;
+  flex-wrap: wrap;
+  background-image: url(images/geo-bg-14.gif);
+}
+
+.box2 img {
+  flex-grow: 6;
+}
+
+.box3 {
+  grid-area: box3;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.box3 img {
+  width: 10%;
+  flex-grow: 4;
+}
+
+.box4 {
+  grid-area: box4;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-image: url(images/geo-bg-8.gif);
+}
+
+.box5 {
+  grid-area: box5;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-image: url(images/geo-bg-7.gif);
+}
+
+.howlbig {
+  flex: 3;
+  height: 20%;
+}
+
+.box6 {
+  grid-area: box6;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  background-image: url(images/geo-bg-11.jpg);
+}
+
+.box7 {
+  grid-area: box7;
+  padding: 4%;
+  background-image: url(images/geo-bg-13.gif);
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: baseline;
+}
