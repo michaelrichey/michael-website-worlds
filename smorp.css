@@ -165,3 +165,8 @@ p {
   padding: 1%;
   background-color: #2E294E;
 }
+
+a {
+  text-decoration: none;
+  color: #F1E9DA;
+}
