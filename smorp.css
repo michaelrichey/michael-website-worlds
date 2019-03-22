@@ -2,6 +2,18 @@ body {
   margin: 0;
 }
 
+h2 {
+  font-family: 'Poller One', cursive;
+}
+
+h3 {
+  font-family: 'Poller One', cursive;
+}
+
+p {
+  font-family: 'Farsan', cursive;
+}
+
 .grid {
   display: grid;
   grid-template-areas:
@@ -11,19 +23,20 @@ body {
     "box5"
     "box6"
     "box7";
+  color: #F1E9DA;
 }
 
 .box2 {
   grid-area: box2;
-  border: orange 5px solid;
   display: grid;
   grid-template-areas:
     "headline1 headline2";
+  background-color: #D90368;
+  color: #F1E9DA;
 }
 
 .headline1 {
   grid-area: headline1;
-  border: purple 5px solid;
   padding-left: 4em;
   padding-right: 4em;
   padding-top: 6em;
@@ -36,8 +49,7 @@ body {
 
 .headline2 {
   grid-area: headline2;
-  border: purple 5px solid;
-  font-size: 40px;
+  font-size: 35px;
   padding-left: 1em;
   padding-right: 1em;
   padding-top: 1em;
@@ -46,54 +58,52 @@ body {
 
 .box3 {
   grid-area: box3;
-  border: orange 5px solid;
   display: grid;
   grid-template-areas:
-    "sp1 sp2 sp3 sp4";
+    "sp0"
+    "sp1";
+  background-color: #2E294E;
+  color: #F1E9DA;
+  padding: 4%;
+}
+
+.sp0 {
+  grid-area: sp0;
+  text-align: center;
 }
 
 .sp1 {
   grid-area: sp1;
-  border: purple 5px solid;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 
-.sp2 {
-  grid-area: sp2;
-  border: purple 5px solid;
-}
-
-.sp3 {
-  grid-area: sp3;
-  border: purple 5px solid;
-}
-
-.sp4 {
-  grid-area: sp4;
-  border: purple 5px solid;
+.sp1 img {
+  height: 12vw;
 }
 
 
 .box4 {
   grid-area: box4;
-  border: orange 5px solid;
   padding-left: 2em;
   padding-right: 2em;
   padding-top: 4em;
   padding-bottom: 4em;
   font-size: 30px;
+  background-color: #541388;
 }
 
 .box5 {
   grid-area: box5;
-  border: orange 5px solid;
   display: grid;
   grid-template-areas:
     "trans1 trans2";
+  background-color: #FFD400;
 }
 
 .trans1 {
   grid-area: trans1;
-  border: purple 5px solid;
   padding-left: 2em;
   padding-right: 2em;
   padding-top: 4em;
@@ -103,7 +113,6 @@ body {
 
 .trans2 {
   grid-area: trans2;
-  border: purple 5px solid;
   padding-left: 2em;
   padding-right: 2em;
   padding-top: 4em;
@@ -121,34 +130,38 @@ body {
 
 .box6 {
   grid-area: box6;
-  border: orange 5px solid;
   grid-template-areas:
     "cta1"
     "ctabutton";
+  background-color: #D90368;
 }
 
 .cta1 {
   grid-area: cta1;
-  border: purple 5px solid;
   text-align: center;
   padding-left: 2em;
   padding-right: 2em;
-  padding-top: 4em;
-  padding-bottom: 4em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  font-size: 30px;
 }
 
 .ctabutton {
   grid-area: ctabutton;
-  border: purple 5px solid;
   text-align: center;
   margin-left: 40%;
   margin-right: 40%;
   border-radius: 20px;
-  margin-top: 10%;
+  margin-top: 2%;
   margin-bottom: 10%;
+  font-size: 40px;
+  background-color: #FFD400;
+  padding: 1px;
 }
 
 .box7 {
   grid-area: box7;
-  border: orange 5px solid;
+  text-align: center;
+  padding: 1%;
+  background-color: #2E294E;
 }
