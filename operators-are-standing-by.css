@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+}
+
 .grid {
   display: grid;
   grid-template-areas:
@@ -21,6 +25,8 @@
 .logo {
   grid-area: logo;
   border: purple 5px solid;
+  padding-left: 2em;
+  font-size: 20px;
 }
 
 .headlink1 {
@@ -41,9 +47,20 @@
   border: purple 5px solid;
 }
 
+.headline1 img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40vw;
+}
+
 .headline2 {
   grid-area: headline2;
   border: purple 5px solid;
+  font-size: 50px;
+  padding-left: 2em;
+  padding-right: 2em;
+  text-align: center;
 }
 
 .box3 {
@@ -84,6 +101,11 @@
 .box4 {
   grid-area: box4;
   border: orange 5px solid;
+  padding-left: 4em;
+  padding-right: 4em;
+  padding-top: 6em;
+  padding-bottom: 6em;
+  font-size: 24px;
 }
 
 .box5 {
@@ -97,11 +119,23 @@
 .trans1 {
   grid-area: trans1;
   border: purple 5px solid;
+  padding-left: 4em;
+  padding-right: 4em;
+  padding-top: 6em;
+  padding-bottom: 6em;
+  font-size: 24px;
 }
 
 .trans2 {
   grid-area: trans2;
   border: purple 5px solid;
+}
+
+.trans2 img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40vw;
 }
 
 .box6 {
@@ -115,11 +149,25 @@
 .cta1 {
   grid-area: cta1;
   border: purple 5px solid;
+  text-align: center;
+  font-size: 26px;
+  padding-left: 6em;
+  padding-right: 6em;
+  padding-top: 2em;
+  padding-bottom: 2em;
 }
 
 .ctabutton {
   grid-area: ctabutton;
   border: purple 5px solid;
+  margin-left: 35%;
+  margin-right: 35%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  text-align: center;
+  font-size: 20px;
+  padding: 2%;
+  border-radius: 100px;
 }
 
 .box7 {
