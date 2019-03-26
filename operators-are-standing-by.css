@@ -14,6 +14,22 @@ body {
     "box7";
 }
 
+h1 {
+  font-family: 'Bungee', cursive;
+}
+
+h2 {
+  font-family: 'Bungee', cursive;
+}
+
+h3 {
+  font-family: 'Bungee', cursive;
+}
+
+p {
+  font-family: 'Iceland', cursive;
+}
+
 .box1 {
   grid-area: box1;
   border: orange 5px solid;
@@ -40,24 +56,28 @@ body {
   display: grid;
   grid-template-areas:
     "headline1 headline2";
+  background-image: url(images/phone-top-bg.jpg);
+  background-size: cover;
 }
 
 .headline1 {
   grid-area: headline1;
   border: purple 5px solid;
+  padding-left: 10%;
+  padding-right: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .headline1 img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
   width: 40vw;
 }
 
 .headline2 {
   grid-area: headline2;
   border: purple 5px solid;
-  font-size: 50px;
+  font-size: 3vw;
   padding-left: 2em;
   padding-right: 2em;
   text-align: center;
@@ -75,26 +95,55 @@ body {
 .sp0 {
   border: purple solid 5px;
   grid-area: sp0;
+  text-align: center;
 }
 
 .sp1 {
   grid-area: sp1;
   border: purple 5px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sp1 img {
+  height: 20vw;
 }
 
 .sp2 {
   grid-area: sp2;
   border: purple 5px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sp2 img {
+  height: 20vw;
 }
 
 .sp3 {
   grid-area: sp3;
   border: purple 5px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sp3 img {
+  height: 20vw;
 }
 
 .sp4 {
   grid-area: sp4;
   border: purple 5px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sp4 img {
+  height: 20vw;
 }
 
 
@@ -150,7 +199,7 @@ body {
   grid-area: cta1;
   border: purple 5px solid;
   text-align: center;
-  font-size: 26px;
+  font-size: 2vw;
   padding-left: 6em;
   padding-right: 6em;
   padding-top: 2em;
