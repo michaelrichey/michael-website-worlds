@@ -1,0 +1,249 @@
+body {
+  margin: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-areas:
+    "box1"
+    "box2"
+    "box3"
+    "box4"
+    "box5"
+    "box6"
+    "box7";
+}
+
+h1 {
+  font-family: 'Bungee', cursive;
+  color: #f8f3d4
+}
+
+h2 {
+  font-family: 'Bungee', cursive;
+}
+
+h3 {
+  font-family: 'Bungee', cursive;
+}
+
+p {
+  font-family: 'Iceland', cursive;
+}
+
+.box1 {
+  grid-area: box1;
+  display: grid;
+  grid-template-areas:
+    "logo headlink1 headlink1 headlink1";
+  background-color: #00b8a9;
+}
+
+.logo {
+  grid-area: logo;
+  padding-left: 2em;
+  font-size: 20px;
+}
+
+.headlink1 {
+  grid-area: headlink1;
+}
+
+.box2 {
+  grid-area: box2;
+  display: grid;
+  grid-template-areas:
+    "headline1 headline2";
+  background-image: url(images/phone-top-bg.jpg);
+  background-size: cover;
+}
+
+.headline1 {
+  grid-area: headline1;
+  padding-left: 10%;
+  padding-right: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6%;
+}
+
+.headline1 img {
+  width: 40vw;
+}
+
+.headline2 {
+  grid-area: headline2;
+  font-size: 3vw;
+  padding-left: 2em;
+  padding-right: 2em;
+  text-align: center;
+  color: #f6416c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box3 {
+  grid-area: box3;
+  display: grid;
+  grid-template-areas:
+    "sp0 sp0 sp0 sp0"
+    "sp1 sp2 sp3 sp4";
+  background-color: #f6416c;
+  color: #f8f3d4;
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+.sp0 {
+  grid-area: sp0;
+  text-align: center;
+  padding-bottom: 2em;
+}
+
+.sp1 {
+  grid-area: sp1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sp1 img {
+  height: 20vw;
+  border-radius: 100px;
+}
+
+.sp2 {
+  grid-area: sp2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sp2 img {
+  height: 20vw;
+  border-radius: 100px;
+}
+
+.sp3 {
+  grid-area: sp3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sp3 img {
+  height: 20vw;
+  border-radius: 100px;
+}
+
+.sp4 {
+  grid-area: sp4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sp4 img {
+  height: 20vw;
+  border-radius: 100px;
+}
+
+
+.box4 {
+  grid-area: box4;
+  padding-left: 4em;
+  padding-right: 4em;
+  padding-top: 6em;
+  padding-bottom: 6em;
+  font-size: 24px;
+  background-color: #ffde7d;
+  color: #f6416c;
+}
+
+.box5 {
+  grid-area: box5;
+  display: grid;
+  grid-template-areas:
+    "trans1 trans2";
+  background-color: #00b8a9;
+  color: #f8f3d4;
+}
+
+.trans1 {
+  grid-area: trans1;
+  padding-left: 4em;
+  padding-right: 4em;
+  padding-top: 6em;
+  padding-bottom: 6em;
+  font-size: 24px;
+}
+
+.trans2 {
+  grid-area: trans2;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 4%;
+}
+
+.trans2 img {
+  width: 10vw;
+  border-radius: 500px;
+}
+
+.box6 {
+  grid-area: box6;
+  grid-template-areas:
+    "cta1"
+    "ctabutton";
+  background-color: #f6416c;
+  color: #f8f3d4;
+}
+
+.cta1 {
+  grid-area: cta1;
+  text-align: center;
+  font-size: 2vw;
+  padding-left: 6em;
+  padding-right: 6em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.ctabutton {
+  grid-area: ctabutton;
+  margin-left: 35%;
+  margin-right: 35%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 100px;
+  background-color: #00b8a9;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  font-size: 30px;
+}
+
+.box7 {
+  grid-area: box7;
+  background-color: #ffde7d;
+  text-align: center;
+  padding-top: 2em;
+  font-size: 25px;
+}
+
+a {
+  text-decoration: none;
+  color: #919eab;
+  color: #f6416c;
+}
+
+#buttonlink {
+  color: #f8f3d4;
+}
