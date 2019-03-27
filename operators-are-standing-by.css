@@ -16,6 +16,7 @@ body {
 
 h1 {
   font-family: 'Bungee', cursive;
+  color: #f8f3d4
 }
 
 h2 {
@@ -32,27 +33,24 @@ p {
 
 .box1 {
   grid-area: box1;
-  border: orange 5px solid;
   display: grid;
   grid-template-areas:
     "logo headlink1 headlink1 headlink1";
+  background-color: #00b8a9;
 }
 
 .logo {
   grid-area: logo;
-  border: purple 5px solid;
   padding-left: 2em;
   font-size: 20px;
 }
 
 .headlink1 {
   grid-area: headlink1;
-  border: purple 5px solid;
 }
 
 .box2 {
   grid-area: box2;
-  border: orange 5px solid;
   display: grid;
   grid-template-areas:
     "headline1 headline2";
@@ -62,12 +60,12 @@ p {
 
 .headline1 {
   grid-area: headline1;
-  border: purple 5px solid;
   padding-left: 10%;
   padding-right: 10%;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 6%;
 }
 
 .headline1 img {
@@ -76,31 +74,36 @@ p {
 
 .headline2 {
   grid-area: headline2;
-  border: purple 5px solid;
   font-size: 3vw;
   padding-left: 2em;
   padding-right: 2em;
   text-align: center;
+  color: #f6416c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .box3 {
   grid-area: box3;
-  border: orange 5px solid;
   display: grid;
   grid-template-areas:
     "sp0 sp0 sp0 sp0"
     "sp1 sp2 sp3 sp4";
+  background-color: #f6416c;
+  color: #f8f3d4;
+  padding-top: 3em;
+  padding-bottom: 3em;
 }
 
 .sp0 {
-  border: purple solid 5px;
   grid-area: sp0;
   text-align: center;
+  padding-bottom: 2em;
 }
 
 .sp1 {
   grid-area: sp1;
-  border: purple 5px solid;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -108,11 +111,11 @@ p {
 
 .sp1 img {
   height: 20vw;
+  border-radius: 100px;
 }
 
 .sp2 {
   grid-area: sp2;
-  border: purple 5px solid;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -120,11 +123,11 @@ p {
 
 .sp2 img {
   height: 20vw;
+  border-radius: 100px;
 }
 
 .sp3 {
   grid-area: sp3;
-  border: purple 5px solid;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -132,11 +135,11 @@ p {
 
 .sp3 img {
   height: 20vw;
+  border-radius: 100px;
 }
 
 .sp4 {
   grid-area: sp4;
-  border: purple 5px solid;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -144,30 +147,32 @@ p {
 
 .sp4 img {
   height: 20vw;
+  border-radius: 100px;
 }
 
 
 .box4 {
   grid-area: box4;
-  border: orange 5px solid;
   padding-left: 4em;
   padding-right: 4em;
   padding-top: 6em;
   padding-bottom: 6em;
   font-size: 24px;
+  background-color: #ffde7d;
+  color: #f6416c;
 }
 
 .box5 {
   grid-area: box5;
-  border: orange 5px solid;
   display: grid;
   grid-template-areas:
     "trans1 trans2";
+  background-color: #00b8a9;
+  color: #f8f3d4;
 }
 
 .trans1 {
   grid-area: trans1;
-  border: purple 5px solid;
   padding-left: 4em;
   padding-right: 4em;
   padding-top: 6em;
@@ -177,27 +182,29 @@ p {
 
 .trans2 {
   grid-area: trans2;
-  border: purple 5px solid;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 4%;
 }
 
 .trans2 img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 40vw;
+  width: 10vw;
+  border-radius: 500px;
 }
 
 .box6 {
   grid-area: box6;
-  border: orange 5px solid;
   grid-template-areas:
     "cta1"
     "ctabutton";
+  background-color: #f6416c;
+  color: #f8f3d4;
 }
 
 .cta1 {
   grid-area: cta1;
-  border: purple 5px solid;
   text-align: center;
   font-size: 2vw;
   padding-left: 6em;
@@ -208,18 +215,35 @@ p {
 
 .ctabutton {
   grid-area: ctabutton;
-  border: purple 5px solid;
   margin-left: 35%;
   margin-right: 35%;
   margin-top: 5%;
   margin-bottom: 5%;
   text-align: center;
   font-size: 20px;
-  padding: 2%;
   border-radius: 100px;
+  background-color: #00b8a9;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  font-size: 30px;
 }
 
 .box7 {
   grid-area: box7;
-  border: orange 5px solid;
+  background-color: #ffde7d;
+  text-align: center;
+  padding-top: 2em;
+  font-size: 25px;
+}
+
+a {
+  text-decoration: none;
+  color: #919eab;
+  color: #f6416c;
+}
+
+#buttonlink {
+  color: #f8f3d4;
 }
