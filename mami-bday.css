@@ -1,3 +1,7 @@
+body {
+  background-image: url(images/mami-bg.jpg);
+}
+
 .grid {
   display: grid;
   grid-template-areas:
@@ -8,6 +12,8 @@
     "box5"
     "box6"
     "box7";
+  grid-gap: 12px;
+  text-align: center;
 }
 
 .box1 {
@@ -16,16 +22,19 @@
   display: grid;
   grid-template-areas:
     "logo headlink1 headlink1 headlink1";
+  grid-gap: 15px;
 }
 
 .logo {
   grid-area: logo;
   border: purple 5px solid;
+  background: pink;
 }
 
 .headlink1 {
   grid-area: headlink1;
   border: purple 5px solid;
+  background: pink;
 }
 
 .box2 {
@@ -34,17 +43,28 @@
   display: grid;
   grid-template-areas:
     "headline1 headline2";
+  grid-gap: 15px;
 }
 
 .headline1 {
   grid-area: headline1;
   border: purple 5px solid;
+  background: pink;
 }
 
 .headline2 {
   grid-area: headline2;
   border: purple 5px solid;
+  font-size: 40px;
+  text-align: center;
+  background: pink;
 }
+
+
+
+
+
+
 
 
 
