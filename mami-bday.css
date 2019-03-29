@@ -1,5 +1,14 @@
 body {
   background-image: url(images/mami-bg.jpg);
+  margin: 3%;
+  animation: bganim infinite 50s linear;
+  font-family: impact;
+}
+
+@keyframes bganim {
+  0% {background-position: 0% 0%}
+  50% {background-position: 100% 100%}
+  100% {background-position: 0% 0%}
 }
 
 .grid {
@@ -55,9 +64,102 @@ body {
 .headline2 {
   grid-area: headline2;
   border: purple 5px solid;
-  font-size: 40px;
+  font-size: 50px;
   text-align: center;
   background: pink;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gif1 {
+  width: 20vw;
+  border-radius: 200px;
+}
+
+.gif1:hover{
+  width: 20vw;
+  border-radius: 200px;
+  animation: gif1anim 5s infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes gif1anim {
+  0% {transform: rotateZ(0deg);}
+  50% {transform: rotateZ(360deg);}
+  100% {transform: rotateZ(0deg);}
+}
+
+.gif2 {
+  width: 20vw;
+  border-radius: 200px;
+}
+
+.gif2:hover{
+  width: 20vw;
+  border-radius: 200px;
+  animation: gif2anim 2s infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes gif2anim {
+  0% {transform: rotateX(0deg);}
+  100% {transform: rotateX(360deg);}
+}
+
+.gif3 {
+  width: 20vw;
+  border-radius: 200px;
+}
+
+.gif3:hover{
+  width: 20vw;
+  border-radius: 200px;
+  animation: gif3anim 1s infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes gif3anim {
+  0% {transform: skewX(0deg);}
+  25% {transform: skewX(20deg);}
+  75% {transform: skewX(-20deg);}
+  100% {transform: skewX(0deg);}
+}
+
+.gif4 {
+  width: 20vw;
+  border-radius: 200px;
+}
+
+.gif4:hover{
+  width: 20vw;
+  border-radius: 200px;
+  animation: gif1anim 5s infinite;
+  animation-timing-function: linear;
+}
+
+.gif5 {
+  width: 20vw;
+  border-radius: 200px;
+}
+
+.gif5:hover{
+  width: 20vw;
+  border-radius: 200px;
+  animation: gif2anim 2s infinite;
+  animation-timing-function: linear;
+}
+
+.gif6 {
+  width: 20vw;
+  border-radius: 200px;
+}
+
+.gif6:hover{
+  width: 20vw;
+  border-radius: 200px;
+  animation: gif3anim 1s infinite;
+  animation-timing-function: linear;
 }
 
 
