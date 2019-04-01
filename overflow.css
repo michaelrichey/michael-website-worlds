@@ -1,0 +1,40 @@
+h1 {
+  text-align: center;
+}
+
+body {
+  margin-left: 20em;
+  margin-right: 20em;
+  font-family: impact;
+  background-image: url(images/famicom-games.jpg);
+  background-size: cover;
+  color: white;
+}
+
+.text {
+  width: 400px;
+  height: 50px;
+  overflow: scroll;
+  border: dotted red 1px;
+  font-family: cursive;
+  background-color: gray;
+}
+
+.text2 {
+  width: 500px;
+  height: 100px;
+  overflow: scroll;
+  border: dotted blue 1px;
+  font-family: fantasy;
+  background-color: gray;
+}
+
+.text3 {
+  width: 700px;
+  height: 200px;
+  overflow: scroll;
+  border: dotted green 1px;
+  transform: skewX(-15deg);
+  font-family: courier;
+  background-color: gray;
+}
