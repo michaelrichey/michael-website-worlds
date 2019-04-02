@@ -1,0 +1,73 @@
+body {
+  background-image: url(images/geo-bg-10.gif);
+  color: white;
+  animation: bganim 20s infinite linear;
+}
+
+@keyframes bganim {
+  0% {background-position: 0%}
+  50% {background-position: 100%}
+  100% {background-position: 0%}
+}
+
+h1 {
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-areas:
+    "puzzle1 puzzle2"
+    "puzzle3 puzzle4"
+    "puzzle5 puzzle6";
+  grid-gap: 10vw;
+  justify-content: center;
+}
+
+.puzzle1 {
+  grid-area: puzzle1;
+  height: 100px;
+  width: 100px;
+  overflow: scroll;
+  border: teal ridge 20px;
+}
+
+.puzzle2 {
+  grid-area: puzzle2;
+  height: 100px;
+  width: 100px;
+  overflow: scroll;
+  border: teal ridge 20px;
+}
+
+.puzzle3 {
+  grid-area: puzzle3;
+  height: 100px;
+  width: 100px;
+  overflow: scroll;
+  border: teal ridge 20px;
+}
+
+.puzzle4 {
+  grid-area: puzzle4;
+  height: 100px;
+  width: 100px;
+  overflow: scroll;
+  border: teal ridge 20px;
+}
+
+.puzzle5 {
+  grid-area: puzzle5;
+  height: 100px;
+  width: 100px;
+  overflow: scroll;
+  border: teal ridge 20px;
+}
+
+.puzzle6 {
+  grid-area: puzzle6;
+  height: 100px;
+  width: 100px;
+  overflow: scroll;
+  border: teal ridge 20px;
+}
