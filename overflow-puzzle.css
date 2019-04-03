@@ -1,0 +1,205 @@
+body {
+  background-image: url(images/geo-bg-10.gif);
+  color: white;
+  animation: bganim 20s infinite linear;
+  font-size: 25px;
+  margin: 5%;
+  font-family: 'Baloo', cursive;
+}
+
+@keyframes bganim {
+  0% {background-position: 0%}
+  50% {background-position: 100%}
+  100% {background-position: 0%}
+}
+
+h1 {
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-areas:
+    "puzzle1 puzzle2"
+    "answer1 answer2"
+    "puzzle3 puzzle4"
+    "answer3 answer4"
+    "puzzle5 puzzle6"
+    "answer5 answer6";
+  grid-gap: 1vw;
+  justify-content: center;
+}
+
+.puzzle1 {
+  grid-area: puzzle1;
+  height: 100px;
+  width: 100px;
+  overflow: scroll;
+  border: teal ridge 20px;
+}
+
+.answer1 {
+  grid-area: answer1;
+  height: 40px;
+  width: 100px;
+  border: purple outset 10px;
+  background-color: purple;
+  color: purple;
+  font-size: 12px;
+  text-align: center;
+}
+
+.answer1:active {
+  grid-area: answer1;
+  height: 40px;
+  width: 100px;
+  border: purple inset 10px;
+  background-color: purple;
+  color: white;
+  font-size: 12px;
+}
+
+.puzzle2 {
+  grid-area: puzzle2;
+  height: 100px;
+  width: 100px;
+  overflow: scroll;
+  border: teal ridge 20px;
+}
+
+.answer2 {
+  grid-area: answer2;
+  height: 40px;
+  width: 100px;
+  border: purple outset 10px;
+  background-color: purple;
+  color: purple;
+  font-size: 12px;
+  text-align: center;
+}
+
+.answer2:active {
+  grid-area: answer2;
+  height: 40px;
+  width: 100px;
+  border: purple inset 10px;
+  background-color: purple;
+  color: white;
+  font-size: 12px;
+}
+
+.puzzle3 {
+  grid-area: puzzle3;
+  height: 100px;
+  width: 100px;
+  overflow: scroll;
+  border: teal ridge 20px;
+}
+
+.answer3 {
+  grid-area: answer3;
+  height: 40px;
+  width: 100px;
+  border: purple outset 10px;
+  background-color: purple;
+  color: purple;
+  font-size: 12px;
+  text-align: center;
+}
+
+.answer3:active {
+  grid-area: answer3;
+  height: 40px;
+  width: 100px;
+  border: purple inset 10px;
+  background-color: purple;
+  color: white;
+  font-size: 12px;
+}
+
+.puzzle4 {
+  grid-area: puzzle4;
+  height: 100px;
+  width: 100px;
+  overflow: scroll;
+  border: teal ridge 20px;
+}
+
+.answer4 {
+  grid-area: answer4;
+  height: 40px;
+  width: 100px;
+  border: purple outset 10px;
+  background-color: purple;
+  color: purple;
+  font-size: 12px;
+  text-align: center;
+}
+
+.answer4:active {
+  grid-area: answer4;
+  height: 40px;
+  width: 100px;
+  border: purple inset 10px;
+  background-color: purple;
+  color: white;
+  font-size: 12px;
+}
+
+.puzzle5 {
+  grid-area: puzzle5;
+  height: 100px;
+  width: 100px;
+  overflow: scroll;
+  border: teal ridge 20px;
+}
+
+.answer5 {
+  grid-area: answer5;
+  height: 40px;
+  width: 100px;
+  border: purple outset 10px;
+  background-color: purple;
+  color: purple;
+  font-size: 12px;
+  text-align: center;
+}
+
+.answer5:active {
+  grid-area: answer5;
+  height: 40px;
+  width: 100px;
+  border: purple inset 10px;
+  background-color: purple;
+  color: white;
+  font-size: 12px;
+}
+
+.puzzle6 {
+  grid-area: puzzle6;
+  height: 100px;
+  width: 100px;
+  overflow: scroll;
+  border: teal ridge 20px;
+}
+
+.answer6 {
+  grid-area: answer6;
+  height: 40px;
+  width: 100px;
+  border: purple outset 10px;
+  background-color: purple;
+  color: purple;
+  font-size: 12px;
+  text-align: center;
+}
+
+.answer6:active {
+  grid-area: answer6;
+  height: 40px;
+  width: 100px;
+  border: purple inset 10px;
+  background-color: purple;
+  color: white;
+  font-size: 12px;
+}
