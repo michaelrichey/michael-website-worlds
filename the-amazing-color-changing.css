@@ -1,0 +1,64 @@
+h1 {
+  text-align: center;
+}
+
+.filterimg1 {
+  filter: blur(5px);
+}
+
+.filterimg2 {
+  filter: brightness(3);
+}
+
+.filterimg3 {
+  filter: contrast(300%);
+}
+
+.filterimg4 {
+  filter: drop-shadow(15px 15px 5px red);
+}
+.filterimg5 {
+  filter: grayscale(100%);
+}
+.filterimg6 {
+  filter: hue-rotate(90deg);
+}
+.filterimg7 {
+  filter: invert(100%);
+}
+
+.filterimg8 {
+  filter: saturate(500%);
+}
+
+.filterimg9 {
+  filter: sepia(100%);
+}
+
+.filterimg10 {
+  filter: opacity(50%);
+}
+
+.imgprime {
+  animation: anim 7s infinite linear;
+}
+
+@keyframes anim {
+  0% {filter: blur(5px)}
+  10% {filter: brightness(3)}
+  20% {filter: contrast(300%)}
+  30% {filter: drop-shadow(15px 15px 5px red)}
+  40% {filter: grayscale(100%)}
+  50% {filter: hue-rotate(90deg)}
+  60% {filter: invert(100%)}
+  70% {filter: saturate(500%)}
+  80% {filter: sepia(100%)}
+  100% {filter: opacity(50%)}
+}
+
+@keyframes anim2 {
+  0% {filter: hue-rotate(360deg)}
+  25% {filter: hue-rotate(180deg)}
+  75% {filter: hue-rotate(90deg)}
+  100% {filter: hue-rotate(360deg)}
+}
