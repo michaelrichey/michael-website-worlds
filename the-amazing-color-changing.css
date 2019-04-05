@@ -1,3 +1,21 @@
+body {
+  display: grid;
+  grid-template-columns: 29% 29% 29%;
+  grid-gap: 20px;
+  align-items: center;
+  justify-content: center;
+  background-image: url(images/geo-bg-2.gif);
+  font-family: impact;
+  color: white;
+}
+
+img {
+  width: 30vw;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 h1 {
   text-align: center;
 }
@@ -41,6 +59,9 @@ h1 {
 
 .imgprime {
   animation: anim 7s infinite linear;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @keyframes anim {
