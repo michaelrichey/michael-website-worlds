@@ -1,0 +1,24 @@
+h1 {
+  text-align: center;
+}
+
+.crackers1 {
+  transform: translateX(300px);
+  animation: crackers1-1 4s infinite, crackers1-2 7s infinite;
+}
+
+@keyframes crackers1-1 {
+  0% {transform: skewX(0deg) translatex(300px);}
+  25% {transform: skewX(-20deg) translatex(600px);}
+  50% {transform: skewX(20deg) translatey(400px);}
+  75% {transform: skewy(20deg) translatey(-100px) translateX(100px);}
+  100% {transform: skewX(0deg) translatex(300px);}
+}
+
+@keyframes crackers1-2 {
+  0% {filter: hue-rotate(0deg);}
+  25% {filter: hue-rotate(50deg);}
+  50% {filter: hue-rotate(180deg);}
+  75% {filter: hue-rotate(360deg);}
+  100% {filter: hue-rotate(0deg);}
+}
