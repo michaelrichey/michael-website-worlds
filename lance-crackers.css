@@ -1,18 +1,30 @@
+body {
+  background-image: url(images/lance-truck.jpg);
+  font-family: impact;
+  color: red;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
 h1 {
   text-align: center;
+  font-size: 70px;
 }
 
 .crackers1 {
-  transform: translateX(300px);
+  transform: translateX(0px);
   animation: crackers1-1 4s infinite, crackers1-2 7s infinite;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @keyframes crackers1-1 {
-  0% {transform: skewX(0deg) translatex(300px);}
-  25% {transform: skewX(-20deg) translatex(600px);}
+  0% {transform: skewX(0deg) translatex(0px);}
+  25% {transform: skewX(-20deg) translatex(300px);}
   50% {transform: skewX(20deg) translatey(400px);}
-  75% {transform: skewy(20deg) translatey(-100px) translateX(100px);}
-  100% {transform: skewX(0deg) translatex(300px);}
+  75% {transform: skewy(20deg) translatey(-50px) translateX(-200px);}
+  100% {transform: skewX(0deg) translatex(0px);}
 }
 
 @keyframes crackers1-2 {
@@ -21,4 +33,64 @@ h1 {
   50% {filter: hue-rotate(180deg);}
   75% {filter: hue-rotate(360deg);}
   100% {filter: hue-rotate(0deg);}
+}
+
+.flex {
+  display: inline-flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.crackers2 {
+  animation:
+    flex-anim 1s infinite,
+    crackers2 5s infinite;
+}
+
+.crackers3 {
+  animation:
+    flex-anim 1s infinite,
+    crackers3 5s infinite;
+}
+
+.crackers4 {
+  animation:
+    flex-anim 1s infinite,
+    crackers4 5s infinite;
+}
+
+.crackers5 {
+  animation:
+    flex-anim 1s infinite,
+    crackers5 5s infinite;
+}
+
+@keyframes flex-anim {
+  0% {transform: rotatey(0deg);}
+  50% {transform: rotatey(180deg);}
+  100% {transform: rotatey(0deg);}
+}
+
+@keyframes crackers2 {
+  0% {filter: brightness(100%);}
+  50% {filter: brightness(400%);}
+  100% {filter: brightness(100%);}
+}
+
+@keyframes crackers3 {
+  0% {filter: saturate(100%);}
+  50% {filter: saturate(400%);}
+  100% {filter: saturate(100%);}
+}
+
+@keyframes crackers4 {
+  0% {filter: invert(0%);}
+  50% {filter: invert(100%);}
+  100% {filter: invert(0%);}
+}
+
+@keyframes crackers5 {
+  0% {filter: contrast(100%);}
+  50% {filter: contrast(500%);}
+  100% {filter: contrast(100%);}
 }
