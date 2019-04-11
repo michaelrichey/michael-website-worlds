@@ -1,3 +1,20 @@
 h1 {
   text-align: center;
 }
+
+.clip1 {
+  clip-path: inset(100px 100px 100px 100px);
+}
+
+.clip2 {
+  animation: clip2-anim 5s infinite alternate;
+}
+
+@keyframes clip2-anim {
+  0% {clip-path: inset(0px 0px 0px 0px);}
+  100% {clip-path: inset(300px 300px 300px 300px);}
+}
+
+.clip3 {
+  clip-path: inset(0px 100px 400px 500px);
+}
