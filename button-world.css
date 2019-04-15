@@ -1,0 +1,62 @@
+h1 {
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-areas:
+    "button1 button2"
+    "button3 button4"
+    "button5 button6";
+  grid-gap: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.button1 {
+  grid-area: button1;
+  background-color: red;
+  width: 20vw;
+  height: 20vw;
+  border-radius: 20px;
+}
+
+.button2 {
+  grid-area: button2;
+  background-color: purple;
+  width: 20vw;
+  height: 20vw;
+  border-radius: 20px;
+}
+
+.button3 {
+  grid-area: button3;
+  background-color: orange;
+  width: 20vw;
+  height: 20vw;
+  border-radius: 20px;
+}
+
+.button4 {
+  grid-area: button4;
+  background-color: pink;
+  width: 20vw;
+  height: 20vw;
+  border-radius: 20px;
+}
+
+.button5 {
+  grid-area: button5;
+  background-color: green;
+  width: 20vw;
+  height: 20vw;
+  border-radius: 20px;
+}
+
+.button6 {
+  grid-area: button6;
+  background-color: yellow;
+  width: 20vw;
+  height: 20vw;
+  border-radius: 20px;
+}
