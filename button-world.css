@@ -1,0 +1,139 @@
+body {
+  background-image: url(images/geo-bg-5.gif);
+  background-size: contain;
+}
+
+h1 {
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-areas:
+    "button1 button2"
+    "button3 button4"
+    "button5 button6"
+    "button7 button7";
+  grid-gap: 100px;
+  justify-content: center;
+  align-items: center;
+}
+
+.button1 {
+  grid-area: button1;
+  background-color: red;
+  width: 20vw;
+  height: 20vw;
+  border-radius: 20px;
+  transition: width 3s;
+}
+
+.button1:hover {
+  width: 40vw;
+}
+
+.button2 {
+  grid-area: button2;
+  background-color: purple;
+  width: 20vw;
+  height: 20vw;
+  border-radius: 20px;
+  transition: height 3s;
+}
+
+.button2:hover {
+  height: 40vw;
+}
+
+.button3 {
+  grid-area: button3;
+  background-color: orange;
+  width: 20vw;
+  height: 20vw;
+  border-radius: 20px;
+  transition-property: width, transform;
+  transition-duration: 3s, 3s;
+}
+
+.button3:hover {
+  width: 40vw;
+  transform: rotatez(1080deg);
+}
+
+.button4 {
+  grid-area: button4;
+  background-color: pink;
+  width: 20vw;
+  height: 20vw;
+  border-radius: 20px;
+  transition-property: background-color, transform;
+  transition-duration: 5s, 1s;
+}
+
+.button4:hover {
+  background-color: blue;
+  transform: skewx(30deg);
+}
+
+.button5 {
+  grid-area: button5;
+  background-image: url(images/dbz-cos-1.jpg);
+  width: 19vw;
+  height: 19vw;
+  border-radius: 20px;
+  transition-property: height, width, background-image;
+  transition-duration: 4s;
+  background-size: cover;
+  border: green solid 1vw;
+}
+
+.button5:hover {
+  height: 60vw;
+  width: 60vw;
+  background-image: url(images/dbz-cos-2.jpg);
+  background-size: cover;
+}
+
+.button6 {
+  grid-area: button6;
+  background-color: yellow;
+  width: 20vw;
+  height: 20vw;
+  border-radius: 20px;
+  transition-property: all;
+  transition-duration: 4s;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: yellow;
+}
+
+.button6:hover {
+  height: 50vw;
+  width: 50vw;
+  border-radius: 400px;
+  border: orange double 40px;
+  background-color: purple;
+  color: orange;
+  font-size: 28px;
+}
+
+p {
+  font-family: impact;
+  text-align: center;
+}
+
+.button7 {
+  grid-area: button7;
+  background-color: teal;
+  width: 20vw;
+  height: 5vw;
+  border-radius: 20px;
+  transition-property: all;
+  transition-duration: 4s;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
