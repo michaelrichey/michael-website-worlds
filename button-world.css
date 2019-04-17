@@ -1,3 +1,8 @@
+body {
+  background-image: url(images/geo-bg-5.gif);
+  background-size: contain;
+}
+
 h1 {
   text-align: center;
 }
@@ -7,7 +12,8 @@ h1 {
   grid-template-areas:
     "button1 button2"
     "button3 button4"
-    "button5 button6";
+    "button5 button6"
+    "button7 button7";
   grid-gap: 100px;
   justify-content: center;
   align-items: center;
@@ -115,4 +121,19 @@ h1 {
 
 p {
   font-family: impact;
+  text-align: center;
+}
+
+.button7 {
+  grid-area: button7;
+  background-color: teal;
+  width: 20vw;
+  height: 5vw;
+  border-radius: 20px;
+  transition-property: all;
+  transition-duration: 4s;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
