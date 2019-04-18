@@ -1,26 +1,60 @@
+body {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
 h1 {
   text-align: center;
 }
 
 .img1 {
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  position: relative;
-  top: -10;
-  left: -10;
+  position: absolute;
+  top: 10vw;
+  left: 10vw;
+  z-index: 5;
+  width: 40vw;
+  animation: img1 1 1s;
+  animation-delay: 2s;
+}
+
+@keyframes img1 {
+  0% {transform: translatey(-50px); opacity: 0;}
+  100% {transform: translatey(0px); visibility: 1;}
 }
 
 .img2 {
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  position: absolute;
+  top: 10vw;
+  left: 50vw;
+  z-index: 5;
+  width: 40vw;
 }
 
 .img3 {
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  width: 40vw;
+  position: absolute;
+  top: 40vw;
+  left: 30vw;
+  z-index: 5;
 }
 
 .img4 {
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  width: 40vw;
+  position: absolute;
+  top: 70vw;
+  left: 10vw;
+  z-index: 5;
 }
 
 .img5 {
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  width: 40vw;
+  position: absolute;
+  top: 70vw;
+  left: 50vw;
+  z-index: 5;
 }
