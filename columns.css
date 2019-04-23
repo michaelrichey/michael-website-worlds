@@ -1,3 +1,11 @@
+body {
+  margin-left: 10vw;
+  margin-right: 5vw;
+  font-family: courier;
+  background-image: url(images/geo-bg-5.gif);
+  background-size: contain;
+}
+
 h1 {
   text-align: center;
 }
@@ -8,4 +16,9 @@ h1 {
 
 .columns2 {
   columns: 10 200px;
+}
+
+.yt1 {
+  width: 50vw;
+  height: 25vw;
 }
