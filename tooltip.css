@@ -1,0 +1,25 @@
+body {
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+h1 {
+  text-align: center;
+}
+
+.text1 {
+  color: white;
+  background-color: black;
+  padding: 2%;
+  border-radius: 20px;
+  top: 20%;
+  left: 20%;
+  flex-wrap: wrap;
+  display: flex;
+  position: absolute;
+  visibility: hidden;
+}
+
+.tooltip1:hover .text1 {
+  visibility: visible;
+}
