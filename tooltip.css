@@ -1,10 +1,22 @@
 body {
   margin-left: 20%;
   margin-right: 20%;
+  font-family: impact;
+  font-size: 25px;
 }
 
 h1 {
   text-align: center;
+}
+
+.tooltip1 {
+  color: red;
+  animation: anim infinite 5s;
+}
+
+@keyframes anim {
+  0% {transform: scale(0.9);}
+  100% {transform: scale(1.2);}
 }
 
 .text1 {
@@ -14,12 +26,103 @@ h1 {
   border-radius: 20px;
   top: 20%;
   left: 20%;
-  flex-wrap: wrap;
-  display: flex;
   position: absolute;
+  z-index: 5;
   visibility: hidden;
 }
 
 .tooltip1:hover .text1 {
+  visibility: visible;
+}
+
+.tooltip2 {
+  color: red;
+  animation: anim infinite 5s;
+}
+
+.text2 {
+  visibility: hidden;
+  color: white;
+  background-color: black;
+  padding: 2%;
+  border-radius: 20px;
+  top: 20%;
+  left: 20%;
+  flex-wrap: wrap;
+  display: flex;
+  position: absolute;
+  z-index: 5;
+}
+
+.tooltip2:hover .text2 {
+  visibility: visible;
+}
+
+.tooltip3 {
+  color: red;
+  animation: anim infinite 5s;
+}
+
+.text3 {
+  visibility: hidden;
+  color: white;
+  background-color: black;
+  padding: 2%;
+  border-radius: 20px;
+  position: absolute;
+  z-index: 5;
+  top: 17%;
+  left: 20%;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.tooltip3:hover .text3 {
+  visibility: visible;
+}
+
+.tooltip4 {
+  color: red;
+  animation: anim infinite 5s;
+}
+
+.text4 {
+  visibility: hidden;
+  color: white;
+  background-color: black;
+  padding: 2%;
+  border-radius: 20px;
+  position: absolute;
+  z-index: 5;
+  top: 17%;
+  left: 20%;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.tooltip4:hover .text4 {
+  visibility: visible;
+}
+
+.tooltip5 {
+  color: red;
+  animation: anim infinite 5s;
+}
+
+.text5 {
+  visibility: hidden;
+  color: white;
+  background-color: black;
+  padding: 2%;
+  border-radius: 20px;
+  position: absolute;
+  z-index: 5;
+  top: 17%;
+  left: 20%;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.tooltip5:hover .text5 {
   visibility: visible;
 }
