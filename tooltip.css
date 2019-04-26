@@ -1,22 +1,21 @@
 body {
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: 5%;
+  margin-right: 30%;
   font-family: impact;
   font-size: 25px;
+  background-image: url(images/geo-bg-3.jpg);
 }
 
 h1 {
   text-align: center;
 }
 
-.tooltip1 {
-  color: red;
-  animation: anim infinite 5s;
+h3 {
+  text-align: center;
 }
 
-@keyframes anim {
-  0% {transform: scale(0.9);}
-  100% {transform: scale(1.2);}
+.tooltip1 {
+  color: red;
 }
 
 .text1 {
@@ -24,10 +23,10 @@ h1 {
   background-color: black;
   padding: 2%;
   border-radius: 20px;
-  top: 20%;
-  left: 20%;
+  top: 5%;
+  right: 5%;
+  left: 75%;
   position: absolute;
-  z-index: 5;
   visibility: hidden;
 }
 
@@ -37,7 +36,6 @@ h1 {
 
 .tooltip2 {
   color: red;
-  animation: anim infinite 5s;
 }
 
 .text2 {
@@ -46,12 +44,12 @@ h1 {
   background-color: black;
   padding: 2%;
   border-radius: 20px;
-  top: 20%;
-  left: 20%;
+  top: 5%;
+  right: 5%;
+  left: 75%;
   flex-wrap: wrap;
   display: flex;
   position: absolute;
-  z-index: 5;
 }
 
 .tooltip2:hover .text2 {
@@ -60,7 +58,6 @@ h1 {
 
 .tooltip3 {
   color: red;
-  animation: anim infinite 5s;
 }
 
 .text3 {
@@ -70,9 +67,9 @@ h1 {
   padding: 2%;
   border-radius: 20px;
   position: absolute;
-  z-index: 5;
-  top: 17%;
-  left: 20%;
+  top: 5%;
+  right: 5%;
+  left: 75%;
   flex-wrap: wrap;
   display: flex;
 }
@@ -83,7 +80,6 @@ h1 {
 
 .tooltip4 {
   color: red;
-  animation: anim infinite 5s;
 }
 
 .text4 {
@@ -93,9 +89,9 @@ h1 {
   padding: 2%;
   border-radius: 20px;
   position: absolute;
-  z-index: 5;
-  top: 17%;
-  left: 20%;
+  top: 5%;
+  right: 5%;
+  left: 75%;
   flex-wrap: wrap;
   display: flex;
 }
@@ -106,7 +102,6 @@ h1 {
 
 .tooltip5 {
   color: red;
-  animation: anim infinite 5s;
 }
 
 .text5 {
@@ -116,13 +111,35 @@ h1 {
   padding: 2%;
   border-radius: 20px;
   position: absolute;
-  z-index: 5;
-  top: 17%;
-  left: 20%;
+  top: 5%;
+  right: 5%;
+  left: 75%;
   flex-wrap: wrap;
   display: flex;
 }
 
 .tooltip5:hover .text5 {
   visibility: visible;
+}
+
+.text6 {
+  visibility: hidden;
+  color: white;
+  background-color: black;
+  padding: 2%;
+  border-radius: 20px;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  left: 75%;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.tooltip6:hover .text6 {
+  visibility: visible;
+}
+
+.tooltip6 {
+  color: red;
 }
