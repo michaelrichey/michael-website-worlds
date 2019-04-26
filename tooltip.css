@@ -1,0 +1,145 @@
+body {
+  margin-left: 5%;
+  margin-right: 30%;
+  font-family: impact;
+  font-size: 25px;
+  background-image: url(images/geo-bg-3.jpg);
+}
+
+h1 {
+  text-align: center;
+}
+
+h3 {
+  text-align: center;
+}
+
+.tooltip1 {
+  color: red;
+}
+
+.text1 {
+  color: white;
+  background-color: black;
+  padding: 2%;
+  border-radius: 20px;
+  top: 5%;
+  right: 5%;
+  left: 75%;
+  position: absolute;
+  visibility: hidden;
+}
+
+.tooltip1:hover .text1 {
+  visibility: visible;
+}
+
+.tooltip2 {
+  color: red;
+}
+
+.text2 {
+  visibility: hidden;
+  color: white;
+  background-color: black;
+  padding: 2%;
+  border-radius: 20px;
+  top: 5%;
+  right: 5%;
+  left: 75%;
+  flex-wrap: wrap;
+  display: flex;
+  position: absolute;
+}
+
+.tooltip2:hover .text2 {
+  visibility: visible;
+}
+
+.tooltip3 {
+  color: red;
+}
+
+.text3 {
+  visibility: hidden;
+  color: white;
+  background-color: black;
+  padding: 2%;
+  border-radius: 20px;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  left: 75%;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.tooltip3:hover .text3 {
+  visibility: visible;
+}
+
+.tooltip4 {
+  color: red;
+}
+
+.text4 {
+  visibility: hidden;
+  color: white;
+  background-color: black;
+  padding: 2%;
+  border-radius: 20px;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  left: 75%;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.tooltip4:hover .text4 {
+  visibility: visible;
+}
+
+.tooltip5 {
+  color: red;
+}
+
+.text5 {
+  visibility: hidden;
+  color: white;
+  background-color: black;
+  padding: 2%;
+  border-radius: 20px;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  left: 75%;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.tooltip5:hover .text5 {
+  visibility: visible;
+}
+
+.text6 {
+  visibility: hidden;
+  color: white;
+  background-color: black;
+  padding: 2%;
+  border-radius: 20px;
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  left: 75%;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.tooltip6:hover .text6 {
+  visibility: visible;
+}
+
+.tooltip6 {
+  color: red;
+}
