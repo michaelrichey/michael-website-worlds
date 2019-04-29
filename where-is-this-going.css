@@ -1,0 +1,10 @@
+body {
+  background-image: repeating-radial-gradient(purple, teal, black 11%);
+  background-size: contain;
+  padding-top: 30vw;
+  padding-bottom: 30vw;
+}
+
+h1 {
+  text-align: center;
+}
