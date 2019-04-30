@@ -1,8 +1,53 @@
 body {
-  background-image: repeating-radial-gradient(purple, teal, black 11%);
-  background-size: contain;
-  padding-top: 30vw;
-  padding-bottom: 30vw;
+  background-image: repeating-radial-gradient(purple, teal, white 1vw);
+  background-size: 100vw;
+  padding-top: 10%;
+  padding-bottom: 40%;
+  animation: change 1s infinite linear alternate;
+}
+
+@keyframes change {
+  0% {background-image: repeating-radial-gradient(purple, teal, black 1vw);}
+  25% {background-image: repeating-radial-gradient(purple, teal, black 3vw);}
+  50% {background-image: repeating-radial-gradient(purple, teal, black 5vw);}
+  75% {background-image: repeating-radial-gradient(purple, teal, black 7vw);}
+  100% {background-image: repeating-radial-gradient(purple, teal, black 9vw);}
+
+}
+
+.grid {
+  display: grid;
+  grid-template-areas:
+    "box1 box1 box1"
+    "box2 box3 box4";
+  margin-left: 20%;
+  margin-right: 20%;
+  grid-gap: 10px;
+}
+
+.box1 {
+  grid-area: box1;
+  border: red solid 5px;
+  background: teal;
+}
+
+.box2 {
+  grid-area: box2;
+  border: red solid 5px;
+}
+
+.box3 {
+  grid-area: box3;
+  border: red solid 5px;
+}
+
+.box3 img {
+  width: 70%;
+}
+
+.box4 {
+  grid-area: box4;
+  border: red solid 5px;
 }
 
 h1 {
