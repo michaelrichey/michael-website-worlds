@@ -4,6 +4,9 @@ body {
   padding-top: 10%;
   padding-bottom: 40%;
   animation: change 1s infinite linear alternate;
+  color: white;
+  font-size: 20px;
+  font-family: impact;
 }
 
 @keyframes change {
@@ -20,25 +23,30 @@ body {
   grid-template-areas:
     "box1 box1 box1"
     "box2 box3 box4";
-  margin-left: 20%;
-  margin-right: 20%;
+  margin-left: 10%;
+  margin-right: 10%;
   grid-gap: 10px;
 }
 
 .box1 {
   grid-area: box1;
-  border: red solid 5px;
+  border: purple solid 10px;
+  border-radius: 30px;
   background: teal;
 }
 
 .box2 {
   grid-area: box2;
-  border: red solid 5px;
+  border: purple solid 10px;
+  border-radius: 30px;
+  padding: 5%;
 }
 
 .box3 {
   grid-area: box3;
-  border: red solid 5px;
+  border: purple solid 10px;
+  border-radius: 30px;
+  padding: 5%;
 }
 
 .box3 img {
@@ -47,7 +55,9 @@ body {
 
 .box4 {
   grid-area: box4;
-  border: red solid 5px;
+  border: purple solid 10px;
+  border-radius: 30px;
+  padding: 5%;
 }
 
 h1 {
