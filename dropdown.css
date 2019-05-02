@@ -1,0 +1,51 @@
+.grid {
+  display: grid;
+  grid-template-areas:
+    "head"
+    "box";
+}
+
+.head {
+  grid-area: head;
+  border: red 5px solid;
+}
+
+.box {
+  grid-area: box;
+  border: red 5px solid;
+}
+
+.dropdown {
+  background-color: orange;
+  color: white;
+  width: 200px;
+  position: relative;
+  display: inline-block;
+}
+
+h2 {
+  text-align: center;
+}
+
+a {
+  padding: 1%;
+  text-decoration: none;
+  color: white;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background-color: green;
+  color: white;
+  padding: 1%;
+  width: 200px;
+  padding-left: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.dropdown:hover .dropdown-content{
+  display: block;
+}
