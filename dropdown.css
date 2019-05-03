@@ -1,3 +1,7 @@
+body {
+  background-image: url(images/geo-bg-14.gif);
+}
+
 .grid {
   display: grid;
   grid-template-areas:
@@ -7,24 +11,31 @@
 
 .head {
   grid-area: head;
-  border: red 5px solid;
+  display: grid;
+  grid-template-areas:
+    "dropdown dropdown2"
 }
 
 .box {
   grid-area: box;
-  border: red 5px solid;
+  padding: 5%;
 }
 
 .dropdown {
-  background-color: orange;
   color: white;
-  width: 200px;
-  position: relative;
-  display: inline-block;
+  grid-area: dropdown;
+}
+
+button {
+  background-color: red;
+  color: white;
+  font-family: impact;
+  font-size: 30px;
+  visibility: show;
 }
 
 h2 {
-  text-align: center;
+  color: black;
 }
 
 a {
@@ -41,11 +52,28 @@ a {
   color: white;
   padding: 1%;
   width: 200px;
-  padding-left: 10%;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  border-radius: 10px;
 }
 
 .dropdown:hover .dropdown-content{
+  display: block;
+}
+
+.dropdown2 {
+  grid-area: dropdown2;
+  color: white;
+}
+
+.dropdown-content2 {
+  position: absolute;
+  z-index: 1;
+  display: none;
+  background-color: green;
+  padding: 1%;
+  width: 200px;
+  border-radius: 10px;
+}
+
+.dropdown2:hover .dropdown-content2 {
   display: block;
 }
