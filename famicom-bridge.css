@@ -1,10 +1,22 @@
+body {
+  color: #d0c6bc;
+  background-color: maroon;
+}
+
 h1 {
+  text-align: center;
+}
+
+h2 {
   text-align: center;
 }
 
 .container {
   position: relative;
   width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .image {
@@ -32,11 +44,90 @@ h1 {
 .text {
   font-family: impact;
   font-size: 3vw;
-  color: white;
+  color: #d0c6bc;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   position: absolute;
   overflow: hidden;
-  white-space: nowrap;
+}
+
+.container1 {
+  width: 50%;
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.overlay1 {
+  background-color: maroon;
+  position: absolute;
+  top: 0;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  height: 0;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.container1:hover .overlay1 {
+  height: 100%;
+}
+
+.image1 {
+  width: 100%;
+  display: block;
+}
+
+.text1 {
+  color: #d0c6bc;
+  font-family: impact;
+  font-size: 3vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+
+.container2 {
+  position: relative;
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.overlay2 {
+  position: absolute;
+  background-color: maroon;
+  height: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  transition: 0.5s;
+  width: 100%;
+  overflow: hidden;
+}
+
+.container2:hover .overlay2 {
+  height: 100%;
+}
+
+.image2 {
+  width: 100%;
+  display: block;
+}
+
+.text2 {
+  color: #d0c6bc;
+  font-family: impact;
+  font-size: 3vw;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
