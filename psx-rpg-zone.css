@@ -1,3 +1,8 @@
+body {
+  font-family: impact;
+  background-image: url(images/geo-bg-3.jpg);
+}
+
 h1 {
   text-align: center;
 }
@@ -30,10 +35,23 @@ h1 {
   width: 24.9999999999%;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1000px) {
   .responsive {
     width: 49.9999999%;
     margin: 6px 0;
   }
 
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }
