@@ -1,0 +1,26 @@
+h1 {
+  text-align: center;
+}
+
+.gallery img {
+  height: 15vw;
+  width: auto;
+  border: skyblue 3px solid;
+}
+
+.gallery img:hover {
+  border: blue 3px solid;
+}
+
+.responsive {
+  float: left;
+  width: 50%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {width: 75%;}
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {width: 100%;}
+}
