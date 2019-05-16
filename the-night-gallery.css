@@ -2,25 +2,33 @@ h1 {
   text-align: center;
 }
 
-.gallery img {
-  height: 15vw;
-  width: auto;
+.gallery {
   border: skyblue 3px solid;
 }
 
-.gallery img:hover {
+.gallery:hover {
   border: blue 3px solid;
 }
 
-.responsive {
-  float: left;
-  width: 50%;
+.gallery img {
+  height: auto;
+  width: 100%;
 }
 
-@media only screen and (max-width: 700px) {
-  .responsive {width: 75%;}
+.responsive {
+  width: 25%;
+  float: left;
+  padding: 6px 0;
+}
+
+@media only screen and (max-width: 1000px) {
+  .responsive {
+    width: 50%;
+  }
 }
 
 @media only screen and (max-width: 500px) {
-  .responsive {width: 100%;}
+  .responsive {
+    width: 100%;
+  }
 }
