@@ -1,0 +1,56 @@
+body {
+  font-family: fantasy;
+  color: red;
+  background-image: url(images/geo-bg-7.gif);
+}
+
+h1 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+.gallery img {
+  height: auto;
+  width: 20vw;
+  border: pink 5px solid;
+  transition: all 1s;
+  margin: 5%;
+}
+
+.gallery img:hover {
+  border: orange 10px solid;
+  border-radius: 20px;
+}
+
+.responsive {
+  width: 25%;
+  float: left;
+  padding: 6px 0;
+}
+
+@media only screen and (max-width: 1000px) {
+  .responsive {
+    width: 50%;
+  }
+  .gallery img {
+    width: 40vw;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+  .gallery img {
+    width: 80vw;
+  }
+}
+
+.break:after {
+  content: "";
+  display: table;
+  clear: both;
+}
