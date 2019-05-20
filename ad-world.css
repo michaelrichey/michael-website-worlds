@@ -1,0 +1,63 @@
+h1 {
+  text-align: center;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "head head head"
+    "lside box1 rside"
+    "lside box2 rside"
+    "lside box3 rside"
+    "foot foot foot";
+}
+
+.head {
+  grid-area: head;
+  border: purple 5px solid;
+}
+
+.lside {
+  grid-area: lside;
+  border: purple 5px solid;
+}
+
+.button1 {
+  font-size: 20px;
+  background-color: #f76600;
+  color: white;
+  padding: 20px;
+  border-radius: 20px;
+  width: 200px;
+  display: block;
+}
+
+.button1:hover {
+  background-color: #f99d5c;
+
+}
+
+.rside {
+  grid-area: rside;
+  border: purple 5px solid;
+}
+
+.box1 {
+  grid-area: box1;
+  border: purple 5px solid;
+}
+
+.box2 {
+  grid-area: box2;
+  border: purple 5px solid;
+}
+
+.box3 {
+  grid-area: box3;
+  border: purple 5px solid;
+}
+
+.foot {
+  grid-area: foot;
+  border: purple 5px solid;
+}
