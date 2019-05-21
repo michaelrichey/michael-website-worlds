@@ -42,9 +42,28 @@ h1 {
   border: purple 5px solid;
 }
 
+.button2 {
+  font-size: 20px;
+  background-color: yellow;
+  color: red;
+  padding: 20px;
+  width: 200px;
+  display: block;
+}
+
 .box1 {
   grid-area: box1;
   border: purple 5px solid;
+}
+
+.button3 {
+  font-size: 20px;
+  background-color: green;
+  color: white;
+  padding: 20px;
+  width: 200px;
+  display: block;
+  border-radius: 2000px;
 }
 
 .box2 {
@@ -52,12 +71,42 @@ h1 {
   border: purple 5px solid;
 }
 
+.button4 {
+  font-size: 20px;
+  background-color: red;
+  font-family: impact;
+  color: white;
+  padding: 20px;
+  width: 200px;
+  display: block;
+}
+
 .box3 {
   grid-area: box3;
   border: purple 5px solid;
 }
 
+.button5 {
+  font-size: 20px;
+  background-color: skyblue;
+  font-family: futura;
+  color: white;
+  padding: 20px;
+  width: 200px;
+  display: block;
+}
+
 .foot {
   grid-area: foot;
   border: purple 5px solid;
+}
+
+.button6 {
+  font-size: 15px;
+  background-color: purple;
+  font-family: arial;
+  color: white;
+  padding: 20px;
+  width: 200px;
+  display: block;
 }
