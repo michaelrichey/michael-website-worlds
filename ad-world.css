@@ -1,0 +1,151 @@
+h1 {
+  text-align: center;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "head head head"
+    "lside box1 rside"
+    "lside box2 rside"
+    "lside box3 rside"
+    "foot foot foot";
+  grid-gap: 10px;
+}
+
+.head {
+  grid-area: head;
+  border: purple 5px solid;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  background-color: skyblue;
+}
+
+.lside {
+  grid-area: lside;
+  border: purple 5px solid;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  text-align: center;
+  background-color: skyblue;
+}
+
+.button1 {
+  font-size: 20px;
+  background-color: #f76600;
+  color: white;
+  padding: 20px;
+  border-radius: 20px;
+  width: 200px;
+}
+
+.button1:hover {
+  background-color: #f99d5c;
+
+}
+
+.rside {
+  grid-area: rside;
+  border: purple 5px solid;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  text-align: center;
+  background-color: skyblue;
+}
+
+.button2 {
+  font-size: 20px;
+  background-color: yellow;
+  color: red;
+  padding: 20px;
+  width: 200px;
+  display: inline;
+}
+
+.box1 {
+  grid-area: box1;
+  border: purple 5px solid;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  text-align: center;
+  background-color: skyblue;
+}
+
+.button3 {
+  font-size: 20px;
+  background-color: green;
+  color: white;
+  padding: 20px;
+  width: 200px;
+  display: block;
+  border-radius: 2000px;
+  display: inline;
+}
+
+.box2 {
+  grid-area: box2;
+  border: purple 5px solid;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  text-align: center;
+  background-color: skyblue;
+}
+
+.button4 {
+  font-size: 20px;
+  background-color: red;
+  font-family: impact;
+  color: white;
+  padding: 20px;
+  width: 200px;
+}
+
+.box3 {
+  grid-area: box3;
+  border: purple 5px solid;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  text-align: center;
+  background-color: skyblue;
+}
+
+.button5 {
+  font-size: 20px;
+  background-color: skyblue;
+  font-family: futura;
+  color: white;
+  padding: 20px;
+  width: 200px;
+}
+
+.foot {
+  grid-area: foot;
+  border: purple 5px solid;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  text-align: center;
+  background-color: skyblue;
+}
+
+.button6 {
+  font-size: 15px;
+  background-color: purple;
+  font-family: arial;
+  color: white;
+  padding: 20px;
+  width: 200px;
+}
