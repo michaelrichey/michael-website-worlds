@@ -1,0 +1,187 @@
+h1 {
+  text-align: center;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "head head head"
+    "lside box1 rside"
+    "lside box2 rside"
+    "lside box3 rside"
+    "foot foot foot";
+  grid-gap: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.head {
+  grid-area: head;
+  border: purple 5px solid;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  background-color: skyblue;
+}
+
+img {
+  width: 70%;
+}
+
+.lside {
+  grid-area: lside;
+  border: purple 5px solid;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  text-align: center;
+  background-color: skyblue;
+}
+
+.button1 {
+  font-size: 20px;
+  background-color: #f76600;
+  color: white;
+  padding: 20px;
+  border-radius: 20px;
+  width: 200px;
+}
+
+.button1:hover {
+  background-color: #f99d5c;
+}
+
+.rside {
+  grid-area: rside;
+  border: purple 5px solid;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  text-align: center;
+  background-color: skyblue;
+}
+
+.button2 {
+  font-size: 20px;
+  background-color: yellow;
+  color: red;
+  padding: 20px;
+  width: 200px;
+  display: inline;
+  box-shadow: gray 0px 9px;
+}
+
+.button2:active {
+  background-color: #fcff66;
+  box-shadow: black 0px 4px;
+  transform: translateY(9px);
+}
+
+.box1 {
+  grid-area: box1;
+  border: purple 5px solid;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  text-align: center;
+  background-color: skyblue;
+}
+
+.button3 {
+  font-size: 20px;
+  background-color: green;
+  color: white;
+  padding: 20px;
+  width: 200px;
+  display: block;
+  border-radius: 2000px;
+  display: inline;
+  text-decoration: none;
+}
+
+.button3:hover {
+  background-color: #66ff77;
+  transform: scale(1.1);
+}
+
+.box2 {
+  grid-area: box2;
+  border: purple 5px solid;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  text-align: center;
+  background-color: skyblue;
+}
+
+.button4 {
+  font-size: 20px;
+  background-color: #ff7777;
+  font-family: impact;
+  color: white;
+  padding: 20px;
+  width: 200px;
+}
+
+.button4:hover {
+  background-color: red;
+  animation: .0001s infinite rage linear alternate;
+
+}
+
+@keyframes rage {
+  0% {transform: translateX(-5px);}
+  50% {transform: translateX(5px);}
+  100% {transform: translateX(0px);}
+}
+
+.box3 {
+  grid-area: box3;
+  border: #ff9900 5px solid;
+  border-radius: 20px;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  text-align: center;
+  background-color: skyblue;
+  font-family: arial;
+  background-color: white;
+}
+
+.button5 {
+  font-size: 20px;
+  background-image: linear-gradient(#faebc8, #f0c14e);
+  font-family: arial;
+  color: black;
+  padding: 20px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.foot {
+  grid-area: foot;
+  border: purple 5px solid;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  text-align: center;
+  background-color: skyblue;
+}
+
+.button6 {
+  font-size: 15px;
+  background-color: purple;
+  font-family: arial;
+  color: white;
+  padding: 20px;
+  width: 200px;
+}
