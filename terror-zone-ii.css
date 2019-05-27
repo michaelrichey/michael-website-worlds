@@ -20,12 +20,30 @@ a {
     "lframe main main"
     "lframe main main"
     "lframe main2 main2"
-    "foot foot foot"
+    "foot foot foot";
+}
+
+@media only screen and (max-width: 1000px)  {
+  .grid {
+    grid-template-areas:
+      "head head"
+      "lframe lframe"
+      "main main"
+      "main main"
+      "main2 main2"
+      "foot foot";
+  }
+
+  .lframe {
+    display: flex;
+    padding: 10px;
+    font-size: 20px;
+    flex-flow: column;
+  }
 
 }
 
 .head {
-  border: #32ff1c ridge 15px;
   grid-area: head;
   text-align: center;
   text-shadow: 3px 3px #32ff1c;
@@ -33,10 +51,8 @@ a {
   color: purple;
   background-image: url(images/shiverspines-ghost-bg.jpg);
   background-size: 100px;
-}
-
-.skele {
-  padding-top: 2000px;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 h1 {
@@ -54,7 +70,6 @@ h3 {
 }
 
 .lframe {
-  border: ridge #32ff1c 15px;
   grid-area: lframe;
   padding: 5%;
   background-image: url(images/shiverspines-ghost-bg.jpg);
@@ -64,7 +79,6 @@ h3 {
 }
 
 .main {
-  border: #32ff1c ridge 15px;
   grid-area: main;
   padding: 5%;
   font-size: 30px;
@@ -73,7 +87,7 @@ h3 {
 }
 
 .main2 {
-  border: #32ff1c ridge 15px;
+  border: ridge #32ff1c 15px;
   grid-area: main2;
   display: grid;
   font-size: 20px;
@@ -86,6 +100,11 @@ h3 {
     "book4 book5 book6"
     "book7 book8 book9"
     "book10 book10 book10";
+}
+
+.nav {
+  position: sticky;
+  top: 70px;
 }
 
 .bookimg {
@@ -150,7 +169,6 @@ h3 {
 }
 
 .foot {
-  border: #32ff1c ridge 15px;
   grid-area: foot;
   padding: 2%;
   background-image: url(images/shiverspines-ghost-bg.jpg);
