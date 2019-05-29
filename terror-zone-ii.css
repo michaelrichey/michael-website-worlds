@@ -108,7 +108,9 @@ h3 {
 }
 
 .bookimg {
-  width: 20vw;
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .main2title {
@@ -118,17 +120,62 @@ h3 {
 
 .book1 {
   grid-area: book1;
-  padding: 5%;
+  position: relative;
+}
+
+.overlay1 {
+  position: absolute;
+  background-color: purple;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.book1:hover .overlay1 {
+  opacity: 1;
 }
 
 .book2 {
   grid-area: book2;
-  padding: 5%;
+  position: relative;
+}
+
+.overlay2 {
+  position: absolute;
+  background-color: purple;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.book2:hover .overlay2 {
+  opacity: 1;
 }
 
 .book3 {
   grid-area: book3;
-  padding: 5%;
+  position: relative;
+}
+
+.overlay3 {
+  position: absolute;
+  background-color: purple;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.book3:hover .overlay3 {
+  opacity: 1;
 }
 
 .book4 {
