@@ -90,7 +90,6 @@ h3 {
   border: ridge #32ff1c 15px;
   grid-area: main2;
   display: grid;
-  font-size: 20px;
   background-image: url(images/shiverspines-bg.jpg);
   background-size: cover;
   background-attachment: fixed;
@@ -100,6 +99,14 @@ h3 {
     "book4 book5 book6"
     "book7 book8 book9"
     "book10 book10 book10";
+}
+
+.main2 h2 {
+  font-size: 60px;
+}
+
+.main2 h3 {
+  text-align: center;
 }
 
 .nav {
@@ -121,6 +128,7 @@ h3 {
 .book1 {
   grid-area: book1;
   position: relative;
+  margin: 5%;
 }
 
 .overlay1 {
@@ -138,9 +146,18 @@ h3 {
   opacity: 1;
 }
 
+.text1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
 .book2 {
   grid-area: book2;
   position: relative;
+  margin: 5%;
 }
 
 .overlay2 {
@@ -158,9 +175,18 @@ h3 {
   opacity: 1;
 }
 
+.text2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
 .book3 {
   grid-area: book3;
   position: relative;
+  margin: 5%;
 }
 
 .overlay3 {
@@ -178,34 +204,187 @@ h3 {
   opacity: 1;
 }
 
+.text3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
 .book4 {
   grid-area: book4;
-  padding: 5%;
+  position: relative;
+  margin: 5%;
+}
+
+.overlay4 {
+  position: absolute;
+  background-color: purple;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.book4:hover .overlay4 {
+  opacity: 1;
+}
+
+.text4 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
 }
 
 .book5 {
   grid-area: book5;
-  padding: 5%;
+  position: relative;
+  margin: 5%;
+}
+
+.overlay5 {
+  position: absolute;
+  background-color: purple;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.book5:hover .overlay5 {
+  opacity: 1;
+}
+
+.text5 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
 }
 
 .book6 {
   grid-area: book6;
-  padding: 5%;
+  position: relative;
+  margin: 5%;
+}
+
+.overlay6 {
+  position: absolute;
+  background-color: purple;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.book6:hover .overlay6 {
+  opacity: 1;
+}
+
+.text6 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
 }
 
 .book7 {
   grid-area: book7;
-  padding: 5%;
+  position: relative;
+  margin: 5%;
+}
+
+.overlay7 {
+  position: absolute;
+  background-color: purple;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.book7:hover .overlay7 {
+  opacity: 1;
+}
+
+.text7 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
 }
 
 .book8 {
   grid-area: book8;
-  padding: 5%;
+  position: relative;
+  margin: 5%;
+}
+
+.overlay8 {
+  position: absolute;
+  background-color: purple;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.book8:hover .overlay8 {
+  opacity: 1;
+}
+
+.text8 {
+  position: absolute;
+  top: 50%;
+  left: 16%;
+  transform: translate(-10%, -50%);
+  text-align: center;
+
 }
 
 .book9 {
   grid-area: book9;
-  padding: 5%;
+  position: relative;
+  margin: 5%;
+}
+
+.overlay9 {
+  position: absolute;
+  background-color: purple;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.book9:hover .overlay9 {
+  opacity: 1;
+}
+
+.text9 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
 }
 
 .book10 {
@@ -220,4 +399,12 @@ h3 {
   padding: 2%;
   background-image: url(images/shiverspines-ghost-bg.jpg);
   background-size: 100px;
+}
+
+.maintext {
+  font-size: 30px;
+  font-family: rockwell;
+  text-shadow: none;
+  padding-left: 20%;
+  padding-right: 20%;
 }
