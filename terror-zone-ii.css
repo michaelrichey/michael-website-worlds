@@ -15,6 +15,8 @@ a {
 .grid {
   font-family: rockwell;
   display: grid;
+  background-image: url(images/shiverspines-ghost-bg.jpg);
+  background-size: 100px;
   grid-template-areas:
     "head head head"
     "lframe main main"
@@ -41,6 +43,42 @@ a {
     flex-flow: column;
   }
 
+  .text1 {
+    font-size: 2vw;
+  }
+
+  .text2 {
+    font-size: 2vw;
+  }
+
+  .text3 {
+    font-size: 1.8vw;
+  }
+
+  .text4 {
+    font-size: 1.8vw;
+  }
+
+  .text5 {
+    font-size: 2vw;
+  }
+
+  .text6 {
+    font-size: 2vw;
+  }
+
+  .text7 {
+    font-size: 2vw;
+  }
+
+  .text8 {
+    font-size: 1.9vw;
+  }
+
+  .text9 {
+    font-size: 2vw;
+  }
+
 }
 
 .head {
@@ -49,8 +87,6 @@ a {
   text-shadow: 3px 3px #32ff1c;
   font-size: 40px;
   color: purple;
-  background-image: url(images/shiverspines-ghost-bg.jpg);
-  background-size: 100px;
   padding-left: 10%;
   padding-right: 10%;
 }
@@ -72,8 +108,6 @@ h3 {
 .lframe {
   grid-area: lframe;
   padding: 5%;
-  background-image: url(images/shiverspines-ghost-bg.jpg);
-  background-size: 100px;
   color: purple;
   font-size: 20px;
 }
@@ -82,8 +116,6 @@ h3 {
   grid-area: main;
   padding: 5%;
   font-size: 30px;
-  background-image: url(images/shiverspines-ghost-bg.jpg);
-  background-size: 100px;
 }
 
 .main2 {
@@ -384,7 +416,7 @@ h3 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  
+
 }
 
 .book10 {
@@ -397,8 +429,6 @@ h3 {
 .foot {
   grid-area: foot;
   padding: 2%;
-  background-image: url(images/shiverspines-ghost-bg.jpg);
-  background-size: 100px;
 }
 
 .maintext {
