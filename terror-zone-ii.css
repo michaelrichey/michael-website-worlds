@@ -1,0 +1,410 @@
+@font-face {
+  font-family: creep;
+  src: url(https://fonts.gstatic.com/s/creepster/v7/AlZy_zVUqJz4yMrniH4Rcn35fh4Dog.woff2);
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.grid {
+  font-family: rockwell;
+  display: grid;
+  grid-template-areas:
+    "head head head"
+    "lframe main main"
+    "lframe main main"
+    "lframe main2 main2"
+    "foot foot foot";
+}
+
+@media only screen and (max-width: 1000px)  {
+  .grid {
+    grid-template-areas:
+      "head head"
+      "lframe lframe"
+      "main main"
+      "main main"
+      "main2 main2"
+      "foot foot";
+  }
+
+  .lframe {
+    display: flex;
+    padding: 10px;
+    font-size: 20px;
+    flex-flow: column;
+  }
+
+}
+
+.head {
+  grid-area: head;
+  text-align: center;
+  text-shadow: 3px 3px #32ff1c;
+  font-size: 40px;
+  color: purple;
+  background-image: url(images/shiverspines-ghost-bg.jpg);
+  background-size: 100px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+h1 {
+  font-family: creep;
+}
+
+h2 {
+  font-family: creep;
+  text-shadow: 2px 2px #32ff1c;
+}
+
+h3 {
+  font-family: creep;
+  text-shadow: 2px 2px #32ff1c;
+}
+
+.lframe {
+  grid-area: lframe;
+  padding: 5%;
+  background-image: url(images/shiverspines-ghost-bg.jpg);
+  background-size: 100px;
+  color: purple;
+  font-size: 20px;
+}
+
+.main {
+  grid-area: main;
+  padding: 5%;
+  font-size: 30px;
+  background-image: url(images/shiverspines-ghost-bg.jpg);
+  background-size: 100px;
+}
+
+.main2 {
+  border: ridge #32ff1c 15px;
+  grid-area: main2;
+  display: grid;
+  background-image: url(images/shiverspines-bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  grid-template-areas:
+    "main2title main2title main2title"
+    "book1 book2 book3"
+    "book4 book5 book6"
+    "book7 book8 book9"
+    "book10 book10 book10";
+}
+
+.main2 h2 {
+  font-size: 60px;
+}
+
+.main2 h3 {
+  text-align: center;
+}
+
+.nav {
+  position: sticky;
+  top: 70px;
+}
+
+.bookimg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.main2title {
+  text-align: center;
+  grid-area: main2title;
+}
+
+.book1 {
+  grid-area: book1;
+  position: relative;
+  margin: 5%;
+}
+
+.overlay1 {
+  position: absolute;
+  background-color: purple;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.book1:hover .overlay1 {
+  opacity: 1;
+}
+
+.text1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+.book2 {
+  grid-area: book2;
+  position: relative;
+  margin: 5%;
+}
+
+.overlay2 {
+  position: absolute;
+  background-color: purple;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.book2:hover .overlay2 {
+  opacity: 1;
+}
+
+.text2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+.book3 {
+  grid-area: book3;
+  position: relative;
+  margin: 5%;
+}
+
+.overlay3 {
+  position: absolute;
+  background-color: purple;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.book3:hover .overlay3 {
+  opacity: 1;
+}
+
+.text3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+.book4 {
+  grid-area: book4;
+  position: relative;
+  margin: 5%;
+}
+
+.overlay4 {
+  position: absolute;
+  background-color: purple;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.book4:hover .overlay4 {
+  opacity: 1;
+}
+
+.text4 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+.book5 {
+  grid-area: book5;
+  position: relative;
+  margin: 5%;
+}
+
+.overlay5 {
+  position: absolute;
+  background-color: purple;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.book5:hover .overlay5 {
+  opacity: 1;
+}
+
+.text5 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+.book6 {
+  grid-area: book6;
+  position: relative;
+  margin: 5%;
+}
+
+.overlay6 {
+  position: absolute;
+  background-color: purple;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.book6:hover .overlay6 {
+  opacity: 1;
+}
+
+.text6 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+.book7 {
+  grid-area: book7;
+  position: relative;
+  margin: 5%;
+}
+
+.overlay7 {
+  position: absolute;
+  background-color: purple;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.book7:hover .overlay7 {
+  opacity: 1;
+}
+
+.text7 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+.book8 {
+  grid-area: book8;
+  position: relative;
+  margin: 5%;
+}
+
+.overlay8 {
+  position: absolute;
+  background-color: purple;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.book8:hover .overlay8 {
+  opacity: 1;
+}
+
+.text8 {
+  position: absolute;
+  top: 50%;
+  left: 16%;
+  transform: translate(-10%, -50%);
+  text-align: center;
+
+}
+
+.book9 {
+  grid-area: book9;
+  position: relative;
+  margin: 5%;
+}
+
+.overlay9 {
+  position: absolute;
+  background-color: purple;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.book9:hover .overlay9 {
+  opacity: 1;
+}
+
+.text9 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+}
+
+.book10 {
+  grid-area: book10;
+  padding: 5%;
+  text-align: center;
+  font-size: 50px;
+}
+
+.foot {
+  grid-area: foot;
+  padding: 2%;
+  background-image: url(images/shiverspines-ghost-bg.jpg);
+  background-size: 100px;
+}
+
+.maintext {
+  font-size: 30px;
+  font-family: rockwell;
+  text-shadow: none;
+  padding-left: 20%;
+  padding-right: 20%;
+}
