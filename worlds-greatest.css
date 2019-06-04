@@ -10,11 +10,11 @@ body {
 }
 
 @keyframes change {
-  0% {background-image: repeating-radial-gradient(purple, teal, black 1vw);}
-  25% {background-image: repeating-radial-gradient(purple, teal, black 3vw);}
-  50% {background-image: repeating-radial-gradient(purple, teal, black 5vw);}
-  75% {background-image: repeating-radial-gradient(purple, teal, black 7vw);}
-  100% {background-image: repeating-radial-gradient(purple, teal, black 9vw);}
+  0% {background-image: repeating-radial-gradient(#fe7a9d, #fefa85, #7e4a86 1vw);}
+  25% {background-image: repeating-radial-gradient(#fe7a9d, #fefa85, #7e4a86 3vw);}
+  50% {background-image: repeating-radial-gradient(#fe7a9d, #fefa85, #7e4a86 5vw);}
+  75% {background-image: repeating-radial-gradient(#fe7a9d, #fefa85, #7e4a86 7vw);}
+  100% {background-image: repeating-radial-gradient(#fe7a9d, #fefa85, #7e4a86 9vw);}
 
 }
 
@@ -26,6 +26,7 @@ body {
   margin-left: 10%;
   margin-right: 10%;
   grid-gap: 10px;
+  text-shadow: 3px 3px #fe7a9d;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -52,27 +53,34 @@ body {
   100% {transform: scale(1.05);}
 }
 
+@keyframes change1 {
+  0% {background-image: repeating-linear-gradient(#fe7a9d, #fefa85, #7e4a86 1vw);}
+  33.33% {background-image: repeating-linear-gradient(#7e4a86, #fe7a9d, #fefa85 1vw);}
+  66.66% {background-image: repeating-linear-gradient(#fefa85, #7e4a86, #fe7a9d 1vw);}
+  100% {background-image: repeating-linear-gradient(#fe7a9d, #fefa85, #7e4a86 1vw);}
+}
+
 .box1 {
   grid-area: box1;
-  border: purple solid 10px;
+  border: #7e4a86 solid 10px;
   border-radius: 30px;
-  animation: boxes 2s infinite alternate;
+  animation: boxes 2s infinite alternate, change1 1s infinite linear alternate;
 }
 
 .box2 {
   grid-area: box2;
-  border: purple solid 10px;
+  border: #7e4a86 solid 10px;
   border-radius: 30px;
   padding: 5%;
-  animation: boxes 2s infinite alternate;
+  animation: boxes 2s infinite alternate, change1 1s infinite linear alternate;
 }
 
 .box3 {
   grid-area: box3;
-  border: purple solid 10px;
+  border: #7e4a86 solid 10px;
   border-radius: 30px;
   padding: 5%;
-  animation: boxes 2s infinite alternate;
+  animation: boxes 2s infinite alternate, change1 1s infinite linear alternate;
 }
 
 .box3 img {
@@ -81,10 +89,10 @@ body {
 
 .box4 {
   grid-area: box4;
-  border: purple solid 10px;
+  border: #7e4a86 solid 10px;
   border-radius: 30px;
   padding: 5%;
-  animation: boxes 2s infinite alternate;
+  animation: boxes 2s infinite alternate, change1 1s infinite linear alternate;
 }
 
 h1 {
