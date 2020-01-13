@@ -1,56 +1,47 @@
 const party = [
   {
     name: "Cloud Strife",
-    weapon: asdf,
-    class: asdf,
-    hometown: asdf
+    weapon: "Sword",
+    class: "Red Mage"
   },
   {
     name: "Barrett Wallace",
-    weapon: asdf,
-    class: asdf,
-    hometown: asdf
+    weapon: "Arm Gun",
+    class: "Fighter"
   },
   {
     name: "Tifa Lockhart",
-    weapon: asdf,
-    class: asdf,
-    hometown: asdf
+    weapon: "Fists",
+    class: "Monk"
   },
   {
     name: "Aeris Gainsborough",
-    weapon: asdf,
-    class: asdf,
-    hometown: asdf
+    weapon: "Pole",
+    class: "Sage"
   },
   {
     name: "Red XIII",
-    weapon: asdf,
-    class: asdf,
-    hometown: asdf
+    weapon: "Teeth",
+    class: "Kitty"
   },
   {
     name: "Cait Sith",
-    weapon: asdf,
-    class: asdf,
-    hometown: asdf
+    weapon: "Horn",
+    class: "White Mage"
   },
   {
     name: "Cid Highwind",
-    weapon: asdf,
-    class: asdf,
-    hometown: asdf
+    weapon: "Pole",
+    class: "Dragoon"
   },
   {
     name: "Yuffie Kisagari",
-    weapon: asdf,
-    class: asdf,
-    hometown: asdf
+    weapon: "Big Shuriken",
+    class: "Ninja"
   },
   {
     name: "Vincent Valentine",
-    weapon: asdf,
-    class: asdf,
-    hometown: asdf
+    weapon: "Gun",
+    class: "Black Mage"
   },
 ]
