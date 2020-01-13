@@ -10,8 +10,8 @@ h1 {
 }
 
 body {
-  background-color: black;
-  color: red;
+  background-color: teal;
+  color: purple;
   margin: 30px;
   padding-right: 600px;
   font-family: arial;
@@ -22,4 +22,9 @@ body {
   font-family: fantasy;
   font-size: 20px;
   color: maroon;
+}
+
+td {
+  border: solid 3px blue;
+  padding: 20px;
 }

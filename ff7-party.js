@@ -45,3 +45,46 @@ const party = [
     class: "Black Mage"
   },
 ]
+
+const filters = {
+  searchText: ''
+}
+
+const partyList = function (party, filters) {
+  const filterParty = party.filter(function (member) {
+    return member.name.toLowerCase().includes(filters.searchText.toLowerCase())
+  })
+
+  document.querySelector('#name-zone').innerHTML = '<th>Name</th>'
+
+  filterParty.forEach(function (member) {
+    const generateParty = document.createElement('td')
+    generateParty.textContent = member.name
+    document.querySelector("#name-zone").appendChild(generateParty)
+  })
+}
+
+const weaponList = function (party) {
+  party.forEach(function (member) {
+    const generateWeapon = document.createElement("td")
+    generateWeapon.textContent = member.weapon
+    document.querySelector("#weapon-zone").appendChild(generateWeapon)
+  })
+}
+
+const classList = function (party) {
+  party.forEach(function (member) {
+    const generateClass = document.createElement('td')
+    generateClass.textContent = member.class
+    document.querySelector("#class-zone").appendChild(generateClass)
+  })
+}
+
+partyList(party, filters)
+weaponList(party)
+classList(party)
+
+document.querySelector("#search").addEventListener('input', function (e) {
+  filters.searchText = e.target.value
+  partyList(party, filters)
+})
