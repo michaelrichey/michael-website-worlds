@@ -10,21 +10,28 @@ h1 {
 }
 
 body {
-  background-color: teal;
-  color: purple;
+  background-image: url(images/ff7-bg.gif);
+  color: black;
   margin: 30px;
   padding-right: 600px;
-  font-family: arial;
-  font-size: 14px;
+  font-family: times;
+  font-size: 20px;
 }
 
-#cheat-zone {
-  font-family: fantasy;
-  font-size: 20px;
-  color: maroon;
+table {
+  font-family: verdana;
+  font-size: 15px;
+  color: black;
+  padding-top: 1em;
+}
+
+th {
+  color: white;
+  background-color: blue;
+  height: 5em;
 }
 
 td {
-  border: solid 3px blue;
+  border: outset 8px gray;
   padding: 20px;
 }
