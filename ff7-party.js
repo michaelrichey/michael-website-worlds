@@ -56,21 +56,25 @@ const partyList = function (party, filters) {
   })
 
   document.querySelector('#name-zone').innerHTML = '<th>Name</th>'
+  document.querySelector('#weapon-zone').innerHTML = '<th>Weapon</th>'
+  document.querySelector('#class-zone').innerHTML = '<th>Class</th>'
 
   filterParty.forEach(function (member) {
     const generateParty = document.createElement('td')
     generateParty.textContent = member.name
     document.querySelector("#name-zone").appendChild(generateParty)
-  })
-}
 
-const weaponList = function (party) {
-  party.forEach(function (member) {
     const generateWeapon = document.createElement("td")
     generateWeapon.textContent = member.weapon
     document.querySelector("#weapon-zone").appendChild(generateWeapon)
+
+    const generateClass = document.createElement('td')
+    generateClass.textContent = member.class
+    document.querySelector("#class-zone").appendChild(generateClass)
   })
 }
+
+
 
 const classList = function (party) {
   party.forEach(function (member) {
@@ -81,8 +85,6 @@ const classList = function (party) {
 }
 
 partyList(party, filters)
-weaponList(party)
-classList(party)
 
 document.querySelector("#search").addEventListener('input', function (e) {
   filters.searchText = e.target.value
