@@ -2,6 +2,9 @@ const ingredients = []
 
 
 const message = function (x) {
+
+  document.querySelector('#welcome').innerHTML = ''
+
   x.forEach(function (item) {
     const generateText = document.createElement('p')
     generateText.innerText = `You have added: ${item.name}`
