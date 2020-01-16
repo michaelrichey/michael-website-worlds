@@ -5,9 +5,8 @@ body {
 .grid{
   display: grid;
   grid-template-areas:
-    "head head head head"
-    "lframe main main main"
-    "foot foot rframe rframe";
+    "head head head"
+    "lframe main box3";
   background-color: #daa831;
   font-family: fantasy;
 }
@@ -39,25 +38,11 @@ body {
   padding: 3%;
 }
 
-.rframe {
+.box3 {
   border: 10px red solid;
   border-image-source: url(images/pizza-border-1.gif);
   border-image-slice: 70;
   border-image-repeat: round;
-  grid-area: rframe;
+  grid-area: box3;
   padding: 3%;
-}
-
-.foot {
-  border: 10px red solid;
-  border-image-source: url(images/pizza-border-1.gif);
-  border-image-slice: 70;
-  border-image-repeat: round;
-  grid-area: foot;
-  padding: 3%;
-  align-items: end;
-}
-
-.foot img{
-  width: 20vw;
 }
